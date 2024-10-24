@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="./js/project.js" type="module" defer></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <title>Horizone - Travel Tips, Guides, and Booking Services</title>
+  <!-- Meta tags for SEO -->
+  <meta name="description"
+    content="Discover travel tips, destination guides, and booking services for hotels, flights, and car rentals. Explore new adventures with Horizone." />
+  <meta name="keywords" content="travel, booking, flights, hotels, car rental, destination guides, adventure" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Horizone" />
+  <link rel="canonical" href="https://www.yoursite.com/" />
+
+  <!-- OpenGraph for social media sharing -->
+  <meta property="og:title" content="Horizone - Travel Tips, Guides, and Booking Services" />
+  <meta property="og:description"
+    content="Explore new adventures with Horizone. Your source for travel tips, destination guides, and booking services." />
+  <meta property="og:image" content="https://www.yoursite.com/images/logo.png" />
+  <meta property="og:url" content="https://www.yoursite.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card for social sharing -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Horizone - Travel Tips, Guides, and Booking Services" />
+  <meta name="twitter:description"
+    content="Explore new adventures with Horizone, your go-to platform for travel tips, destination guides, and booking." />
+  <meta name="twitter:image" content="https://www.yoursite.com/images/logo.png" / </head>
+
+<body>
+  <!-- Start Navbar -->
+  <header class=" z-3 p-3 d-flex justify-content-between w-100 align-items-center">
+    <div class="links d-flex gap-3">
+      <h1 class="fs-2 m-auto m-lg-0"><a class="text-white text-decoration-none" href="index.html">Horizone</a></h1>
+      <button class="dash bg-transparent" name="toggle-navigation" aria-label="Toggle Navigation Menu" id="dash">
+        <svg fill="#ffffff" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" width="30">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier1" stroke-linecap="round" stroke-linejoin="round" word-spacing=""></g>
+          <g id="SVGRepo_iconCarrier4545">
+            <path
+              d="M 6.7070 16.1641 L 10.7382 16.1641 C 12.0039 16.1641 13.0586 15.1094 13.0586 13.8437 C 13.0586 12.5313 12.0039 11.5000 10.7382 11.5000 L 6.7070 11.5000 C 5.4413 11.5000 4.3867 12.5313 4.3867 13.8437 C 4.3867 15.1094 5.4413 16.1641 6.7070 16.1641 Z M 20.0429 15.7188 L 49.7149 15.7188 C 50.7930 15.7188 51.6133 14.8984 51.6133 13.8437 C 51.6133 12.7656 50.7930 11.9453 49.7149 11.9453 L 20.0429 11.9453 C 18.9882 11.9453 18.1445 12.7656 18.1445 13.8437 C 18.1445 14.8984 18.9882 15.7188 20.0429 15.7188 Z M 6.7070 30.3437 L 10.7382 30.3437 C 12.0039 30.3437 13.0586 29.2891 13.0586 28.0000 C 13.0586 26.7110 12.0039 25.6797 10.7382 25.6797 L 6.7070 25.6797 C 5.4413 25.6797 4.3867 26.7110 4.3867 28.0000 C 4.3867 29.2891 5.4413 30.3437 6.7070 30.3437 Z M 20.0429 29.8984 L 49.7149 29.8984 C 50.7930 29.8984 51.6133 29.0547 51.6133 28.0000 C 51.6133 26.9453 50.7930 26.1250 49.7149 26.1250 L 20.0429 26.1250 C 18.9882 26.1250 18.1445 26.9453 18.1445 28.0000 C 18.1445 29.0547 18.9882 29.8984 20.0429 29.8984 Z M 6.7070 44.5000 L 10.7382 44.5000 C 12.0039 44.5000 13.0586 43.4453 13.0586 42.1797 C 13.0586 40.8672 12.0039 39.8359 10.7382 39.8359 L 6.7070 39.8359 C 5.4413 39.8359 4.3867 40.8672 4.3867 42.1797 C 4.3867 43.4453 5.4413 44.5000 6.7070 44.5000 Z M 20.0429 44.0547 L 49.7149 44.0547 C 50.7930 44.0547 51.6133 43.2344 51.6133 42.1797 C 51.6133 41.1016 50.7930 40.2813 49.7149 40.2813 L 20.0429 40.2813 C 18.9882 40.2813 18.1445 41.1016 18.1445 42.1797 C 18.1445 43.2344 18.9882 44.0547 20.0429 44.0547 Z">
+            </path>
+          </g>
+        </svg>
+      </button>
+      <div class="dd">
+        <ul class="d-flex m-auto" id="navBarLinks">
+          <li class="close-btn bg-transparent position-absolute rounded-circle text-white"
+            style="width: 50px; height: 50px">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier8888" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM8.96963 8.96965C9.26252 8.67676 9.73739 8.67676 10.0303 8.96965L12 10.9393L13.9696 8.96967C14.2625 8.67678 14.7374 8.67678 15.0303 8.96967C15.3232 9.26256 15.3232 9.73744 15.0303 10.0303L13.0606 12L15.0303 13.9696C15.3232 14.2625 15.3232 14.7374 15.0303 15.0303C14.7374 15.3232 14.2625 15.3232 13.9696 15.0303L12 13.0607L10.0303 15.0303C9.73742 15.3232 9.26254 15.3232 8.96965 15.0303C8.67676 14.7374 8.67676 14.2625 8.96965 13.9697L10.9393 12L8.96963 10.0303C8.67673 9.73742 8.67673 9.26254 8.96963 8.96965Z"
+                  fill="#333"></path>
+              </g>
+            </svg>
+          </li>
+          <li><a href="#">Hotel</a></li>
+          <li><a href="#">Flight</a></li>
+          <li><a href="#">Train</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Car Rental</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="search position-relative">
+      <input type="search" class="rounded outline-0" id="searchInput" placeholder="Search" />
+      <svg class="position-absolute translate-middle-y top-50" id="searchBtn" viewBox="0 0 24 24" width="25" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier2" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier2" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier4444">
+          <path
+            d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+      </svg>
+    </div>
+    <div class="auth d-flex justify-content-between gap-1">
+      <button id="langButton" name="langButton" class="p-1 bg-transparent d-flex gap-2 align-items-center"
+        aria-label="Change Language">
+        <img class="bg-white p-1 rounded-circle" src="./images/language-dark.svg" alt="change language logo"
+          style="width: 30px" />
+        <span id="lang" class="fs-6 m-auto">En</span>
+      </button>
+      <div id="languagesCard" class="language lang-card overflow-hidden position-absolute">
+        <button class="text-black w-100 p-3" name="english" aria-label="Switch to English">English</button>
+        <button class="text-black w-100 p-3" name="arabic" aria-label="التبديل إلى العربية">العربيه</button>
+      </div>
+      <div class="auth1" id="register">
+        <button class="py-3 px-4 fw-bold bg-transparent login" name="login" aria-label="Login">Login</button>
+        <button class="py-3 px-4 fw-bold rounded text-black" name="signup" aria-label="Sign Up">Sign Up</button>
+      </div>
+    </div>
+  </header>
+  <!-- End Navbar -->
+  <!-- Start Slider -->
+  <div class="slider position-relative overflow-hidden">
+    <!-- Display list Items -->
+    <div class="list d-flex w-100 h-100"></div>
+    <!-- Create Slider Dots -->
+    <div class="slider-dots px-5 position-absolute d-flex gap-1 z-2"></div>
+  </div>
+  <!-- End Slider -->
+
+  <!-- Start blogs -->
+  <div class="blogs p-4">
+    <div class="title-and-filter d-flex justify-content-between flex-wrap">
+      <div class="title mb-5 " id="blogText">
+        <h2 class="fs-1">Blog</h2>
+        <p class="my-3 fs-6">
+          Here, we share travel tips, destination guides, and stories that
+          inspire your next adventure.
+        </p>
+      </div>
+      <div class="filter d-flex gap-3 align-items-center p-3">
+        <span id="sortTitle"> Sort by :</span>
+        <div class="dropdown" id="sort">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="filterDropdown" name="filterDropdown"
+            aria-label="Filter options" data-bs-toggle="dropdown" aria-expanded="false">
+            Choose
+          </button>
+
+          <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+            <li>
+              <a class="dropdown-item" href="#" data-filter="all">All</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" data-filter="Latest">Latest</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" data-filter="Oldest">Oldest</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" data-filter="Popular">Popular</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Display categorates -->
+    <div class="swiper d-flex gap-2">
+      <button class="back-btn swiper-btn py-2 px-1 rounded" name="backButton" aria-label="Go back">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#000000"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs">
+          <path d="M15 18l-6-6 6-6"></path>
+        </svg>
+      </button>
+      <div class="categorates d-flex gap-2 overflow-x-auto"></div>
+      <button class="next-btn swiper-btn py-2 px-1 rounded" name="nextButton" aria-label="Go forward">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier4545" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"
+              fill="#000000"></path>
+          </g>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Create Cards -->
+
+    <div class="cards my-5 row"></div>
+    <div class="pagination d-flex justify-content-center my-3"></div>
+  </div>
+
+  <!-- End Blogs -->
+
+  <!-- Start Ads -->
+  <div class="ads m-4 d-grid gap-3">
+    <div class="booking text-black position-relative rounded overflow-hidden">
+      <img src="./images/image3.avif" alt="Destination"
+        class="position-absolute w-100 top-0 start-0 object-fit-cover h-100" />
+      <div id="booking"
+        class="booking-content d-flex py-3 px-4 w-100 h-100 text-white justify-content-lg-end justify-content-sm-center flex-column">
+        <h2 class="fs-2 z-2">Explore more to get your comfort zone</h2>
+        <p class="opacity-75 text-white mt-3 mb-4">Book your perfect stay with us.</p>
+        <button class="py-3 px-4 rounded z-2" name="bookingButton" aria-label="Book now">Booking Now →</button>
+      </div>
+    </div>
+
+    <div class="article position-relative rounded">
+      <img src="./images/categorates/clothes.jpg" alt="Clothes"
+        class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover rounded" />
+      <div id="article"
+        class="article-content d-flex py-3 px-4 w-100 h-100 text-white justify-content-lg-end justify-content-sm-center flex-column">
+        <p class="fs-4 z-2">Article Available</p>
+        <h3 class="fs-1 z-2">78</h3>
+      </div>
+    </div>
+    <div id="beyond" class="beyond position-relative">
+      <img src="./images/image1.jpeg" alt="Scenic Image" class="w-100 rounded" />
+      <h2 class="position-absolute top-50  start-50 translate-middle text-center text-white fs-2">
+        Beyond accommodation, creating memories of a lifetime
+      </h2>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Left section: Logo and mission statement -->
+      <div class="footer-section  text-center flex-grow-1 my-0 mx-3">
+        <h3 class="footer-logo">Horizone</h3>
+        <p class="footer-mission ">
+          Our mission is to equip modern explorers with cutting-edge,
+          functional, and stylish bags that elevate every adventure.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+  <!-- toTop button -->
+  <button id="toTop" class="top position-fixed z-2 cursor-pointer bg-white rounded-circle border-secondary opacity-0"
+    style="width: 60px; height: 60px" name="scrollToTop" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-short"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z">
+      </path>
+    </svg>
+  </button>
+</body>
+
+</html>

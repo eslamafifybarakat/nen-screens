@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="هذه صفحة توضيحية تستخدم لعرض محتوى HTML.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="اسم الكاتب">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>article details</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/details.css">
+    <script src="./js/bootstrap.bundle.min.js" defer></script>
+    <script src="./js/details.js" type="module" defer></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class=" z-3 d-flex bg-black p-3 text-white justify-content-between w-100 align-items-center">
+        <div class="links d-flex gap-3">
+            <h1 class="fs-2 m-auto m-lg-0"><a class="text-white text-decoration-none" href="index.html">Horizone</a>
+            </h1>
+            <button class="dash bg-transparent" name="toggle-navigation" aria-label="Toggle Navigation Menu" id="dash">
+                <svg fill="#ffffff" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" width="30">
+                    <g id="SVGRepo_bgCarrier4" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier1" stroke-linecap="round" stroke-linejoin="round" word-spacing=""></g>
+                    <g id="SVGRepo_iconCarrier4545">
+                        <path
+                            d="M 6.7070 16.1641 L 10.7382 16.1641 C 12.0039 16.1641 13.0586 15.1094 13.0586 13.8437 C 13.0586 12.5313 12.0039 11.5000 10.7382 11.5000 L 6.7070 11.5000 C 5.4413 11.5000 4.3867 12.5313 4.3867 13.8437 C 4.3867 15.1094 5.4413 16.1641 6.7070 16.1641 Z M 20.0429 15.7188 L 49.7149 15.7188 C 50.7930 15.7188 51.6133 14.8984 51.6133 13.8437 C 51.6133 12.7656 50.7930 11.9453 49.7149 11.9453 L 20.0429 11.9453 C 18.9882 11.9453 18.1445 12.7656 18.1445 13.8437 C 18.1445 14.8984 18.9882 15.7188 20.0429 15.7188 Z M 6.7070 30.3437 L 10.7382 30.3437 C 12.0039 30.3437 13.0586 29.2891 13.0586 28.0000 C 13.0586 26.7110 12.0039 25.6797 10.7382 25.6797 L 6.7070 25.6797 C 5.4413 25.6797 4.3867 26.7110 4.3867 28.0000 C 4.3867 29.2891 5.4413 30.3437 6.7070 30.3437 Z M 20.0429 29.8984 L 49.7149 29.8984 C 50.7930 29.8984 51.6133 29.0547 51.6133 28.0000 C 51.6133 26.9453 50.7930 26.1250 49.7149 26.1250 L 20.0429 26.1250 C 18.9882 26.1250 18.1445 26.9453 18.1445 28.0000 C 18.1445 29.0547 18.9882 29.8984 20.0429 29.8984 Z M 6.7070 44.5000 L 10.7382 44.5000 C 12.0039 44.5000 13.0586 43.4453 13.0586 42.1797 C 13.0586 40.8672 12.0039 39.8359 10.7382 39.8359 L 6.7070 39.8359 C 5.4413 39.8359 4.3867 40.8672 4.3867 42.1797 C 4.3867 43.4453 5.4413 44.5000 6.7070 44.5000 Z M 20.0429 44.0547 L 49.7149 44.0547 C 50.7930 44.0547 51.6133 43.2344 51.6133 42.1797 C 51.6133 41.1016 50.7930 40.2813 49.7149 40.2813 L 20.0429 40.2813 C 18.9882 40.2813 18.1445 41.1016 18.1445 42.1797 C 18.1445 43.2344 18.9882 44.0547 20.0429 44.0547 Z">
+                        </path>
+                    </g>
+                </svg>
+            </button>
+            <div class="dd">
+                <ul class="d-flex m-auto" id="navBarLinks">
+                    <li class="close-btn bg-transparent position-absolute rounded-circle text-white"
+                        style="width: 50px; height: 50px">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier444" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier7" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier848">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM8.96963 8.96965C9.26252 8.67676 9.73739 8.67676 10.0303 8.96965L12 10.9393L13.9696 8.96967C14.2625 8.67678 14.7374 8.67678 15.0303 8.96967C15.3232 9.26256 15.3232 9.73744 15.0303 10.0303L13.0606 12L15.0303 13.9696C15.3232 14.2625 15.3232 14.7374 15.0303 15.0303C14.7374 15.3232 14.2625 15.3232 13.9696 15.0303L12 13.0607L10.0303 15.0303C9.73742 15.3232 9.26254 15.3232 8.96965 15.0303C8.67676 14.7374 8.67676 14.2625 8.96965 13.9697L10.9393 12L8.96963 10.0303C8.67673 9.73742 8.67673 9.26254 8.96963 8.96965Z"
+                                    fill="#333"></path>
+                            </g>
+                        </svg>
+                    </li>
+                    <li><a href="#">Hotel</a></li>
+                    <li><a href="#">Flight</a></li>
+                    <li><a href="#">Train</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Car Rental</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="search position-relative">
+            <input type="search" class="rounded outline-0 z-2" id="searchInput" placeholder="Search" />
+            <svg class="position-absolute translate-middle-y top-50" id="searchBtn" viewBox="0 0 24 24" width="25"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier24" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier24" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier44484">
+                    <path
+                        d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </svg>
+        </div>
+        <div class="auth d-flex justify-content-between gap-1">
+            <button id="langButton" name="langButton" class="p-1 bg-transparent d-flex gap-2 align-items-center"
+                aria-label="Change Language">
+                <img class="bg-white p-1 rounded-circle" src="./images/language-dark.svg" alt="change language logo"
+                    style="width: 30px" />
+                <span id="lang" class="fs-6 m-auto">En</span>
+            </button>
+            <div id="languagesCard" class="language lang-card overflow-hidden position-absolute">
+                <button class="text-black w-100 p-3" name="english" aria-label="Switch to English">English</button>
+                <button class="text-black w-100 p-3" name="arabic" aria-label="التبديل إلى العربية">العربيه</button>
+            </div>
+            <div class="auth1" id="register">
+                <button class="py-3 px-4 fw-bold bg-transparent login" name="login" aria-label="Login">Login</button>
+                <button class="py-3 px-4 fw-bold rounded bg-white text-black" name="signup" aria-label="Sign Up">Sign
+                    Up</button>
+            </div>
+        </div>
+    </header>
+    <!-- End header  -->
+
+    <!-- start page -->
+    <div class="page p-lg-3">
+        <div class="img-container" id="imgContainer"></div>
+        <div class="page-content">
+            <!-- bread-crumb -->
+
+            <div class="bread-crumb" id="breadCrumb">
+                <span><a href="index.html" class=" text-dark">Home</a></span>
+                <svg fill="#000000" height="40px" width="200px" version="1.1" id="XMLID_287_"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                    xml:space="preserve">
+                    <g id="SVGRepo_bgCarrier47" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier4" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier7">
+                        <g id="next">
+                            <g>
+                                <polygon points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 "></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <span><a href="#" class=" text-dark"> </a></span>
+            </div>
+            <!-- End bread-crumb -->
+
+            <!-- start Article -->
+            <div id="articleTitle" class="article-title">
+                <h1></h1>
+                <div class="save">
+                    <svg width="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier8" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier9" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier3">
+                            <path
+                                d="M21.9998 5.11V16.47C21.9998 17.92 20.9598 18.53 19.6898 17.83L17.7598 16.75C17.5998 16.66 17.4998 16.49 17.4998 16.31V8.99C17.4998 6.45 15.4298 4.38 12.8898 4.38H8.81984C8.44984 4.38 8.18984 3.99 8.35984 3.67C8.87984 2.68 9.91984 2 11.1098 2H18.8898C20.5998 2 21.9998 3.4 21.9998 5.11Z"
+                                fill="#292D32"></path>
+                            <path
+                                d="M12.89 5.87891H5.11C3.4 5.87891 2 7.27891 2 8.98891V20.3489C2 21.7989 3.04 22.4089 4.31 21.7089L8.24 19.5189C8.66 19.2889 9.34 19.2889 9.76 19.5189L13.69 21.7089C14.96 22.4089 16 21.7989 16 20.3489V8.98891C16 7.27891 14.6 5.87891 12.89 5.87891ZM11 12.7489H9.75V13.9989C9.75 14.4089 9.41 14.7489 9 14.7489C8.59 14.7489 8.25 14.4089 8.25 13.9989V12.7489H7C6.59 12.7489 6.25 12.4089 6.25 11.9989C6.25 11.5889 6.59 11.2489 7 11.2489H8.25V9.99891C8.25 9.58891 8.59 9.24891 9 9.24891C9.41 9.24891 9.75 9.58891 9.75 9.99891V11.2489H11C11.41 11.2489 11.75 11.5889 11.75 11.9989C11.75 12.4089 11.41 12.7489 11 12.7489Z"
+                                fill="#292D32"></path>
+                        </g>
+                    </svg>
+                    <svg width="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier88" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier88" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier88">
+                            <rect width="24" height="24" fill="white"></rect>
+                            <circle cx="7" cy="12" r="0.5" stroke="#000000" stroke-linecap="round"
+                                stroke-linejoin="round">
+                            </circle>
+                            <circle cx="12" cy="12" r="0.5" stroke="#000000" stroke-linecap="round"
+                                stroke-linejoin="round">
+                            </circle>
+                            <circle cx="17" cy="12" r="0.5" stroke="#000000" stroke-linecap="round"
+                                stroke-linejoin="round">
+                            </circle>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="author d-flex gap-4 flex-wrap flex-row justify-content-between">
+                <div class="author-content align-items-center flex-grow-1 d-flex flex-row gap-3" id="authorContent">
+                </div>
+                <div id="share" class="share d-flex  align-items-center  gap-2">
+                    <span>Share:</span>
+                    <div class="share-icons d-flex gap-2 ">
+                        <button id="facebookShareButton" name="facebookShare" aria-label="Share on Facebook"
+                            title="Share this content on Facebook"> <svg width="50" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier97" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier97" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier97">
+                                    <path
+                                        d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"
+                                        fill="#0080ff"></path>
+                                </g>
+                            </svg>
+                        </button>
+                        <button id="twitterShareButton" name="twitterShare" aria-label="Share on Twitter"
+                            title="Share this content on Twitter"> <svg width="35" xmlns="http://www.w3.org/2000/svg"
+                                shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                viewBox="0 0 512 512">
+                                <path
+                                    d="M256 0c141.385 0 256 114.615 256 256S397.385 512 256 512 0 397.385 0 256 114.615 0 256 0z" />
+                                <path fill="#fff" fill-rule="nonzero"
+                                    d="M318.64 157.549h33.401l-72.973 83.407 85.85 113.495h-67.222l-52.647-68.836-60.242 68.836h-33.423l78.052-89.212-82.354-107.69h68.924l47.59 62.917 55.044-62.917zm-11.724 176.908h18.51L205.95 176.493h-19.86l120.826 157.964z" />
+                            </svg>
+                        </button>
+                        <button id="copyLinkBtn" name="copyLink" aria-label="Copy link to clipboard"
+                            title="Copy the link to clipboard"> <svg class="ms-2" width="35" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier100" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier100" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier100">
+                                    <path
+                                        d="M9.16488 17.6505C8.92513 17.8743 8.73958 18.0241 8.54996 18.1336C7.62175 18.6695 6.47816 18.6695 5.54996 18.1336C5.20791 17.9361 4.87912 17.6073 4.22153 16.9498C3.56394 16.2922 3.23514 15.9634 3.03767 15.6213C2.50177 14.6931 2.50177 13.5495 3.03767 12.6213C3.23514 12.2793 3.56394 11.9505 4.22153 11.2929L7.04996 8.46448C7.70755 7.80689 8.03634 7.47809 8.37838 7.28062C9.30659 6.74472 10.4502 6.74472 11.3784 7.28061C11.7204 7.47809 12.0492 7.80689 12.7068 8.46448C13.3644 9.12207 13.6932 9.45086 13.8907 9.7929C14.4266 10.7211 14.4266 11.8647 13.8907 12.7929C13.7812 12.9825 13.6314 13.1681 13.4075 13.4078M10.5919 10.5922C10.368 10.8319 10.2182 11.0175 10.1087 11.2071C9.57284 12.1353 9.57284 13.2789 10.1087 14.2071C10.3062 14.5492 10.635 14.878 11.2926 15.5355C11.9502 16.1931 12.279 16.5219 12.621 16.7194C13.5492 17.2553 14.6928 17.2553 15.621 16.7194C15.9631 16.5219 16.2919 16.1931 16.9495 15.5355L19.7779 12.7071C20.4355 12.0495 20.7643 11.7207 20.9617 11.3787C21.4976 10.4505 21.4976 9.30689 20.9617 8.37869C20.7643 8.03665 20.4355 7.70785 19.7779 7.05026C19.1203 6.39267 18.7915 6.06388 18.4495 5.8664C17.5212 5.3305 16.3777 5.3305 15.4495 5.8664C15.2598 5.97588 15.0743 6.12571 14.8345 6.34955"
+                                        stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+                `
+            </div>
+            <div class="row mt-4 align-items-start justify-content-between  ">
+                <div class="description position-relative p-s-5 col-md-12 gap-2 col-lg-9" id="description"></div>
+                <div class="sidebar col-md-3 col-sm-0">
+                    <div class="cards mt-4">
+                        <div class="categorates mt-5">
+                            <h2 id="categorateTitle">Top categorates:</h2>
+
+                            <div class="d-flex flex-wrap gap-3 pt-3 align-items-center" id="categorates">
+
+                                <div class="gap-0">
+                                    <button class="button-2" name="culinary" aria-label="Explore Culinary"
+                                        title="Discover Culinary tips and recipes">
+                                        Culinary
+                                    </button>
+                                </div>
+                                <div class="gap-0">
+                                    <button class="button-2" name="tipsAndHacks" aria-label="Explore Tips & Hacks"
+                                        title="Get useful tips and hacks">
+                                        Tips & Hacks
+                                    </button>
+                                </div>
+                                <div class="gap-0">
+                                    <button class="button-2" name="lifestyle" aria-label="Explore Lifestyle"
+                                        title="Learn about lifestyle topics">
+                                        Life Style
+                                    </button>
+                                </div>
+                                <div class="gap-0">
+                                    <button class="button-2" name="destination" aria-label="Explore Destinations"
+                                        title="Discover new travel destinations">
+                                        Destination
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="authors mt-5">
+                        <h2 id="authorsTitle">Top Authors :</h2>
+                        <div id="authors">
+                            <div class="d-flex gap-3 pt-3 align-items-center">
+                                <div class="author-img-container special">
+                                    <img src="./images/people/person1.jpg" alt="mohamed rady">
+                                </div>
+                                <div class="gap-0">
+                                    <p class="name fw-bold m-auto fs-6">mohamed rady</p>
+                                    <span class="text-danger">life style</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 pt-3 align-items-center">
+                                <div class="author-img-container special">
+                                    <img src="./images/people/person4.jpeg" alt="Alexandro sane">
+                                </div>
+                                <div class="gap-0">
+                                    <p class="name fw-bold m-auto fs-6">Alexandro sane</p>
+                                    <span class=" text-danger">Tips & Hacks</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 pt-3 align-items-center">
+                                <div class="author-img-container special">
+                                    <img src="./images/people/person1.jpg" alt="sadio mane">
+                                </div>
+                                <div class="gap-0">
+                                    <p class="name fw-bold m-auto fs-6">sadio mane</p>
+                                    <span class="text-danger">life style</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End Article -->
+
+        <!-- Start video -->
+        <div class="video ">
+            <div class="explan p-2 w-100">
+                <h2 class="fs-1 ">Explanatory Video</h2>
+                <div class="under-title-vector">
+                    <img src="https://dev.nendemo2024.xyz/content/images/vector-title.svg" loading="lazy" alt="vector">
+                </div>
+            </div>
+            <div class="video-container">
+                <video id="myVideo">
+                    <source src="./video/video.mp4" type="video/mp4">
+                </video>
+
+                <!-- Overlay content -->
+                <div class="overlay" id="overlay">
+                    <button class="resume" id="playPauseButton" name="playPause" aria-label="Play or Pause"
+                        title="Click to play or pause the video"> <svg width="100px" fill="#ffffff" height="200px"
+                            version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 52 52" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <path
+                                        d="M26,0C11.663,0,0,11.663,0,26s11.663,26,26,26s26-11.663,26-26S40.337,0,26,0z M26,50C12.767,50,2,39.233,2,26 S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z">
+                                    </path>
+                                    <polygon points="32,36.783 32,15.438 14.043,25.806 "></polygon>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- End video -->
+        <!-- start Latest  -->
+        <div class="latest">
+            <div>
+                <h2 class="fs-1 fw-bold">Latest Articles</h2>
+                <div class="under-title-vector border-1">
+                    <img src="https://dev.nendemo2024.xyz/content/images/vector-title.svg" loading="lazy"
+                        onerror="this.onerror=null;this.src='https://dev.nendemo2024.xyz/content/images/not-found/no-image.svg';"
+                        alt="vector">
+                </div>
+            </div>
+            <div class="row  ">
+                <div class="article p-1 col-lg-6 col-md-12">
+                    <img src="./images/image1.jpeg" alt="image">
+                    <div class="content">
+                        <div class="title text-truncate">
+                            Innovation Meets Sustainability
+                        </div>
+                        <svg width='30' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                    fill="#ffffff"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="article p-1 col-lg-3 col-md-6">
+                    <img src="./images/image2.jpeg" alt="image">
+                    <div class="content">
+
+                        <div class="title text-truncate">
+                            Innovation Meets Sustainability
+                        </div>
+                        <svg width='30' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                    fill="#ffffff"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="article p-1 col-lg-3 col-md-6">
+                    <img src="./images/image3.avif" alt="image">
+                    <div class="content">
+
+                        <div class="title text-truncate">
+                            Innovation Meets Sustainability
+                        </div>
+                        <svg width='30' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                    fill="#ffffff"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Latest  -->
+
+    </div>
+</body>
+
+</html>

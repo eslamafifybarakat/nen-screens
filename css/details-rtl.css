@@ -1,0 +1,36 @@
+.category::after {
+    right: 48%;
+
+}
+header .search svg {
+    left: 10px ;
+    right: auto;
+
+}
+.bread-crumb svg{
+transform:rotate(180deg) !important;
+}
+
+.author-name::after {
+    left: 66% !important;
+}
+.explan{
+    text-align: right;
+  }
+  .latest .content svg{
+transform: rotate(180deg);
+  
+  }
+ @media (max-width: 767px) {
+
+    .lang-card.active {
+        left: 10px;
+        right: auto;
+        top: 60px;
+    }
+    header .search input.open {
+        left: 0;
+        right: inherit;
+        z-index: 5;
+      }
+}

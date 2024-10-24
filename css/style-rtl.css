@@ -1,0 +1,48 @@
+
+header .search svg {
+    left: 10px ;
+    right: auto;
+    transform: rotate(180deg);
+
+}
+.language{
+    right: auto !important;
+}
+.cards .card .category{
+    right: 20px;
+    left: auto;
+}
+svg:not(.bi-arrow-up-short){
+    transform: rotate(180deg);
+}
+@media (max-width: 700px) {
+}
+.list{
+    position: relative;
+    left:0;
+}
+@media (max-width: 700px) {
+  .global-card.active{
+    left: 10px;
+    right: auto;
+    width: fit-content;
+  }
+
+}
+.dropdown-menu {
+    text-align: start;
+}
+@media (max-width: 767px) {
+
+    .lang-card.active {
+        left: 10px;
+        right: auto;
+        top: 60px;
+    }
+
+    header .search input.open {
+      left: 0;
+      right: inherit;
+      z-index: 5;
+    }
+}

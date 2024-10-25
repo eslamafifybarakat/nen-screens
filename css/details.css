@@ -475,15 +475,15 @@ cursor: pointer;
 @media (max-width:767px) {
     .article-title{
         margin: 20px 0;
+        font-size: 1.8rem;
         &::before{
           width: 40px;
-        
+        display: none;
     }
     }
     .article-title h1{
-        font-size: 1.8rem;
-        padding-right: 0;
-        padding-left: 50px;
+
+        padding: 0;
 
     }
 

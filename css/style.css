@@ -399,6 +399,12 @@ input[type="search"]::-webkit-search-results-decoration {
 .slider .list .item .content .content-text {
   width: 35rem;
 }
+@media (max-width:767px) {
+  .slider .list .item .content .content-text {
+    width: 28rem;
+  }
+}
+
 
 .slider .list .item .content .content-text p.destination {
   width: fit-content;

@@ -130,7 +130,7 @@ function displaycontent(slidesData){
         <p class="destination bg-secondary bg-opacity-75 py-2 px-3 rounded-pill text-truncate">
           ${destination}
         </p>
-        <h2 class="my-3 fs-1  text-truncate">${title}</h2>
+        <h2 class="my-3   text-truncate">${title}</h2>
         <p class="fw-normal fs-6 lh-base">
           ${description}
         </p>

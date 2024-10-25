@@ -292,7 +292,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     right: -10px;
     border: 6px solid transparent;
     border-top-color: white;
-    top: 50%;
+    top: 45%;
   }
 }
   .lang-card {

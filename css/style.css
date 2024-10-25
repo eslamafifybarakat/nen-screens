@@ -115,6 +115,7 @@ header .search input.active::placeholder {
   right: .625rem;
   top: .625rem;
   display: none;
+  z-index: 5;
 }
 
 header .links ul {
@@ -339,7 +340,7 @@ input[type="search"]::-webkit-search-results-decoration {
     right: -10px;
     border: 6px solid transparent;
     border-top-color: white;
-    top: 50%;
+    top: 45%;
   }
 }
 

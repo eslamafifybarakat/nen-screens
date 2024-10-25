@@ -18,13 +18,13 @@ const slidesData = [
       name: 'Mohamed Rady',
       imageSrc: './images/image1.jpeg',
       publicationDate: '24 Jan 2024',
-      readTime: '10 mins read'
+      readTime: '10 minutes ago'
     },
     profileAr: {
       name: 'محمد راضي',
       imageSrc: './images/image1.jpeg',
       publicationDate: '24 يناير 2024',
-      readTime: '10 دقائق قراءة'
+      readTime: 'منذ 10 دقائق'
     }
   },
   {
@@ -39,13 +39,13 @@ const slidesData = [
       name: 'Ahmed Ali',
       imageSrc: './images/image1.jpeg',
       publicationDate: '5 Feb 2024',
-      readTime: '8 mins read'
+      readTime: '8 minutes ago'
     },
     profileAr: {
       name: 'أحمد علي',
       imageSrc: './images/image1.jpeg',
       publicationDate: '5 فبراير 2024',
-      readTime: '8 دقائق قراءة'
+      readTime: 'منذ 8 دقائق'
     }
   },  
   {
@@ -60,13 +60,13 @@ const slidesData = [
       name: 'Mohamed Rady',
       imageSrc: './images/image1.jpeg',
       publicationDate: '24 Jan 2024',
-      readTime: '10 mins read'
+      readTime: '10 minutes ago'
     },
     profileAr: {
       name: 'محمد راضي',
       imageSrc: './images/image1.jpeg',
       publicationDate: '24 يناير 2024',
-      readTime: '10 دقائق قراءة'
+      readTime: 'منذ 10 دقائق'
     }
   },
   {
@@ -81,13 +81,13 @@ const slidesData = [
       name: 'Yasser Ali',
       imageSrc: './images/image1.jpeg',
       publicationDate: '5 Feb 2024',
-      readTime: '8 mins read'
+      readTime: '8 minutes ago'
     },
     profileAr: {
       name: 'ياسر علي',
       imageSrc: './images/image1.jpeg',
       publicationDate: '5 فبراير 2024',
-      readTime: '8 دقائق قراءة'
+      readTime: 'منذ 8 دقائق'
     }
   }
 ];
@@ -96,6 +96,7 @@ const slidesData = [
 let articlesData=[];
 getAttribute()
 function getAttribute(){
+  
     fetch('./json/articles.json').then(response => response.json()).then(articles=>{
         articlesData=articles
         displayArticles(articlesData)
@@ -105,13 +106,14 @@ function getAttribute(){
 }
 
 // Categorates list
-let categorateList= ['Tips & Hacks','Culinary','All','Lifestyle','Destination','Tips & Hacks','Culinary']
+let categorateList= ['All','Lifestyle','Destination','Tips & Hacks','Culinary','Tips & Hacks','Culinary']
 let categorateListAr = [
-  'الكل', 'أسلوب الحياة', 'وجهة', 'نصائح وحيل', 'الطهي','الكل', 'أسلوب الحياة', 'وجهة', 'نصائح وحيل', 'الطهي','الكل', 'أسلوب الحياة', 'وجهة', 'نصائح وحيل', 'الطهي'];
+  'الكل', 'أسلوب الحياة', 'وجهة', 'نصائح وحيل', 'الطهي','الكل', 'أسلوب الحياة'];
 //Start DisplayContent
 function displaycontent(slidesData){
 
     const list=document.querySelector('.list');
+    if (!list) return
     slidesData.forEach((data,index)=>{
       const destination =lang==='ar'? data.destinationAr:data.destination;
       const title =lang==='ar'?data.titleAr: data.title;
@@ -135,26 +137,30 @@ function displaycontent(slidesData){
       </div>
       <div class="profile position-relative mt-4 d-flex flex-column gap-3 align-self-center ">
         <div class="name d-flex align-items-center gap-2 cursor-pointer">
-          <img src="${data.profile.imageSrc}" class="rounded-circle" style="width: 30px; height: 30px;" alt="${profileName}">
+          <img src="${data.profile.imageSrc ||'./images/default.jpg'}" class="rounded-circle" style="width: 30px; height: 30px;" alt="${profileName}">
           <p class="fw-bold my-auto">${profileName}</p>
         </div>
-        <div class="date d-flex gap-2 align-items-center position-relative fw-normal opacity-75 gap-lg-2">
-          <span class="Publication-date">${publicationDate}</span>
-          <span class="bg-white rounded-circle" style="width:5px; height:5px;"></span>
-          <span class="read-time">${readTime}</span>
+        <div class="date d-flex  align-items-center position-relative fw-normal opacity-75 gap-4">
+          <span class="Publication-date d-flex align-items-center gap-2">
+          <svg class="no-rotate" fill="#ffffff" width="16" viewBox="0 0 35 35" data-name="Layer 2" id="a866a81f-2948-4418-8bd5-1a5193c5f74e" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M29.545,34.75H5.455a5.211,5.211,0,0,1-5.2-5.2V8.56a5.21,5.21,0,0,1,5.205-5.2h24.09a5.21,5.21,0,0,1,5.2,5.205V29.545A5.211,5.211,0,0,1,29.545,34.75ZM5.455,5.855A2.708,2.708,0,0,0,2.75,8.56V29.545a2.709,2.709,0,0,0,2.705,2.7h24.09a2.708,2.708,0,0,0,2.7-2.7V8.56a2.707,2.707,0,0,0-2.7-2.7Z"></path><path d="M33.5,17.331H1.541a1.25,1.25,0,0,1,0-2.5H33.5a1.25,1.25,0,0,1,0,2.5Z"></path><path d="M9.459,9.155a1.249,1.249,0,0,1-1.25-1.25V1.5a1.25,1.25,0,0,1,2.5,0V7.905A1.25,1.25,0,0,1,9.459,9.155Z"></path><path d="M25.542,9.155a1.249,1.249,0,0,1-1.25-1.25V1.5a1.25,1.25,0,0,1,2.5,0V7.905A1.25,1.25,0,0,1,25.542,9.155Z"></path></g></svg>
+          ${publicationDate}</span>
+          <span class="read-time d-flex align-items-center gap-1">
+          <svg class="no-rotate" fill="#ffffff" width="16" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M256,0C114.84,0,0,114.84,0,256s114.84,256,256,256s256-114.84,256-256S397.16,0,256,0z M423.127,396.636l-30.258-30.258 l-26.49,26.49l30.258,30.258c-33.551,28.279-75.697,46.657-121.905,50.598v-42.896h-37.463v42.896 c-46.207-3.941-88.354-22.319-121.905-50.598l30.258-30.258l-26.49-26.49l-30.258,30.258 c-28.279-33.551-46.657-75.697-50.598-121.905h42.896v-37.463H38.275c3.941-46.207,22.319-88.354,50.598-121.905l30.258,30.258 l26.49-26.49l-30.258-30.258c33.551-28.279,75.697-46.657,121.905-50.598v42.896h37.463V38.275 c46.207,3.941,88.354,22.319,121.905,50.598l-30.258,30.258l26.49,26.49l30.258-30.258 c28.279,33.551,46.657,75.697,50.598,121.905h-42.896v37.463h42.896C469.784,320.939,451.405,363.085,423.127,396.636z"></path> </g> </g> <g> <g> <polygon points="274.732,237.268 274.732,118.634 237.268,118.634 237.268,274.732 355.902,274.732 355.902,237.268 "></polygon> </g> </g> </g></svg>
+          ${readTime}</span>
         </div>
       </div>
     </div>
   </div>
         `
     const sliderDots=document.querySelector('.slider-dots')
-
+    if (sliderDots) {
         let sliderDot=document.createElement('span')
         sliderDot.classList.add('dot')
         if (index === 0) {
             sliderDot.classList.add('active');
         }
         sliderDots.appendChild(sliderDot)
+      }
     });
     
     getIndex();
@@ -169,6 +175,7 @@ function displaycontent(slidesData){
   
 function displayCategorates() {
   let categoratesDiv = document.querySelector('.categorates');
+  if (!categoratesDiv) return;
   let categorateName = lang === 'ar' ? categorateListAr : categorateList;
 
   categorateName.forEach((categorate, i) => {
@@ -195,6 +202,7 @@ function displayCategorates() {
       btn.addEventListener('click', () => {
           const firstCategorateBtnWidth = document.querySelector('.categorates button').clientWidth;
           categoratesDiv.scrollLeft += btn.classList.contains('back-btn') ? -firstCategorateBtnWidth : firstCategorateBtnWidth;
+
       });
   });
 
@@ -232,19 +240,17 @@ function updateSwiperBtnsVisibility() {
 
 window.addEventListener('resize', updateSwiperBtnsVisibility);
 
-// Call the displayCategorates function when the DOM is loaded
-document.addEventListener('DOMContentLoaded', displayCategorates);
 
 //Start GetSort function
 
 function getSortBy(){
-    const dropdownItems = document.querySelectorAll('.dropdown-item');
+  if (typeof window === 'undefined') return;
+  const selectElement = document.getElementById('select');
 
-    dropdownItems.forEach(item => {
-      item.addEventListener('click', ()=> {
-        console.log(item.getAttribute('data-filter'))
-      });
-    });}
+  selectElement.addEventListener('change', (event) => {
+    const selectedValue = event.target.value;
+    console.log(selectedValue);
+  });}
 
 //End GetSort function
 
@@ -335,6 +341,7 @@ function displayPagination() {
 // Function to filter data based on category
 
 function filterData(category) {
+  if (typeof window === 'undefined') return;
     document.querySelectorAll('.categorate-button').forEach(btn=>{
         btn.classList.remove('active')
     })
@@ -352,6 +359,7 @@ function filterData(category) {
 // Function to display articles based on current page
 
 function displayArticles(articlesData){
+  if (typeof window === 'undefined') return;
     const cards=document.querySelector('.cards');
     cards.innerHTML = ''; 
 
@@ -364,7 +372,6 @@ function displayArticles(articlesData){
       const category =lang==='ar'?article.categoryAr:article.category;
       const title = lang==='ar'?article.titleAr:article.title;
       const description = lang==='ar'?article.descriptionAr:article.description;
-      const profileName = lang==='ar'?article.author.nameAr:article.author.name;
       const publicationDate =  lang==='ar'?article.dateAr:article.date;
       const readTime =  lang==='ar'?article.readTimeAr:article.readTime;
     const card=document.createElement('div');
@@ -372,18 +379,21 @@ function displayArticles(articlesData){
     card.innerHTML=`      
 <a href="article details.html?id=${article.id}" class="text-black text-decoration-none">
       <div class="img-container">
-            <img class="card-img w-100 h-100 object-fit-cover rounded-2" src="${article.imgSrc}" alt="${article.title}" />
+            <img class="card-img w-100 h-100 object-fit-cover rounded-2" src="${article.imgSrc||'./images/default.jpg'} " alt="${article.title}" />
           <h4 class="category fs-6 py-2 px-3 d-inline position-absolute rounded-pill text-truncate">${category}</h4>
       </div>
             <div class="card-body d-flex flex-column  justify-content-between">
               <div class="d-flex flex-column justify-content-between flex-grow-1">
               <div>
-              <div class="date d-flex align-items-center mb-3 mt-2  position-relative fs-6 fw-normal opacity-75 gap-3">
-                <span class="Publication-date"> ${publicationDate} </span>
-               <span class="bg-secondary opacity-75 rounded-circle" style="width:7px; height:7px;"></span>
-                <span class="read-time"> ${readTime} </span>
+              <div class="date d-flex align-items-center mb-3 mt-2  position-relative fs-6 fw-normal opacity-75 gap-4">
+                <span class="Publication-date d-flex gap-2 align-items-center"> 
+                <svg class="no-rotate" fill="#000000" width="18" viewBox="0 0 35 35" data-name="Layer 2" id="a866a81f-2948-4418-8bd5-1a5193c5f74e" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M29.545,34.75H5.455a5.211,5.211,0,0,1-5.2-5.2V8.56a5.21,5.21,0,0,1,5.205-5.2h24.09a5.21,5.21,0,0,1,5.2,5.205V29.545A5.211,5.211,0,0,1,29.545,34.75ZM5.455,5.855A2.708,2.708,0,0,0,2.75,8.56V29.545a2.709,2.709,0,0,0,2.705,2.7h24.09a2.708,2.708,0,0,0,2.7-2.7V8.56a2.707,2.707,0,0,0-2.7-2.7Z"></path><path d="M33.5,17.331H1.541a1.25,1.25,0,0,1,0-2.5H33.5a1.25,1.25,0,0,1,0,2.5Z"></path><path d="M9.459,9.155a1.249,1.249,0,0,1-1.25-1.25V1.5a1.25,1.25,0,0,1,2.5,0V7.905A1.25,1.25,0,0,1,9.459,9.155Z"></path><path d="M25.542,9.155a1.249,1.249,0,0,1-1.25-1.25V1.5a1.25,1.25,0,0,1,2.5,0V7.905A1.25,1.25,0,0,1,25.542,9.155Z"></path></g></svg>
+                ${publicationDate} </span>
+                <span class="read-time d-flex gap-2 align-items-center">
+                <svg fill="#000000" width="18" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M256,0C114.84,0,0,114.84,0,256s114.84,256,256,256s256-114.84,256-256S397.16,0,256,0z M423.127,396.636l-30.258-30.258 l-26.49,26.49l30.258,30.258c-33.551,28.279-75.697,46.657-121.905,50.598v-42.896h-37.463v42.896 c-46.207-3.941-88.354-22.319-121.905-50.598l30.258-30.258l-26.49-26.49l-30.258,30.258 c-28.279-33.551-46.657-75.697-50.598-121.905h42.896v-37.463H38.275c3.941-46.207,22.319-88.354,50.598-121.905l30.258,30.258 l26.49-26.49l-30.258-30.258c33.551-28.279,75.697-46.657,121.905-50.598v42.896h37.463V38.275 c46.207,3.941,88.354,22.319,121.905,50.598l-30.258,30.258l26.49,26.49l30.258-30.258 c28.279,33.551,46.657,75.697,50.598,121.905h-42.896v37.463h42.896C469.784,320.939,451.405,363.085,423.127,396.636z"></path> </g> </g> <g> <g> <polygon points="274.732,237.268 274.732,118.634 237.268,118.634 237.268,274.732 355.902,274.732 355.902,237.268 "></polygon> </g> </g> </g></svg> 
+                ${readTime} </span>
               </div>
-                      <h4 class="card-title text-truncate fs-3 mb-2"><a href="article details.html?id=${article.id}" class="text-black text-decoration-none">${title}</a></h4>
+                      <h4 class="card-title text-truncate fs-3 mb-2">${title}</h4>
               <div class="description">
                 <p class="card-text fs-6 overflow-hidden opacity-75 lh-base mb-3">
                   ${description}
@@ -391,13 +401,20 @@ function displayArticles(articlesData){
               </div>
               </div>
   
-                <div class="profile d-flex align-items-center gap-2">
+                <div class="profile justify-content-between d-flex align-items-center gap-2">
                   <div class="name d-flex gap-2">
-                      <div class="img-container rounded-circle overflow-hidden flex-shrink-0" style="width:30px; height:30px;">
-                    <img class="w-100 object-fit-contain" src="${article.author.imgSrc}" alt="${profileName}" />
-                    </div>
-                    <p class="fw-bold m-auto">${profileName}</p>
+                  <svg width="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                  ${category}
                   </div>
+                                          <svg  width='20' class="go" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                    fill="#000000"></path>
+                            </g>
+                        </svg>
                 </div>
               </div>
             </div>
@@ -444,6 +461,7 @@ function showSlide(index) {
 
 // Function to update the active dot based on the current slide
 function updateActiveDot(index) {
+  if (typeof window === 'undefined') return;
     const sliderDots = document.querySelectorAll('.slider-dots .dot'); 
     sliderDots.forEach(dot => dot.classList.remove('active'));
     sliderDots[index].classList.add('active');
@@ -451,6 +469,7 @@ function updateActiveDot(index) {
 }
 
 function initializePageLanguage(){
+  if (typeof window === 'undefined') return;
     changeToRtl('./css/style-rtl.css');
     if(localStorage.getItem('lang')==='ar'){
       //  Fixing next and back buttons
@@ -462,6 +481,7 @@ function initializePageLanguage(){
 }
 
 function changeToArabic(lang) {
+  if (typeof window === 'undefined') return;
   if (lang === 'ar') {
       const navBarLinks = document.querySelectorAll('#navBarLinks li a');
 
@@ -477,15 +497,13 @@ function changeToArabic(lang) {
 
     const BlogTile=document.querySelector('#blogText h2')
     const BlogParagraph=document.querySelector('#blogText p')
-    BlogTile.innerHTML='مدونة'
+    BlogTile.innerHTML='مدونات'
     BlogParagraph.innerHTML='نشارك هنا نصائح السفر وأدلة الوجهات والقصص التي إلهام مغامرتك القادمة.'
 
     const sortTitle=document.querySelector('#sortTitle')
-    const sortBtn=document.querySelector('#sort button');
-    const sortOptions=document.querySelectorAll('#sort ul li a')
+    const sortOptions=document.querySelectorAll('#sort select option')
 
     sortTitle.innerHTML='الترتيب حسب:'
-    sortBtn.innerHTML='اختر'
     sortOptions[0].innerHTML='الكل'
     sortOptions[1].innerHTML='اخر المدونات'
     sortOptions[2].innerHTML='اقدم المدونات'
@@ -497,7 +515,7 @@ function changeToArabic(lang) {
 
     bookingTitle.innerHTML = 'استكشف أكثر للحصول على منطقة راحتك';
     bookingDescription.innerHTML = 'احجز إقامتك المثالية معنا.';
-    bookingButton.innerHTML = 'احجز الآن →';
+    bookingButton.innerHTML = 'احجز الآن ';
 
     const articleText = document.querySelector('#article p');
     const articleCount = document.querySelector('#article h3');
@@ -510,7 +528,9 @@ function changeToArabic(lang) {
     beyondTitle.innerHTML = 'خارج الإقامة، خلق ذكريات تدوم مدى الحياة';
   }
 }
+
 document.addEventListener('DOMContentLoaded', () => {
+  if (typeof window === 'undefined') return;
   // 1. Call Displaycontent function 
   displaycontent(slidesData);
   // 3. Call displayArticles Function
@@ -534,7 +554,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
   // Open And Close Language Menu
-  openAndClose('langButton','#languagesCard','active');
+  openAndClose(['langButton','langFlag','langImg'],'#languagesCard','active');
   
   handleLanguage('#languagesCard button');
   initializePageLanguage(); // Ensure language settings are applied

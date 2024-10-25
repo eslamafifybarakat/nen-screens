@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/bootstrap.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <script src="./js/project.js" type="module" defer></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
   <title>Horizone - Travel Tips, Guides, and Booking Services</title>
   <!-- Meta tags for SEO -->
@@ -31,16 +30,19 @@
   <meta name="twitter:title" content="Horizone - Travel Tips, Guides, and Booking Services" />
   <meta name="twitter:description"
     content="Explore new adventures with Horizone, your go-to platform for travel tips, destination guides, and booking." />
-  <meta name="twitter:image" content="https://www.yoursite.com/images/logo.png" / </head>
+  <meta name="twitter:image" content="https://www.yoursite.com/images/logo.png">
+</head>
 
 <body>
   <!-- Start Navbar -->
   <header class=" z-3 p-3 d-flex justify-content-between w-100 align-items-center">
     <div class="links d-flex gap-3">
-      <h1 class="fs-2 m-auto m-lg-0"><a class="text-white text-decoration-none" href="index.html">Horizone</a></h1>
+      <a href="index.html">
+        <img src="./images/logo.svg" alt="pagelogo">
+      </a>
       <button class="dash bg-transparent" name="toggle-navigation" aria-label="Toggle Navigation Menu" id="dash">
         <svg fill="#ffffff" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" width="30">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_bgCarrier111" stroke-width="0"></g>
           <g id="SVGRepo_tracerCarrier1" stroke-linecap="round" stroke-linejoin="round" word-spacing=""></g>
           <g id="SVGRepo_iconCarrier4545">
             <path
@@ -54,9 +56,9 @@
           <li class="close-btn bg-transparent position-absolute rounded-circle text-white"
             style="width: 50px; height: 50px">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="SVGRepo_bgCarrier8888" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
+              <g id="SVGRepo_bgCarrier11118888" stroke-width="0"></g>
+              <g stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier4">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM8.96963 8.96965C9.26252 8.67676 9.73739 8.67676 10.0303 8.96965L12 10.9393L13.9696 8.96967C14.2625 8.67678 14.7374 8.67678 15.0303 8.96967C15.3232 9.26256 15.3232 9.73744 15.0303 10.0303L13.0606 12L15.0303 13.9696C15.3232 14.2625 15.3232 14.7374 15.0303 15.0303C14.7374 15.3232 14.2625 15.3232 13.9696 15.0303L12 13.0607L10.0303 15.0303C9.73742 15.3232 9.26254 15.3232 8.96965 15.0303C8.67676 14.7374 8.67676 14.2625 8.96965 13.9697L10.9393 12L8.96963 10.0303C8.67673 9.73742 8.67673 9.26254 8.96963 8.96965Z"
                   fill="#333"></path>
@@ -85,19 +87,32 @@
       </svg>
     </div>
     <div class="auth d-flex justify-content-between gap-1">
-      <button id="langButton" name="langButton" class="p-1 bg-transparent d-flex gap-2 align-items-center"
-        aria-label="Change Language">
-        <img class="bg-white p-1 rounded-circle" src="./images/language-dark.svg" alt="change language logo"
-          style="width: 30px" />
-        <span id="lang" class="fs-6 m-auto">En</span>
+      <button id="langButton" name="langButton"
+        class=" bg-transparent d-flex gap-2 align-items-center justify-content-center" aria-label="Change Language">
+        <span id="langImg" class="lang-img-container d-flex" style="width: 40px; height: 40px;">
+          <img id="langFlag" class="p-1 w-100 object-fit-fill" src="./images/flags/us.svg" alt="" />
+
+        </span>
+        <span id="lang" class="fs-6 m-auto">English</span>
       </button>
       <div id="languagesCard" class="language lang-card overflow-hidden position-absolute">
-        <button class="text-black w-100 p-3" name="english" aria-label="Switch to English">English</button>
-        <button class="text-black w-100 p-3" name="arabic" aria-label="التبديل إلى العربية">العربيه</button>
+        <button class="text-black w-100 p-3 d-flex gap-1 align-items-center" name="english"
+          aria-label="Switch to English">
+          <span class="lang-img-container d-flex" style="width: 40px; height: 40px;">
+            <img class="p-1 w-100 object-fit-fill" src="./images/flags/us.svg" alt="" />
+          </span>
+          English
+        </button>
+        <button class="text-black w-100 p-3 d-flex gap-1 align-items-center" name="arabic"
+          aria-label="التبديل إلى العربية">
+          <span class="lang-img-container d-flex" style="width: 40px; height: 40px;">
+            <img class="p-1 w-100 object-fit-fill" src="./images/flags/sa.svg" alt="" />
+          </span>العربية
+        </button>
       </div>
       <div class="auth1" id="register">
-        <button class="py-3 px-4 fw-bold bg-transparent login" name="login" aria-label="Login">Login</button>
-        <button class="py-3 px-4 fw-bold rounded text-black" name="signup" aria-label="Sign Up">Sign Up</button>
+        <button class="py-1 px-4 fw-bold bg-transparent login" name="login" aria-label="Login">Login</button>
+        <button class="sign-up" name="signup" aria-label="Sign Up">Sign Up</button>
       </div>
     </div>
   </header>
@@ -115,34 +130,34 @@
   <div class="blogs p-4">
     <div class="title-and-filter d-flex justify-content-between flex-wrap">
       <div class="title mb-5 " id="blogText">
-        <h2 class="fs-1">Blog</h2>
-        <p class="my-3 fs-6">
+        <div>
+          <h2 class="fs-2 fw-semibold">Blogs</h2>
+          <div class="under-title-vector">
+            <img src="https://dev.nendemo2024.xyz/content/images/vector-title.svg" loading="lazy" alt="vector">
+          </div>
+        </div>
+        <p class="my-1 fs-6">
           Here, we share travel tips, destination guides, and stories that
           inspire your next adventure.
         </p>
       </div>
-      <div class="filter d-flex gap-3 align-items-center p-3">
+      <div class="filter d-flex gap-1 align-items-center p-3">
         <span id="sortTitle"> Sort by :</span>
-        <div class="dropdown" id="sort">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="filterDropdown" name="filterDropdown"
-            aria-label="Filter options" data-bs-toggle="dropdown" aria-expanded="false">
-            Choose
-          </button>
-
-          <ul class="dropdown-menu" aria-labelledby="filterDropdown">
-            <li>
-              <a class="dropdown-item" href="#" data-filter="all">All</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#" data-filter="Latest">Latest</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#" data-filter="Oldest">Oldest</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#" data-filter="Popular">Popular</a>
-            </li>
-          </ul>
+        <div id="sort">
+          <select class="dropdown" id="select">
+            <option selected>
+              All
+            </option>
+            <option>
+              Latest
+            </option>
+            <option>
+              Oldest
+            </option>
+            <option>
+              Popular
+            </option>
+          </select>
         </div>
       </div>
     </div>
@@ -157,9 +172,9 @@
       <div class="categorates d-flex gap-2 overflow-x-auto"></div>
       <button class="next-btn swiper-btn py-2 px-1 rounded" name="nextButton" aria-label="Go forward">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_bgCarrier1111121" stroke-width="0"></g>
           <g id="SVGRepo_tracerCarrier4545" stroke-linecap="round" stroke-linejoin="round"></g>
-          <g id="SVGRepo_iconCarrier">
+          <g id="SVGRepo_iconCarrier44">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"
               fill="#000000"></path>
@@ -182,10 +197,12 @@
       <img src="./images/image3.avif" alt="Destination"
         class="position-absolute w-100 top-0 start-0 object-fit-cover h-100" />
       <div id="booking"
-        class="booking-content d-flex py-3 px-4 w-100 h-100 text-white justify-content-lg-end justify-content-sm-center flex-column">
+        class="booking-content text-center d-flex py-3 px-4 w-100 h-100 text-white justify-content-lg-end justify-content-sm-center flex-column">
         <h2 class="fs-2 z-2">Explore more to get your comfort zone</h2>
-        <p class="opacity-75 text-white mt-3 mb-4">Book your perfect stay with us.</p>
-        <button class="py-3 px-4 rounded z-2" name="bookingButton" aria-label="Book now">Booking Now →</button>
+        <p class="z-2 text-white mt-3 mb-4">Book your perfect stay with us.</p>
+        <button class=" booking mx-auto py-3 px-4 rounded z-2" name="bookingButton" aria-label="Book now">Booking Now
+        </button>
+
       </div>
     </div>
 
@@ -206,29 +223,285 @@
     </div>
   </div>
   <!-- footer -->
-  <footer class="footer">
-    <div class="container">
+  <footer class="footer overflow-hidden">
+    <div class="containe">
       <!-- Left section: Logo and mission statement -->
       <div class="footer-section  text-center flex-grow-1 my-0 mx-3">
-        <h3 class="footer-logo">Horizone</h3>
-        <p class="footer-mission ">
-          Our mission is to equip modern explorers with cutting-edge,
-          functional, and stylish bags that elevate every adventure.
+        <h3 class="location">
+          <a href="" class="d-flex align-items-center gap-1 justify-content-center">
+            <svg class="no-rotate" width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier1111121212" stroke-width="0"></g>
+              <g stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier45">
+                <path
+                  d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                  stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+            </svg>S. B. 10076 Riyadh 11433 Kingdom of Saudi Arabia</a>
+        </h3>
+        <p class="email">
+          <a href="" class="d-flex align-items-center justify-content-center gap-1">
+            <svg class="no-rotate" width="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier1212" stroke-width="0"></g>
+              <g stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier454">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z"
+                  fill="#ffffff"></path>
+              </g>
+            </svg>Email: info@nen.com</a>
         </p>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-8">
+          <div class="row g-3 px-lg-5">
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="tag-title mb-3 ">
+                Certifications
+              </div>
+              <div class="items d-flex flex-column gap-3">
+                <a href="#" class="item d-flex align-items-center gap-1">
+                  <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier121255" stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier4547">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"></path>
+                    </g>
+                  </svg>
+                  <span>
+                    UKVI SKILLS FOR ENGLISH
+                  </span>
+                </a>
+                <a href="#" class="item d-flex align-items-center gap-1">
+                  <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier1212554" stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier45472">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"></path>
+                    </g>
+                  </svg>
+                  <span>
+                    ITEP INTERNATIONAL
+                  </span>
+                </a>
+                <a href="#" class="item d-flex align-items-center gap-1">
+                  <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier121255415" stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier454724">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"></path>
+                    </g>
+                  </svg>
+                  <span>
+                    ATTANAL AL-ARABI
+                  </span>
+                </a>
+                <a href="#" class="item d-flex align-items-center gap-1">
+                  <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier1212551" stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier4547246">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"></path>
+                    </g>
+                  </svg>
+                  <span>
+                    I.C.P.U CERTIFICATE
+                  </span>
+                </a>
+                <a href="#" class="item d-flex align-items-center gap-1">
+                  <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier15" stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier4547248">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"></path>
+                    </g>
+                  </svg>
+                  <span>
+                    B.SKILLS CERTIFICATE
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4  col-md-6 col-12">
+              <div class="tag-title mb-3 ">
+                PORTALS
+              </div>
+              <div class="items d-flex flex-column gap-3">
+                <a href="#" class="item d-flex align-items-center gap-1">
+                  <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier16" stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier4547241">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"></path>
+                    </g>
+                  </svg>
+                  <span>
+                    FOLLOW METRIC
+                  </span>
+                </a>
+                <a href="#" class="item d-flex align-items-center gap-1">
+                  <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier17" stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier4547240">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"></path>
+                    </g>
+                  </svg>
+                  <span>
+                    HELP4ME
+                  </span>
+                </a>
+                <a href="#" class="item d-flex align-items-center gap-1">
+                  <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier18" stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier4547242">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"></path>
+                    </g>
+                  </svg>
+                  <span>
+                    UTEST
+                  </span>
+                </a>
+                <a href="#" class="item d-flex align-items-center gap-1">
+                  <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier13" stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier45472425">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"></path>
+                    </g>
+                  </svg>
+                  <span>
+                    MICROSOFT V-ACADEMY
+                  </span>
+                </a>
+                <a href="#" class="item d-flex align-items-center gap-1">
+                  <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier134" stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier4547242578">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"></path>
+                    </g>
+                  </svg>
+                  <span>
+                    CISCO V-ACAD
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="tag-title mb-3 ">
+                SUBSIDIARIES
+              </div>
+              <div class="items d-flex flex-column gap-3">
+                <a href="#" class="item d-flex align-items-center gap-1">
+                  <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier1344" stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier45472425786">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"></path>
+                    </g>
+                  </svg> <span>
+                    NEN TECHNOLOGY
+                  </span>
+                </a>
+                <a href="#" class="item d-flex align-items-center gap-1">
+                  <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier13442" stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier454724257867">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"></path>
+                    </g>
+                  </svg> <span>
+                    NEN BIO AGRO
+                  </span>
+                </a>
+                <a href="#" class="item d-flex align-items-center gap-1">
+                  <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier134421" stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier45472425786789">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"></path>
+                    </g>
+                  </svg> <span>
+                    DATA QUEST
+                  </span>
+                </a>
+                <a href="#" class="item d-flex align-items-center gap-1">
+                  <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier13447" stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier454724257867829">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"></path>
+                    </g>
+                  </svg> <span>
+                    DAR AL-TANMYA
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-md-3 col-12">
+          <div id="subscribe" class="d-flex flex-column justify-content-center text-white-color mt-2">
+            <h6 class="tag-title">
+              Subscribe Our Newsletter
+            </h6>
+            <p class="desc fs-5-2 mt-2">
+              Join our newsletter and be the first to know about new product releases, discounts,
+              and
+              useful resources!
+            </p>
+            <div class="input-group rounded-pill overflow-hidden mt-4">
+              <input type="text" class="form-control border-0" placeholder="Your email address" aria-label="Email">
+
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
   </footer>
   <!-- toTop button -->
-  <button id="toTop" class="top position-fixed z-2 cursor-pointer bg-white rounded-circle border-secondary opacity-0"
-    style="width: 60px; height: 60px" name="scrollToTop" aria-label="Scroll to top">
-    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-short"
+  <button id="toTop" class="top position-fixed z-2 cursor-pointer rounded-circle border-secondary opacity-0"
+    name="scrollToTop" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-arrow-up-short"
       viewBox="0 0 16 16">
       <path fill-rule="evenodd"
         d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z">
       </path>
     </svg>
   </button>
+  <script src="./js/project.js" type="module"></script>
+
 </body>
 
 </html>

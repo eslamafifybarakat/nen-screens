@@ -1,4 +1,7 @@
+body{
+  font-family: Tajawal,sans-serif !important;
 
+}
 header .search svg {
     left: 10px ;
     right: auto;
@@ -8,12 +11,18 @@ header .search svg {
 .language{
     right: auto !important;
 }
+#langButton{
+    &::after{
+      left: -7px;
+      right: inherit;
+    }
+  }
 .cards .card .category{
     right: 20px;
     left: auto;
 }
-svg:not(.bi-arrow-up-short){
-    transform: rotate(180deg);
+svg:not(.bi-arrow-up-short,.no-rotate){
+    transform:scale(-1)
 }
 @media (max-width: 700px) {
 }
@@ -45,4 +54,32 @@ svg:not(.bi-arrow-up-short){
       right: inherit;
       z-index: 5;
     }
+}
+a {
+  .go{
+
+    left: 10px;
+    right: inherit;
+    transform: rotate(180degs);
+  }
+
+}
+.footer {
+  text-align: center;
+  .tag-title {
+    text-align: right;
+  }
+  #subscribe{
+    text-align: right;
+  }
+
+  a{
+
+    &.item{
+
+      &:hover{
+        transform: translateX(-20px);
+      }
+    }
+  }
 }

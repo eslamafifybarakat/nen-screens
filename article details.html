@@ -19,13 +19,14 @@
 
 <body>
     <!-- header -->
-    <header class=" z-3 d-flex bg-black p-3 text-white justify-content-between w-100 align-items-center">
+    <header class=" z-3 p-3 d-flex justify-content-between w-100 align-items-center">
         <div class="links d-flex gap-3">
-            <h1 class="fs-2 m-auto m-lg-0"><a class="text-white text-decoration-none" href="index.html">Horizone</a>
-            </h1>
+            <a href="index.html">
+                <img src="./images/logo.svg" alt="">
+            </a>
             <button class="dash bg-transparent" name="toggle-navigation" aria-label="Toggle Navigation Menu" id="dash">
                 <svg fill="#ffffff" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" width="30">
-                    <g id="SVGRepo_bgCarrier4" stroke-width="0"></g>
+                    <g stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier1" stroke-linecap="round" stroke-linejoin="round" word-spacing=""></g>
                     <g id="SVGRepo_iconCarrier4545">
                         <path
@@ -39,9 +40,9 @@
                     <li class="close-btn bg-transparent position-absolute rounded-circle text-white"
                         style="width: 50px; height: 50px">
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier444" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier7" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier848">
+                            <g id="SVGRepo_bgCarrier8888" stroke-width="0"></g>
+                            <g stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g>
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM8.96963 8.96965C9.26252 8.67676 9.73739 8.67676 10.0303 8.96965L12 10.9393L13.9696 8.96967C14.2625 8.67678 14.7374 8.67678 15.0303 8.96967C15.3232 9.26256 15.3232 9.73744 15.0303 10.0303L13.0606 12L15.0303 13.9696C15.3232 14.2625 15.3232 14.7374 15.0303 15.0303C14.7374 15.3232 14.2625 15.3232 13.9696 15.0303L12 13.0607L10.0303 15.0303C9.73742 15.3232 9.26254 15.3232 8.96965 15.0303C8.67676 14.7374 8.67676 14.2625 8.96965 13.9697L10.9393 12L8.96963 10.0303C8.67673 9.73742 8.67673 9.26254 8.96963 8.96965Z"
                                     fill="#333"></path>
@@ -57,12 +58,12 @@
             </div>
         </div>
         <div class="search position-relative">
-            <input type="search" class="rounded outline-0 z-2" id="searchInput" placeholder="Search" />
+            <input type="search" class="rounded outline-0" id="searchInput" placeholder="Search" />
             <svg class="position-absolute translate-middle-y top-50" id="searchBtn" viewBox="0 0 24 24" width="25"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier24" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier24" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier44484">
+                <g id="SVGRepo_bgCarrier2" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier2" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier4444">
                     <path
                         d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
                         stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -70,161 +71,379 @@
             </svg>
         </div>
         <div class="auth d-flex justify-content-between gap-1">
-            <button id="langButton" name="langButton" class="p-1 bg-transparent d-flex gap-2 align-items-center"
+            <button id="langButton" name="langButton"
+                class=" bg-transparent d-flex gap-2 align-items-center justify-content-center"
                 aria-label="Change Language">
-                <img class="bg-white p-1 rounded-circle" src="./images/language-dark.svg" alt="change language logo"
-                    style="width: 30px" />
-                <span id="lang" class="fs-6 m-auto">En</span>
+                <span id="langImg" class="lang-img-container d-flex" style="width: 40px; height: 40px;">
+                    <img id="langFlag" class="p-1 w-100 object-fit-fill" src="./images/flags/us.svg" alt="" />
+
+                </span>
+                <span id="lang" class="fs-6 m-auto">English</span>
             </button>
             <div id="languagesCard" class="language lang-card overflow-hidden position-absolute">
-                <button class="text-black w-100 p-3" name="english" aria-label="Switch to English">English</button>
-                <button class="text-black w-100 p-3" name="arabic" aria-label="التبديل إلى العربية">العربيه</button>
+                <button class="text-black w-100 p-3 d-flex gap-1 align-items-center" name="english"
+                    aria-label="Switch to English">
+                    <span class="lang-img-container d-flex" style="width: 40px; height: 40px;">
+                        <img class="p-1 w-100 object-fit-fill" src="./images/flags/us.svg" alt="" />
+                    </span>
+                    English
+                </button>
+                <button class="text-black w-100 p-3 d-flex gap-1 align-items-center" name="arabic"
+                    aria-label="التبديل إلى العربية">
+                    <span class="lang-img-container d-flex" style="width: 40px; height: 40px;">
+                        <img class="p-1 w-100 object-fit-fill" src="./images/flags/sa.svg" alt="" />
+                    </span>العربية
+                </button>
             </div>
             <div class="auth1" id="register">
-                <button class="py-3 px-4 fw-bold bg-transparent login" name="login" aria-label="Login">Login</button>
-                <button class="py-3 px-4 fw-bold rounded bg-white text-black" name="signup" aria-label="Sign Up">Sign
-                    Up</button>
+                <button class="py-1 px-4 fw-bold bg-transparent login" name="login" aria-label="Login">Login</button>
+                <button class="sign-up" name="signup" aria-label="Sign Up">Sign Up</button>
             </div>
         </div>
     </header>
     <!-- End header  -->
 
     <!-- start page -->
-    <div class="page p-lg-3">
+    <div class="page px-lg-3 pb-3">
+        <!-- bread-crumb -->
+
+        <div class="bread-crumb" id="breadCrumb">
+            <span><a href="index.html" class=" text-dark">Home</a></span>
+            <svg height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g stroke-width="0"></g>
+                <g stroke-linecap="round" stroke-linejoin="round"></g>
+                <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#000000"></path>
+                </g>
+            </svg>
+            <span><a href="#" class=" text-dark">Blogs </a></span>
+        </div>
+        <!-- End bread-crumb -->
         <div class="img-container" id="imgContainer"></div>
         <div class="page-content">
-            <!-- bread-crumb -->
 
-            <div class="bread-crumb" id="breadCrumb">
-                <span><a href="index.html" class=" text-dark">Home</a></span>
-                <svg fill="#000000" height="40px" width="200px" version="1.1" id="XMLID_287_"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                    xml:space="preserve">
-                    <g id="SVGRepo_bgCarrier47" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier4" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier7">
-                        <g id="next">
-                            <g>
-                                <polygon points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 "></polygon>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-                <span><a href="#" class=" text-dark"> </a></span>
-            </div>
-            <!-- End bread-crumb -->
 
             <!-- start Article -->
             <div id="articleTitle" class="article-title">
                 <h1></h1>
-                <div class="save">
-                    <svg width="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier8" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier9" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier3">
-                            <path
-                                d="M21.9998 5.11V16.47C21.9998 17.92 20.9598 18.53 19.6898 17.83L17.7598 16.75C17.5998 16.66 17.4998 16.49 17.4998 16.31V8.99C17.4998 6.45 15.4298 4.38 12.8898 4.38H8.81984C8.44984 4.38 8.18984 3.99 8.35984 3.67C8.87984 2.68 9.91984 2 11.1098 2H18.8898C20.5998 2 21.9998 3.4 21.9998 5.11Z"
-                                fill="#292D32"></path>
-                            <path
-                                d="M12.89 5.87891H5.11C3.4 5.87891 2 7.27891 2 8.98891V20.3489C2 21.7989 3.04 22.4089 4.31 21.7089L8.24 19.5189C8.66 19.2889 9.34 19.2889 9.76 19.5189L13.69 21.7089C14.96 22.4089 16 21.7989 16 20.3489V8.98891C16 7.27891 14.6 5.87891 12.89 5.87891ZM11 12.7489H9.75V13.9989C9.75 14.4089 9.41 14.7489 9 14.7489C8.59 14.7489 8.25 14.4089 8.25 13.9989V12.7489H7C6.59 12.7489 6.25 12.4089 6.25 11.9989C6.25 11.5889 6.59 11.2489 7 11.2489H8.25V9.99891C8.25 9.58891 8.59 9.24891 9 9.24891C9.41 9.24891 9.75 9.58891 9.75 9.99891V11.2489H11C11.41 11.2489 11.75 11.5889 11.75 11.9989C11.75 12.4089 11.41 12.7489 11 12.7489Z"
-                                fill="#292D32"></path>
-                        </g>
-                    </svg>
-                    <svg width="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier88" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier88" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier88">
-                            <rect width="24" height="24" fill="white"></rect>
-                            <circle cx="7" cy="12" r="0.5" stroke="#000000" stroke-linecap="round"
-                                stroke-linejoin="round">
-                            </circle>
-                            <circle cx="12" cy="12" r="0.5" stroke="#000000" stroke-linecap="round"
-                                stroke-linejoin="round">
-                            </circle>
-                            <circle cx="17" cy="12" r="0.5" stroke="#000000" stroke-linecap="round"
-                                stroke-linejoin="round">
-                            </circle>
-                        </g>
-                    </svg>
-                </div>
+
             </div>
             <div class="author d-flex gap-4 flex-wrap flex-row justify-content-between">
-                <div class="author-content align-items-center flex-grow-1 d-flex flex-row gap-3" id="authorContent">
+                <div class="author-content align-items-center  flex-grow-1 d-flex flex-row gap-3" id="authorContent">
                 </div>
                 <div id="share" class="share d-flex  align-items-center  gap-2">
-                    <span>Share:</span>
-                    <div class="share-icons d-flex gap-2 ">
-                        <button id="facebookShareButton" name="facebookShare" aria-label="Share on Facebook"
-                            title="Share this content on Facebook"> <svg width="50" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g id="SVGRepo_bgCarrier97" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier97" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier97">
-                                    <path
-                                        d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"
-                                        fill="#0080ff"></path>
-                                </g>
-                            </svg>
-                        </button>
-                        <button id="twitterShareButton" name="twitterShare" aria-label="Share on Twitter"
-                            title="Share this content on Twitter"> <svg width="35" xmlns="http://www.w3.org/2000/svg"
-                                shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
-                                image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
-                                viewBox="0 0 512 512">
+                    <div class="share-icon">
+                        <svg width="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke-width="0"></g>
+                            <g stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g>
                                 <path
-                                    d="M256 0c141.385 0 256 114.615 256 256S397.385 512 256 512 0 397.385 0 256 114.615 0 256 0z" />
-                                <path fill="#fff" fill-rule="nonzero"
-                                    d="M318.64 157.549h33.401l-72.973 83.407 85.85 113.495h-67.222l-52.647-68.836-60.242 68.836h-33.423l78.052-89.212-82.354-107.69h68.924l47.59 62.917 55.044-62.917zm-11.724 176.908h18.51L205.95 176.493h-19.86l120.826 157.964z" />
-                            </svg>
-                        </button>
-                        <button id="copyLinkBtn" name="copyLink" aria-label="Copy link to clipboard"
-                            title="Copy the link to clipboard"> <svg class="ms-2" width="35" viewBox="0 0 24 24"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g id="SVGRepo_bgCarrier100" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier100" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier100">
-                                    <path
-                                        d="M9.16488 17.6505C8.92513 17.8743 8.73958 18.0241 8.54996 18.1336C7.62175 18.6695 6.47816 18.6695 5.54996 18.1336C5.20791 17.9361 4.87912 17.6073 4.22153 16.9498C3.56394 16.2922 3.23514 15.9634 3.03767 15.6213C2.50177 14.6931 2.50177 13.5495 3.03767 12.6213C3.23514 12.2793 3.56394 11.9505 4.22153 11.2929L7.04996 8.46448C7.70755 7.80689 8.03634 7.47809 8.37838 7.28062C9.30659 6.74472 10.4502 6.74472 11.3784 7.28061C11.7204 7.47809 12.0492 7.80689 12.7068 8.46448C13.3644 9.12207 13.6932 9.45086 13.8907 9.7929C14.4266 10.7211 14.4266 11.8647 13.8907 12.7929C13.7812 12.9825 13.6314 13.1681 13.4075 13.4078M10.5919 10.5922C10.368 10.8319 10.2182 11.0175 10.1087 11.2071C9.57284 12.1353 9.57284 13.2789 10.1087 14.2071C10.3062 14.5492 10.635 14.878 11.2926 15.5355C11.9502 16.1931 12.279 16.5219 12.621 16.7194C13.5492 17.2553 14.6928 17.2553 15.621 16.7194C15.9631 16.5219 16.2919 16.1931 16.9495 15.5355L19.7779 12.7071C20.4355 12.0495 20.7643 11.7207 20.9617 11.3787C21.4976 10.4505 21.4976 9.30689 20.9617 8.37869C20.7643 8.03665 20.4355 7.70785 19.7779 7.05026C19.1203 6.39267 18.7915 6.06388 18.4495 5.8664C17.5212 5.3305 16.3777 5.3305 15.4495 5.8664C15.2598 5.97588 15.0743 6.12571 14.8345 6.34955"
-                                        stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                                    d="M9 12C9 13.3807 7.88071 14.5 6.5 14.5C5.11929 14.5 4 13.3807 4 12C4 10.6193 5.11929 9.5 6.5 9.5C7.88071 9.5 9 10.6193 9 12Z"
+                                    stroke="#990000" stroke-width="1.5"></path>
+                                <path d="M14 6.5L9 10" stroke="#990000" stroke-width="1.5" stroke-linecap="round">
+                                </path>
+                                <path d="M14 17.5L9 14" stroke="#990000" stroke-width="1.5" stroke-linecap="round">
+                                </path>
+                                <path
+                                    d="M19 18.5C19 19.8807 17.8807 21 16.5 21C15.1193 21 14 19.8807 14 18.5C14 17.1193 15.1193 16 16.5 16C17.8807 16 19 17.1193 19 18.5Z"
+                                    stroke="#990000" stroke-width="1.5"></path>
+                                <path
+                                    d="M19 5.5C19 6.88071 17.8807 8 16.5 8C15.1193 8 14 6.88071 14 5.5C14 4.11929 15.1193 3 16.5 3C17.8807 3 19 4.11929 19 5.5Z"
+                                    stroke="#990000" stroke-width="1.5"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <span>Share</span>
+                </div>
+                <div class="share-popup" id="sharePopup">
+                    <div class="share-container">
+                        <button class="close-popup" id="closePopup">
+                            <svg width="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g stroke-width="0"></g>
+                                <g stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.9393 12L6.9696 15.9697L8.03026 17.0304L12 13.0607L15.9697 17.0304L17.0304 15.9697L13.0607 12L17.0303 8.03039L15.9696 6.96973L12 10.9393L8.03038 6.96973L6.96972 8.03039L10.9393 12Z"
+                                        fill="#080341"></path>
                                 </g>
                             </svg>
                         </button>
-                    </div>
+                        <h5 id="shareTitle">Share</h5>
+                        <div class="share-icons d-flex gap-2 ">
+                            <button id="facebookShareButton" name="facebookShare" aria-label="Share on Facebook"
+                                title="Share this content on Facebook"> <svg width="40" class="no-rotate"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier97" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier97" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier97">
+                                        <path
+                                            d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"
+                                            fill="#0080ff"></path>
+                                    </g>
+                                </svg>
+                            </button>
+                            <button id="twitterShareButton" name="twitterShare" aria-label="Share on Twitter"
+                                title="Share this content on Twitter"> <svg width="30" class="no-rotate"
+                                    xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                                    text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+                                    fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512">
+                                    <path
+                                        d="M256 0c141.385 0 256 114.615 256 256S397.385 512 256 512 0 397.385 0 256 114.615 0 256 0z" />
+                                    <path fill="#fff" fill-rule="nonzero"
+                                        d="M318.64 157.549h33.401l-72.973 83.407 85.85 113.495h-67.222l-52.647-68.836-60.242 68.836h-33.423l78.052-89.212-82.354-107.69h68.924l47.59 62.917 55.044-62.917zm-11.724 176.908h18.51L205.95 176.493h-19.86l120.826 157.964z" />
+                                </svg>
+                            </button>
 
+
+                            <button id="linkedinShareButton" name="linkedinShare" aria-label="Share on LinkedIn"
+                                title="Share this content on LinkedIn"> <svg width="35" viewBox="0 0 16 16"
+                                    class="no-rotate" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                    <g stroke-width="0"></g>
+                                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g>
+                                        <path fill="#0A66C2"
+                                            d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </button>
+                            <button id="whatsappShareButton" name="whatsappShare" aria-label="Share on WhatsApp"
+                                title="Share this content on WhatsApp"><svg width="35" viewBox="0 0 32 32" fill="none"
+                                    class="no-rotate" xmlns="http://www.w3.org/2000/svg">
+                                    <g stroke-width="0"></g>
+                                    <g stroke-linecap="round" stroke-linejoin="round">
+                                    </g>
+                                    <g>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                                            fill="#BFC8D0"></path>
+                                        <path
+                                            d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                                            fill="url(#paint0_linear_87_7264)"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                                            fill="white"></path>
+                                        <path
+                                            d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                                            fill="white"></path>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#5BD066"></stop>
+                                                <stop offset="1" stop-color="#27B43E"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </g>
+                                </svg>
+                            </button>
+                            <button id="instagramShareButton" name="instagramShare" aria-label="Share on Instagram"
+                                title="Share this content on Instagram"><svg viewBox="0 0 32 32" class="no-rotate"
+                                    fill="none" width="30" xmlns="http://www.w3.org/2000/svg">
+                                    <g stroke-width="0"></g>
+                                    <g stroke-linecap="round" stroke-linejoin="round">
+                                    </g>
+                                    <g>
+                                        <rect x="2" y="2" width="28" height="28" rx="6"
+                                            fill="url(#paint0_radial_87_7153)"></rect>
+                                        <rect x="2" y="2" width="28" height="28" rx="6"
+                                            fill="url(#paint1_radial_87_7153)"></rect>
+                                        <rect x="2" y="2" width="28" height="28" rx="6"
+                                            fill="url(#paint2_radial_87_7153)"></rect>
+                                        <path
+                                            d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
+                                            fill="white"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+                                            fill="white"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
+                                            fill="white"></path>
+                                        <defs>
+                                            <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1"
+                                                gradientUnits="userSpaceOnUse"
+                                                gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)">
+                                                <stop stop-color="#B13589"></stop>
+                                                <stop offset="0.79309" stop-color="#C62F94"></stop>
+                                                <stop offset="1" stop-color="#8A3AC8"></stop>
+                                            </radialGradient>
+                                            <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1"
+                                                gradientUnits="userSpaceOnUse"
+                                                gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)">
+                                                <stop stop-color="#E0E8B7"></stop>
+                                                <stop offset="0.444662" stop-color="#FB8A2E"></stop>
+                                                <stop offset="0.71474" stop-color="#E2425C"></stop>
+                                                <stop offset="1" stop-color="#E2425C" stop-opacity="0"></stop>
+                                            </radialGradient>
+                                            <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1"
+                                                gradientUnits="userSpaceOnUse"
+                                                gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)">
+                                                <stop offset="0.156701" stop-color="#406ADC"></stop>
+                                                <stop offset="0.467799" stop-color="#6A45BE"></stop>
+                                                <stop offset="1" stop-color="#6A45BE" stop-opacity="0"></stop>
+                                            </radialGradient>
+                                        </defs>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="copy">
+                            <h5 class="fs-5 pt-5 opacity-75" id="pageLink">Page Link</h5>
+                            <div
+                                class="d-flex justify-content-between align-items-center bg-light text-muted-color py-2 px-3 rounded mt-3 gap-3">
+                                <p class="mb-0 opacity-25" id="link"></p>
+                                <button id="copyLinkBtn" class="copy" name="copyLink"
+                                    aria-label="Copy link to clipboard" title="Copy the link to clipboard">
+                                    <span data-text-end="Copied!" data-text-initial="Copy to clipboard"
+                                        class="tooltip"></span>
+                                    <span>
+                                        <svg xml:space="preserve" style="enable-background:new 0 0 512 512"
+                                            class="no-rotate" viewBox="0 0 6.35 6.35" y="0" x="0" height="20" width="20"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g>
+                                                <path fill="currentColor"
+                                                    d="M2.43.265c-.3 0-.548.236-.573.53h-.328a.74.74 0 0 0-.735.734v3.822a.74.74 0 0 0 .735.734H4.82a.74.74 0 0 0 .735-.734V1.529a.74.74 0 0 0-.735-.735h-.328a.58.58 0 0 0-.573-.53zm0 .529h1.49c.032 0 .049.017.049.049v.431c0 .032-.017.049-.049.049H2.43c-.032 0-.05-.017-.05-.049V.843c0-.032.018-.05.05-.05zm-.901.53h.328c.026.292.274.528.573.528h1.49a.58.58 0 0 0 .573-.529h.328a.2.2 0 0 1 .206.206v3.822a.2.2 0 0 1-.206.205H1.53a.2.2 0 0 1-.206-.205V1.529a.2.2 0 0 1 .206-.206z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                `
+
             </div>
             <div class="row mt-4 align-items-start justify-content-between  ">
                 <div class="description position-relative p-s-5 col-md-12 gap-2 col-lg-9" id="description"></div>
                 <div class="sidebar col-md-3 col-sm-0">
-                    <div class="cards mt-4">
-                        <div class="categorates mt-5">
-                            <h2 id="categorateTitle">Top categorates:</h2>
+                    <div class="cards">
+                        <div class="categorates">
+                            <h2 id="categorateTitle">Top Categories:</h2>
+                            <div class="under-title-vector">
+                                <img src="https://dev.nendemo2024.xyz/content/images/vector-title.svg" loading="lazy"
+                                    alt="vector">
+                            </div>
+                            <div class="d-flex flex-wrap gap-1 pt-3 align-items-center" id="categorates">
 
-                            <div class="d-flex flex-wrap gap-3 pt-3 align-items-center" id="categorates">
-
                                 <div class="gap-0">
-                                    <button class="button-2" name="culinary" aria-label="Explore Culinary"
-                                        title="Discover Culinary tips and recipes">
-                                        Culinary
+                                    <button class="button-2 d-flex align-items-center gap-1" name="culinary"
+                                        aria-label="Explore Culinary" title="Discover Culinary tips and recipes">
+                                        <svg class="no-rotate" width="15" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g stroke-width="0"></g>
+                                            <g stroke-linecap="round" stroke-linejoin="round"></g>
+                                            <g>
+                                                <path
+                                                    d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </g>
+                                        </svg>
+                                        <span> Culinary</span>
                                     </button>
                                 </div>
                                 <div class="gap-0">
-                                    <button class="button-2" name="tipsAndHacks" aria-label="Explore Tips & Hacks"
-                                        title="Get useful tips and hacks">
-                                        Tips & Hacks
+                                    <button class="button-2 d-flex align-items-center gap-1" name="tipsAndHacks"
+                                        aria-label="Explore Tips & Hacks" title="Get useful tips and hacks">
+                                        <svg class="no-rotate" width="15" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g stroke-width="0"></g>
+                                            <g stroke-linecap="round" stroke-linejoin="round"></g>
+                                            <g>
+                                                <path
+                                                    d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </g>
+                                        </svg>
+                                        <span> Tips & Hacks</span>
                                     </button>
                                 </div>
                                 <div class="gap-0">
-                                    <button class="button-2" name="lifestyle" aria-label="Explore Lifestyle"
-                                        title="Learn about lifestyle topics">
-                                        Life Style
+                                    <button class="button-2 d-flex align-items-center gap-1" name="lifestyle"
+                                        aria-label="Explore Lifestyle" title="Learn about lifestyle topics">
+                                        <svg class="no-rotate" width="15" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g stroke-width="0"></g>
+                                            <g stroke-linecap="round" stroke-linejoin="round"></g>
+                                            <g>
+                                                <path
+                                                    d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </g>
+                                        </svg>
+                                        <span> Life Style</span>
                                     </button>
                                 </div>
                                 <div class="gap-0">
-                                    <button class="button-2" name="destination" aria-label="Explore Destinations"
-                                        title="Discover new travel destinations">
-                                        Destination
+                                    <button class="button-2 d-flex align-items-center gap-1" name="destination"
+                                        aria-label="Explore Destinations" title="Discover new travel destinations">
+                                        <svg class="no-rotate" width="15" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g stroke-width="0"></g>
+                                            <g stroke-linecap="round" stroke-linejoin="round"></g>
+                                            <g>
+                                                <path
+                                                    d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </g>
+                                        </svg>
+                                        <span> Destination </span>
                                     </button>
                                 </div>
                             </div>
@@ -232,39 +451,6 @@
                         </div>
 
                     </div>
-                    <div class="authors mt-5">
-                        <h2 id="authorsTitle">Top Authors :</h2>
-                        <div id="authors">
-                            <div class="d-flex gap-3 pt-3 align-items-center">
-                                <div class="author-img-container special">
-                                    <img src="./images/people/person1.jpg" alt="mohamed rady">
-                                </div>
-                                <div class="gap-0">
-                                    <p class="name fw-bold m-auto fs-6">mohamed rady</p>
-                                    <span class="text-danger">life style</span>
-                                </div>
-                            </div>
-                            <div class="d-flex gap-3 pt-3 align-items-center">
-                                <div class="author-img-container special">
-                                    <img src="./images/people/person4.jpeg" alt="Alexandro sane">
-                                </div>
-                                <div class="gap-0">
-                                    <p class="name fw-bold m-auto fs-6">Alexandro sane</p>
-                                    <span class=" text-danger">Tips & Hacks</span>
-                                </div>
-                            </div>
-                            <div class="d-flex gap-3 pt-3 align-items-center">
-                                <div class="author-img-container special">
-                                    <img src="./images/people/person1.jpg" alt="sadio mane">
-                                </div>
-                                <div class="gap-0">
-                                    <p class="name fw-bold m-auto fs-6">sadio mane</p>
-                                    <span class="text-danger">life style</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -273,7 +459,7 @@
         <!-- Start video -->
         <div class="video ">
             <div class="explan p-2 w-100">
-                <h2 class="fs-1 ">Explanatory Video</h2>
+                <h2 class="fs-2 ">Explanatory Video</h2>
                 <div class="under-title-vector">
                     <img src="https://dev.nendemo2024.xyz/content/images/vector-title.svg" loading="lazy" alt="vector">
                 </div>
@@ -282,16 +468,15 @@
                 <video id="myVideo">
                     <source src="./video/video.mp4" type="video/mp4">
                 </video>
-
                 <!-- Overlay content -->
                 <div class="overlay" id="overlay">
                     <button class="resume" id="playPauseButton" name="playPause" aria-label="Play or Pause"
                         title="Click to play or pause the video"> <svg width="100px" fill="#ffffff" height="200px"
                             version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 52 52" xml:space="preserve">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
+                            <g stroke-width="0"></g>
+                            <g stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g>
                                 <g>
                                     <path
                                         d="M26,0C11.663,0,0,11.663,0,26s11.663,26,26,26s26-11.663,26-26S40.337,0,26,0z M26,50C12.767,50,2,39.233,2,26 S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z">
@@ -308,74 +493,318 @@
         <!-- start Latest  -->
         <div class="latest">
             <div>
-                <h2 class="fs-1 fw-bold">Latest Articles</h2>
+                <h2 class="fs-2 fw-bold">Latest Articles</h2>
                 <div class="under-title-vector border-1">
                     <img src="https://dev.nendemo2024.xyz/content/images/vector-title.svg" loading="lazy"
                         onerror="this.onerror=null;this.src='https://dev.nendemo2024.xyz/content/images/not-found/no-image.svg';"
                         alt="vector">
                 </div>
             </div>
-            <div class="row  ">
-                <div class="article p-1 col-lg-6 col-md-12">
-                    <img src="./images/image1.jpeg" alt="image">
-                    <div class="content">
-                        <div class="title text-truncate">
-                            Innovation Meets Sustainability
-                        </div>
-                        <svg width='30' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
-                                    fill="#ffffff"></path>
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-                <div class="article p-1 col-lg-3 col-md-6">
-                    <img src="./images/image2.jpeg" alt="image">
-                    <div class="content">
-
-                        <div class="title text-truncate">
-                            Innovation Meets Sustainability
-                        </div>
-                        <svg width='30' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
-                                    fill="#ffffff"></path>
-                            </g>
-                        </svg>
-                    </div>
-
-                </div>
-                <div class="article p-1 col-lg-3 col-md-6">
-                    <img src="./images/image3.avif" alt="image">
-                    <div class="content">
-
-                        <div class="title text-truncate">
-                            Innovation Meets Sustainability
-                        </div>
-                        <svg width='30' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
-                                    fill="#ffffff"></path>
-                            </g>
-                        </svg>
-                    </div>
-                </div>
+            <div class="row" id="latestArticles">
             </div>
         </div>
 
         <!-- End Latest  -->
 
     </div>
+    <!-- footer -->
+    <footer class="footer overflow-hidden">
+        <div class="containe">
+            <!-- Left section: Logo and mission statement -->
+            <div class="footer-section  text-center flex-grow-1 my-0 mx-3">
+                <p class="location">
+                    <a href="https://maps.google.com/?q=S.B. 10076 Riyadh 11433 Kingdom of Saudi Arabia" target="_blank"
+                        class="d-flex align-items-center gap-1 justify-content-center">
+                        <svg class="no-rotate" width="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g stroke-width="0"></g>
+                            <g stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g>
+                                <path
+                                    d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg>S. B. 10076 Riyadh 11433 Kingdom of Saudi Arabia</a>
+                </p>
+                <p class="email">
+                    <a href="mailto:info@nen.com" class="d-flex align-items-center justify-content-center gap-1"
+                        target="_blank">
+                        <svg class="no-rotate" width="25" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g stroke-width="0"></g>
+                            <g stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z"
+                                    fill="#ffffff"></path>
+                            </g>
+                        </svg>Email: info@nen.com</a>
+                </p>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-8">
+                    <div class="row g-3 px-lg-5">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="tag-title mb-3 ">
+                                CERTIFICATIONS
+                            </div>
+                            <div class="items d-flex flex-column gap-3">
+                                <a href="#" class="item d-flex align-items-center gap-1">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke-width="0"></g>
+                                        <g stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                    </svg>
+                                    <span>
+                                        UKVI SKILLS FOR ENGLISH
+                                    </span>
+                                </a>
+                                <a href="#" class="item d-flex align-items-center gap-1">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke-width="0"></g>
+                                        <g stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                    </svg>
+                                    <span>
+                                        ITEP INTERNATIONAL
+                                    </span>
+                                </a>
+                                <a href="#" class="item d-flex align-items-center gap-1">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke-width="0"></g>
+                                        <g stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                    </svg>
+                                    <span>
+                                        ATTANAL AL-ARABI
+                                    </span>
+                                </a>
+                                <a href="#" class="item d-flex align-items-center gap-1">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke-width="0"></g>
+                                        <g stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                    </svg>
+                                    <span>
+                                        I.C.P.U CERTIFICATE
+                                    </span>
+                                </a>
+                                <a href="#" class="item d-flex align-items-center gap-1">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke-width="0"></g>
+                                        <g stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                    </svg>
+                                    <span>
+                                        B.SKILLS CERTIFICATE
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  col-md-6 col-12">
+                            <div class="tag-title mb-3 ">
+                                PORTALS
+                            </div>
+                            <div class="items d-flex flex-column gap-3">
+                                <a href="#" class="item d-flex align-items-center gap-1">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke-width="0"></g>
+                                        <g stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                    </svg>
+                                    <span>
+                                        FOLLOW METRIC
+                                    </span>
+                                </a>
+                                <a href="#" class="item d-flex align-items-center gap-1">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke-width="0"></g>
+                                        <g stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                    </svg>
+                                    <span>
+                                        HELP4ME
+                                    </span>
+                                </a>
+                                <a href="#" class="item d-flex align-items-center gap-1">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke-width="0"></g>
+                                        <g stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                    </svg>
+                                    <span>
+                                        UTEST
+                                    </span>
+                                </a>
+                                <a href="#" class="item d-flex align-items-center gap-1">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke-width="0"></g>
+                                        <g stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                    </svg>
+                                    <span>
+                                        MICROSOFT V-ACADEMY
+                                    </span>
+                                </a>
+                                <a href="#" class="item d-flex align-items-center gap-1">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke-width="0"></g>
+                                        <g stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                    </svg>
+                                    <span>
+                                        CISCO V-ACAD
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="tag-title mb-3 ">
+                                SUBSIDIARIES
+                            </div>
+                            <div class="items d-flex flex-column gap-3">
+                                <a href="#" class="item d-flex align-items-center gap-1">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke-width="0"></g>
+                                        <g stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                    </svg> <span>
+                                        NEN TECHNOLOGY
+                                    </span>
+                                </a>
+                                <a href="#" class="item d-flex align-items-center gap-1">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke-width="0"></g>
+                                        <g stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                    </svg> <span>
+                                        NEN BIO AGRO
+                                    </span>
+                                </a>
+                                <a href="#" class="item d-flex align-items-center gap-1">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke-width="0"></g>
+                                        <g stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                    </svg> <span>
+                                        DATA QUEST
+                                    </span>
+                                </a>
+                                <a href="#" class="item d-flex align-items-center gap-1">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke-width="0"></g>
+                                        <g stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                    </svg> <span>
+                                        DAR AL-TANMYA
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div id="subscribe" class="d-flex flex-column justify-content-center text-white-color mt-2">
+                        <h6 class="tag-title">
+                            Subscribe Our Newsletter
+                        </h6>
+                        <p class="desc fs-5-2 mt-2">
+                            Join our newsletter and be the first to know about new product releases, discounts,
+                            and
+                            useful resources!
+                        </p>
+                        <div class="input-group rounded-pill overflow-hidden mt-4">
+                            <input type="text" class="form-control border-0" placeholder="Your email address"
+                                aria-label="Email">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- toTop button -->
+    <button id="toTop" class="top position-fixed z-2 cursor-pointer rounded-circle border-secondary opacity-0"
+        name="scrollToTop" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-arrow-up-short"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z">
+            </path>
+        </svg>
+    </button>
 </body>
 
 </html>

@@ -1,3 +1,7 @@
+body{
+  font-family: Tajawal,sans-serif !important;
+
+}
 .category::after {
     right: 48%;
 
@@ -10,9 +14,27 @@ header .search svg {
 .bread-crumb svg{
 transform:rotate(180deg) !important;
 }
+#langButton{
+    &::after{
+      left: -10px;
+      right: inherit;
+    }
+  }
 
 .author-name::after {
     left: 66% !important;
+}
+svg:not(.bi-arrow-up-short,.no-rotate){
+    transform:scale(-1)
+}
+.article-title{
+
+  &::before{
+    right: 0;
+    left: inherit;
+
+  }
+  
 }
 .explan{
     text-align: right;
@@ -22,7 +44,6 @@ transform: rotate(180deg);
   
   }
  @media (max-width: 767px) {
-
     .lang-card.active {
         left: 10px;
         right: auto;
@@ -33,4 +54,33 @@ transform: rotate(180deg);
         right: inherit;
         z-index: 5;
       }
+      .article-title h1{
+        font-size: 1.8rem;
+        padding-left: 0;
+        padding-right: 50px;
+  
+    }
+}
+.close-popup {
+  left: 10px;
+  right: inherit !important;
+}
+.footer {
+  text-align: center;
+  .tag-title {
+    text-align: right;
+  }
+  #subscribe{
+    text-align: right;
+  }
+
+  a{
+
+    &.item{
+
+      &:hover{
+        transform: translateX(-20px);
+      }
+    }
+  }
 }

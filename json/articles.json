@@ -340,7 +340,1717 @@
             },
             "category": "Culinary",
             "categoryAr": "الطهي"
-        }
+        },
+        {
+            "id": 1,
+            "imgSrc": "./images/categorates/clothes.jpg",
+            "date": "20 Jan 2024",
+            "dateAr": "20 يناير 2024",
+            "readTime": "8 minutes ago",
+            "readTimeAr": "منذ 8 دقائق",
+            "title": "A fashionista's guide to wanderlust",
+            "titleAr": "دليل الموضة لعشاق السفر",
+            "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+            "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+            "author": {
+                "name": "Maximilian Bartholomew",
+                "nameAr": "ماكسيميليان بارتولوميو",
+                "imgSrc": "./images/people/person2.jpg"
+            },
+            "category": "Lifestyle",
+            "categoryAr": "أسلوب الحياة"
+        },
+        {
+            "id": 2,
+            "imgSrc": "./images/image1.jpeg",
+            "date": "20 Jan 2024",
+            "dateAr": "20 يناير 2024",
+            "readTime": "8 minutes ago",
+            "readTimeAr": "منذ 8 دقائق",
+            "title": "unveiling the secrets beyond the tourist trails",
+            "titleAr": "كشف الأسرار وراء المسارات السياحية",
+            "description": "Dive into the local culture, discover hidden spots, and experience the authentic charm that often goes unnoticed by the mainstream travel crowd.",
+            "descriptionAr": "استكشف الثقافة المحلية، واكتشف الأماكن المخفية، واستمتع بالجاذبية الأصيلة التي غالبًا ما لا تلاحظها الحشود السياحية.",
+            "author": {
+                "name": "Seraphina Isabella",
+                "nameAr": "سيرافينا إيزابيلا",
+                "imgSrc": "./images/people/person1.jpg"
+            },
+            "category": "Destination",
+            "categoryAr": "وجهة"
+        },
+        {
+            "id": 3,
+            "imgSrc": "./images/categorates/tips & tricks.jpg",
+            "date": "20 Jan 2024",
+            "dateAr": "20 يناير 2024",
+            "readTime": "8 mins read",
+            "readTimeAr": "منذ 8 دقائق",
+            "title": "10 Essential packing hacks for stress-free travel",
+            "titleAr": "10 حيل تعبئة أساسية لسفر بدون إجهاد",
+            "description": "Uncover the secrets to efficient packing that will revolutionize your travel experience.",
+            "descriptionAr": "اكتشف أسرار التعبئة الفعالة التي ستحدث ثورة في تجربة سفرك.",
+            "author": {
+                "name": "Benjamin Augustus",
+                "nameAr": "بنجامين أوغسطس",
+                "imgSrc": "./images/people/person6.jpeg"
+            },
+            "category": "Tips & Hacks",
+            "categoryAr": "نصائح وحيل"
+        },
+        {
+            "id": 4,
+            "imgSrc": "./images/categorates/clothes.jpg",
+            "date": "20 Jan 2024",
+            "dateAr": "20 يناير 2024",
+            "readTime": "8 minutes ago",
+            "readTimeAr": "منذ 8 دقائق",
+            "title": "A fashionista's guide to wanderlust",
+            "titleAr": "دليل الموضة لعشاق السفر",
+            "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+            "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+            "author": {
+                "name": "Maximilian Bartholomew",
+                "nameAr": "ماكسيميليان بارتولوميو",
+                "imgSrc": "./images/people/person2.jpg"
+            },
+            "category": "Lifestyle",
+            "categoryAr": "أسلوب الحياة"
+        },
+        {
+            "id": 5,
+            "imgSrc": "./images/categorates/culinary1.jpg",
+            "date": "20 Jan 2024",
+            "dateAr": "20 يناير 2024",
+            "readTime": "8 minutes ago",
+            "readTimeAr": "منذ 8 دقائق",
+            "title": "wavoring mozaic resto gastronomic delights",
+            "titleAr": "الاستمتاع بمأكولات موزايك ريستو الفاخرة",
+            "description": "From street food to fine dining, uncover the diverse and delectable world of this culinary destination.",
+            "descriptionAr": "من طعام الشارع إلى المطاعم الفاخرة، اكتشف العالم المتنوع والشهي لهذه الوجهة الطهوية.",
+            "author": {
+                "name": "Nathaniel Reginald",
+                "nameAr": "ناثانيال ريجينالد",
+                "imgSrc": "./images/people/person2.jpg"
+            },
+            "category": "Culinary",
+            "categoryAr": "الطهي"
+        },
+        {
+            "id": 6,
+            "imgSrc": "./images/categorates/culinary1.jpg",
+            "date": "20 Jan 2024",
+            "dateAr": "20 يناير 2024",
+            "readTime": "8 minutes ago",
+            "readTimeAr": "منذ 8 دقائق",
+            "title": "Experiencing sustainable culinary tourism",
+            "titleAr": "تجربة السياحة الطهوية المستدامة",
+            "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+            "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+            "author": {
+                "name": "Sebastian Montgomery",
+                "nameAr": "سيباستيان مونتغومري",
+                "imgSrc": "./images/people/person4.jpeg"
+            },
+            "category": "Culinary",
+            "categoryAr": "الطهي"
+        },
+        {
+            "id": 7,
+            "imgSrc": "./images/categorates/clothes.jpg",
+            "date": "20 Jan 2024",
+            "dateAr": "20 يناير 2024",
+            "readTime": "8 minutes ago",
+            "readTimeAr": "منذ 8 دقائق",
+            "title": "A Fashionista's guide to wanderlust",
+            "titleAr": "دليل الموضة لعشاق السفر",
+            "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+            "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+            "author": {
+                "name": "Maximilian Bartholomew",
+                "nameAr": "ماكسيميليان بارتولوميو",
+                "imgSrc": "./images/people/person2.jpg"
+            },
+            "category": "Lifestyle",
+            "categoryAr": "أسلوب الحياة"
+        },
+        {
+            "id": 8,
+            "imgSrc": "./images/image2.jpeg",
+            "date": "20 Jan 2024",
+            "dateAr": "20 يناير 2024",
+            "readTime": "8 minutes ago",
+            "readTimeAr": "منذ 8 دقائق",
+            "title": "Journey through time",
+            "titleAr": "رحلة عبر الزمن",
+            "description": "Wander through ancient streets, visit iconic landmarks, and immerse yourself in the tales that have shaped history.",
+            "descriptionAr": "تجول في الشوارع القديمة، وزر المعالم الشهيرة، وانغمس في الحكايات التي شكلت التاريخ.",
+            "author": {
+                "name": "Percival Thaddeus",
+                "nameAr": "برسيفال ثاديوس",
+                "imgSrc": "./images/people/person3.jpg"
+            },
+            "category": "Destination",
+            "categoryAr": "وجهة"
+        },
+        {
+            "id": 9,
+            "imgSrc": "./images/categorates/culinary1.jpg",
+            "date": "20 Jan 2024",
+            "dateAr": "20 يناير 2024",
+            "readTime": "8 minutes ago",
+            "readTimeAr": "منذ 8 دقائق",
+            "title": "Experiencing sustainable culinary tourism",
+            "titleAr": "تجربة السياحة الطهوية المستدامة",
+            "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+            "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+            "author": {
+                "name": "Sebastian Montgomery",
+                "nameAr": "سيباستيان مونتغومري",
+                "imgSrc": "./images/people/person4.jpeg"
+            },
+            "category": "Culinary",
+            "categoryAr": "الطهي"
+        },
+        {
+            "id": 10,
+            "imgSrc": "./images/categorates/clothes.jpg",
+            "date": "20 Jan 2024",
+            "dateAr": "20 يناير 2024",
+            "readTime": "8 minutes ago",
+            "readTimeAr": "منذ 8 دقائق",
+            "title": "Navigating the traveler's lifestyle",
+            "titleAr": "التنقل في نمط حياة المسافر",
+            "description": "From managing work on the road to finding the best travel gear, discover how to thrive as a full-time traveler.",
+            "descriptionAr": "من إدارة العمل أثناء السفر إلى العثور على أفضل معدات السفر، اكتشف كيف تزدهر كمسافر بدوام كامل.",
+            "author": {
+                "name": "Arabella Serenity",
+                "nameAr": "أرابيلا سيرينيتي",
+                "imgSrc": "./images/people/person5.jpg"
+            },
+            "category": "Lifestyle",
+            "categoryAr": "أسلوب الحياة"
+        },
+        {
+            "id": 11,
+            "imgSrc": "./images/categorates/culinary1.jpg",
+            "date": "20 Jan 2024",
+            "dateAr": "20 يناير 2024",
+            "readTime": "8 minutes ago",
+            "readTimeAr": "منذ 8 دقائق",
+            "title": "Experiencing sustainable culinary tourism",
+            "titleAr": "تجربة السياحة الطهوية المستدامة",
+            "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+            "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+            "author": {
+                "name": "Sebastian Montgomery",
+                "nameAr": "سيباستيان مونتغومري",
+                "imgSrc": "./images/people/person4.jpeg"
+            },
+            "category": "Culinary",
+            "categoryAr": "الطهي"
+        },
+        {
+            "id": 12,
+            "imgSrc": "./images/image1.jpeg",
+            "date": "20 Jan 2024",
+            "dateAr": "20 يناير 2024",
+            "readTime": "8 minutes ago",
+            "readTimeAr": "منذ 8 دقائق",
+            "title": "Adrenaline-pumping adventures",
+            "titleAr": "مغامرات مليئة بالأدرينالين",
+            "description": "Join us on an exploration of [Adventure Destination], where heart-pounding activities await.",
+            "descriptionAr": "انضم إلينا في استكشاف وجهات المغامرة، حيث تنتظرك أنشطة مثيرة.",
+            "author": {
+                "name": "Calista Gwendolyn",
+                "nameAr": "كاليستا غويندولين",
+                "imgSrc": "./images/people/person1.jpg"
+            },
+            "category": "Destination",
+            "categoryAr": "وجهة"
+        },
+            {
+                "id": 13,
+                "imgSrc": "./images/image2.jpeg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "Journey through time",
+                "titleAr": "رحلة عبر الزمن",
+                "description": "Wander through ancient streets, visit iconic landmarks, and immerse yourself in the tales that have shaped history.",
+                "descriptionAr": "تجول في الشوارع القديمة، وزر المعالم الشهيرة، وانغمس في الحكايات التي شكلت التاريخ.",
+                "author": {
+                    "name": "Percival Thaddeus",
+                    "nameAr": "برسيفال ثاديوس",
+                    "imgSrc": "./images/people/person3.jpg"
+                },
+                "category": "Destination",
+                "categoryAr": "وجهة"
+            },
+            {
+                "id": 14,
+                "imgSrc": "./images/categorates/culinary1.jpg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "Experiencing sustainable culinary tourism",
+                "titleAr": "تجربة السياحة الطهوية المستدامة",
+                "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                "author": {
+                    "name": "Sebastian Montgomery",
+                    "nameAr": "سيباستيان مونتغومري",
+                    "imgSrc": "./images/people/person4.jpeg"
+                },
+                "category": "Culinary",
+                "categoryAr": "الطهي"
+            },
+            {
+                "id": 15,
+                "imgSrc": "./images/categorates/clothes.jpg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "A fashionista's guide to wanderlust",
+                "titleAr": "دليل الموضة لعشاق السفر",
+                "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                "author": {
+                    "name": "Maximilian Bartholomew",
+                    "nameAr": "ماكسيميليان بارتولوميو",
+                    "imgSrc": "./images/people/person2.jpg"
+                },
+                "category": "Lifestyle",
+                "categoryAr": "أسلوب الحياة"
+            },
+            {
+                "id": 16,
+                "imgSrc": "./images/categorates/culinary1.jpg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "Experiencing sustainable culinary tourism",
+                "titleAr": "تجربة السياحة الطهوية المستدامة",
+                "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                "author": {
+                    "name": "Sebastian Montgomery",
+                    "nameAr": "سيباستيان مونتغومري",
+                    "imgSrc": "./images/people/person4.jpeg"
+                },
+                "category": "Culinary",
+                "categoryAr": "الطهي"
+            },
+            {
+                "id": 17,
+                "imgSrc": "./images/categorates/tips & tricks.jpg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "Top 5 apps and gadgets that will transform your journeys",
+                "titleAr": "أفضل 5 تطبيقات وأدوات لتحسين رحلاتك",
+                "description": "Explore the latest in travel technology with our guide to must-have apps and gadgets.",
+                "descriptionAr": "استكشف أحدث تقنيات السفر من خلال دليلنا لأهم التطبيقات والأدوات التي يجب امتلاكها.",
+                "author": {
+                    "name": "Anastasia Evangeline",
+                    "nameAr": "أنستازيا إيفانجيلين",
+                    "imgSrc": "./images/people/person6.jpeg"
+                },
+                "category": "Tips & Hacks",
+                "categoryAr": "نصائح وحيل"
+            },
+            {
+                "id": 18,
+                "imgSrc": "./images/categorates/culinary1.jpg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "Savoring mozaic resto gastronomic delights",
+                "titleAr": "الاستمتاع بأطباق موزايك ريستو",
+                "description": "From street food to fine dining, uncover the diverse and delectable world of this culinary destination.",
+                "descriptionAr": "من طعام الشارع إلى الطعام الفاخر، اكتشف عالم الطهي المتنوع والشهي في هذه الوجهة الطهوية.",
+                "author": {
+                    "name": "Nathaniel Reginald",
+                    "nameAr": "ناثانيال ريجنالد",
+                    "imgSrc": "./images/people/person2.jpg"
+                },
+                "category": "Culinary",
+                "categoryAr": "الطهي"
+            },
+            {
+                "id": 1,
+                "imgSrc": "./images/categorates/clothes.jpg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "A fashionista's guide to wanderlust",
+                "titleAr": "دليل الموضة لعشاق السفر",
+                "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                "author": {
+                    "name": "Maximilian Bartholomew",
+                    "nameAr": "ماكسيميليان بارتولوميو",
+                    "imgSrc": "./images/people/person2.jpg"
+                },
+                "category": "Lifestyle",
+                "categoryAr": "أسلوب الحياة"
+            },
+            {
+                "id": 2,
+                "imgSrc": "./images/image1.jpeg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "unveiling the secrets beyond the tourist trails",
+                "titleAr": "كشف الأسرار وراء المسارات السياحية",
+                "description": "Dive into the local culture, discover hidden spots, and experience the authentic charm that often goes unnoticed by the mainstream travel crowd.",
+                "descriptionAr": "استكشف الثقافة المحلية، واكتشف الأماكن المخفية، واستمتع بالجاذبية الأصيلة التي غالبًا ما لا تلاحظها الحشود السياحية.",
+                "author": {
+                    "name": "Seraphina Isabella",
+                    "nameAr": "سيرافينا إيزابيلا",
+                    "imgSrc": "./images/people/person1.jpg"
+                },
+                "category": "Destination",
+                "categoryAr": "وجهة"
+            },
+            {
+                "id": 3,
+                "imgSrc": "./images/categorates/tips & tricks.jpg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 mins read",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "10 Essential packing hacks for stress-free travel",
+                "titleAr": "10 حيل تعبئة أساسية لسفر بدون إجهاد",
+                "description": "Uncover the secrets to efficient packing that will revolutionize your travel experience.",
+                "descriptionAr": "اكتشف أسرار التعبئة الفعالة التي ستحدث ثورة في تجربة سفرك.",
+                "author": {
+                    "name": "Benjamin Augustus",
+                    "nameAr": "بنجامين أوغسطس",
+                    "imgSrc": "./images/people/person6.jpeg"
+                },
+                "category": "Tips & Hacks",
+                "categoryAr": "نصائح وحيل"
+            },
+            {
+                "id": 4,
+                "imgSrc": "./images/categorates/clothes.jpg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "A fashionista's guide to wanderlust",
+                "titleAr": "دليل الموضة لعشاق السفر",
+                "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                "author": {
+                    "name": "Maximilian Bartholomew",
+                    "nameAr": "ماكسيميليان بارتولوميو",
+                    "imgSrc": "./images/people/person2.jpg"
+                },
+                "category": "Lifestyle",
+                "categoryAr": "أسلوب الحياة"
+            },
+            {
+                "id": 5,
+                "imgSrc": "./images/categorates/culinary1.jpg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "wavoring mozaic resto gastronomic delights",
+                "titleAr": "الاستمتاع بمأكولات موزايك ريستو الفاخرة",
+                "description": "From street food to fine dining, uncover the diverse and delectable world of this culinary destination.",
+                "descriptionAr": "من طعام الشارع إلى المطاعم الفاخرة، اكتشف العالم المتنوع والشهي لهذه الوجهة الطهوية.",
+                "author": {
+                    "name": "Nathaniel Reginald",
+                    "nameAr": "ناثانيال ريجينالد",
+                    "imgSrc": "./images/people/person2.jpg"
+                },
+                "category": "Culinary",
+                "categoryAr": "الطهي"
+            },
+            {
+                "id": 6,
+                "imgSrc": "./images/categorates/culinary1.jpg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "Experiencing sustainable culinary tourism",
+                "titleAr": "تجربة السياحة الطهوية المستدامة",
+                "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                "author": {
+                    "name": "Sebastian Montgomery",
+                    "nameAr": "سيباستيان مونتغومري",
+                    "imgSrc": "./images/people/person4.jpeg"
+                },
+                "category": "Culinary",
+                "categoryAr": "الطهي"
+            },
+            {
+                "id": 7,
+                "imgSrc": "./images/categorates/clothes.jpg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "A Fashionista's guide to wanderlust",
+                "titleAr": "دليل الموضة لعشاق السفر",
+                "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                "author": {
+                    "name": "Maximilian Bartholomew",
+                    "nameAr": "ماكسيميليان بارتولوميو",
+                    "imgSrc": "./images/people/person2.jpg"
+                },
+                "category": "Lifestyle",
+                "categoryAr": "أسلوب الحياة"
+            },
+            {
+                "id": 8,
+                "imgSrc": "./images/image2.jpeg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "Journey through time",
+                "titleAr": "رحلة عبر الزمن",
+                "description": "Wander through ancient streets, visit iconic landmarks, and immerse yourself in the tales that have shaped history.",
+                "descriptionAr": "تجول في الشوارع القديمة، وزر المعالم الشهيرة، وانغمس في الحكايات التي شكلت التاريخ.",
+                "author": {
+                    "name": "Percival Thaddeus",
+                    "nameAr": "برسيفال ثاديوس",
+                    "imgSrc": "./images/people/person3.jpg"
+                },
+                "category": "Destination",
+                "categoryAr": "وجهة"
+            },
+            {
+                "id": 9,
+                "imgSrc": "./images/categorates/culinary1.jpg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "Experiencing sustainable culinary tourism",
+                "titleAr": "تجربة السياحة الطهوية المستدامة",
+                "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                "author": {
+                    "name": "Sebastian Montgomery",
+                    "nameAr": "سيباستيان مونتغومري",
+                    "imgSrc": "./images/people/person4.jpeg"
+                },
+                "category": "Culinary",
+                "categoryAr": "الطهي"
+            },
+            {
+                "id": 10,
+                "imgSrc": "./images/categorates/clothes.jpg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "Navigating the traveler's lifestyle",
+                "titleAr": "التنقل في نمط حياة المسافر",
+                "description": "From managing work on the road to finding the best travel gear, discover how to thrive as a full-time traveler.",
+                "descriptionAr": "من إدارة العمل أثناء السفر إلى العثور على أفضل معدات السفر، اكتشف كيف تزدهر كمسافر بدوام كامل.",
+                "author": {
+                    "name": "Arabella Serenity",
+                    "nameAr": "أرابيلا سيرينيتي",
+                    "imgSrc": "./images/people/person5.jpg"
+                },
+                "category": "Lifestyle",
+                "categoryAr": "أسلوب الحياة"
+            },
+            {
+                "id": 11,
+                "imgSrc": "./images/categorates/culinary1.jpg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "Experiencing sustainable culinary tourism",
+                "titleAr": "تجربة السياحة الطهوية المستدامة",
+                "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                "author": {
+                    "name": "Sebastian Montgomery",
+                    "nameAr": "سيباستيان مونتغومري",
+                    "imgSrc": "./images/people/person4.jpeg"
+                },
+                "category": "Culinary",
+                "categoryAr": "الطهي"
+            },
+            {
+                "id": 12,
+                "imgSrc": "./images/image1.jpeg",
+                "date": "20 Jan 2024",
+                "dateAr": "20 يناير 2024",
+                "readTime": "8 minutes ago",
+                "readTimeAr": "منذ 8 دقائق",
+                "title": "Adrenaline-pumping adventures",
+                "titleAr": "مغامرات مليئة بالأدرينالين",
+                "description": "Join us on an exploration of [Adventure Destination], where heart-pounding activities await.",
+                "descriptionAr": "انضم إلينا في استكشاف وجهات المغامرة، حيث تنتظرك أنشطة مثيرة.",
+                "author": {
+                    "name": "Calista Gwendolyn",
+                    "nameAr": "كاليستا غويندولين",
+                    "imgSrc": "./images/people/person1.jpg"
+                },
+                "category": "Destination",
+                "categoryAr": "وجهة"
+            },
+                {
+                    "id": 13,
+                    "imgSrc": "./images/image2.jpeg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "Journey through time",
+                    "titleAr": "رحلة عبر الزمن",
+                    "description": "Wander through ancient streets, visit iconic landmarks, and immerse yourself in the tales that have shaped history.",
+                    "descriptionAr": "تجول في الشوارع القديمة، وزر المعالم الشهيرة، وانغمس في الحكايات التي شكلت التاريخ.",
+                    "author": {
+                        "name": "Percival Thaddeus",
+                        "nameAr": "برسيفال ثاديوس",
+                        "imgSrc": "./images/people/person3.jpg"
+                    },
+                    "category": "Destination",
+                    "categoryAr": "وجهة"
+                },
+                {
+                    "id": 14,
+                    "imgSrc": "./images/categorates/culinary1.jpg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "Experiencing sustainable culinary tourism",
+                    "titleAr": "تجربة السياحة الطهوية المستدامة",
+                    "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                    "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                    "author": {
+                        "name": "Sebastian Montgomery",
+                        "nameAr": "سيباستيان مونتغومري",
+                        "imgSrc": "./images/people/person4.jpeg"
+                    },
+                    "category": "Culinary",
+                    "categoryAr": "الطهي"
+                },
+                {
+                    "id": 15,
+                    "imgSrc": "./images/categorates/clothes.jpg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "A fashionista's guide to wanderlust",
+                    "titleAr": "دليل الموضة لعشاق السفر",
+                    "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                    "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                    "author": {
+                        "name": "Maximilian Bartholomew",
+                        "nameAr": "ماكسيميليان بارتولوميو",
+                        "imgSrc": "./images/people/person2.jpg"
+                    },
+                    "category": "Lifestyle",
+                    "categoryAr": "أسلوب الحياة"
+                },
+                {
+                    "id": 16,
+                    "imgSrc": "./images/categorates/culinary1.jpg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "Experiencing sustainable culinary tourism",
+                    "titleAr": "تجربة السياحة الطهوية المستدامة",
+                    "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                    "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                    "author": {
+                        "name": "Sebastian Montgomery",
+                        "nameAr": "سيباستيان مونتغومري",
+                        "imgSrc": "./images/people/person4.jpeg"
+                    },
+                    "category": "Culinary",
+                    "categoryAr": "الطهي"
+                },
+                {
+                    "id": 17,
+                    "imgSrc": "./images/categorates/tips & tricks.jpg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "Top 5 apps and gadgets that will transform your journeys",
+                    "titleAr": "أفضل 5 تطبيقات وأدوات لتحسين رحلاتك",
+                    "description": "Explore the latest in travel technology with our guide to must-have apps and gadgets.",
+                    "descriptionAr": "استكشف أحدث تقنيات السفر من خلال دليلنا لأهم التطبيقات والأدوات التي يجب امتلاكها.",
+                    "author": {
+                        "name": "Anastasia Evangeline",
+                        "nameAr": "أنستازيا إيفانجيلين",
+                        "imgSrc": "./images/people/person6.jpeg"
+                    },
+                    "category": "Tips & Hacks",
+                    "categoryAr": "نصائح وحيل"
+                },
+                {
+                    "id": 18,
+                    "imgSrc": "./images/categorates/culinary1.jpg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "Savoring mozaic resto gastronomic delights",
+                    "titleAr": "الاستمتاع بأطباق موزايك ريستو",
+                    "description": "From street food to fine dining, uncover the diverse and delectable world of this culinary destination.",
+                    "descriptionAr": "من طعام الشارع إلى الطعام الفاخر، اكتشف عالم الطهي المتنوع والشهي في هذه الوجهة الطهوية.",
+                    "author": {
+                        "name": "Nathaniel Reginald",
+                        "nameAr": "ناثانيال ريجنالد",
+                        "imgSrc": "./images/people/person2.jpg"
+                    },
+                    "category": "Culinary",
+                    "categoryAr": "الطهي"
+                },
+                {
+                    "id": 1,
+                    "imgSrc": "./images/categorates/clothes.jpg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "A fashionista's guide to wanderlust",
+                    "titleAr": "دليل الموضة لعشاق السفر",
+                    "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                    "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                    "author": {
+                        "name": "Maximilian Bartholomew",
+                        "nameAr": "ماكسيميليان بارتولوميو",
+                        "imgSrc": "./images/people/person2.jpg"
+                    },
+                    "category": "Lifestyle",
+                    "categoryAr": "أسلوب الحياة"
+                },
+                {
+                    "id": 2,
+                    "imgSrc": "./images/image1.jpeg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "unveiling the secrets beyond the tourist trails",
+                    "titleAr": "كشف الأسرار وراء المسارات السياحية",
+                    "description": "Dive into the local culture, discover hidden spots, and experience the authentic charm that often goes unnoticed by the mainstream travel crowd.",
+                    "descriptionAr": "استكشف الثقافة المحلية، واكتشف الأماكن المخفية، واستمتع بالجاذبية الأصيلة التي غالبًا ما لا تلاحظها الحشود السياحية.",
+                    "author": {
+                        "name": "Seraphina Isabella",
+                        "nameAr": "سيرافينا إيزابيلا",
+                        "imgSrc": "./images/people/person1.jpg"
+                    },
+                    "category": "Destination",
+                    "categoryAr": "وجهة"
+                },
+                {
+                    "id": 3,
+                    "imgSrc": "./images/categorates/tips & tricks.jpg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 mins read",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "10 Essential packing hacks for stress-free travel",
+                    "titleAr": "10 حيل تعبئة أساسية لسفر بدون إجهاد",
+                    "description": "Uncover the secrets to efficient packing that will revolutionize your travel experience.",
+                    "descriptionAr": "اكتشف أسرار التعبئة الفعالة التي ستحدث ثورة في تجربة سفرك.",
+                    "author": {
+                        "name": "Benjamin Augustus",
+                        "nameAr": "بنجامين أوغسطس",
+                        "imgSrc": "./images/people/person6.jpeg"
+                    },
+                    "category": "Tips & Hacks",
+                    "categoryAr": "نصائح وحيل"
+                },
+                {
+                    "id": 4,
+                    "imgSrc": "./images/categorates/clothes.jpg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "A fashionista's guide to wanderlust",
+                    "titleAr": "دليل الموضة لعشاق السفر",
+                    "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                    "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                    "author": {
+                        "name": "Maximilian Bartholomew",
+                        "nameAr": "ماكسيميليان بارتولوميو",
+                        "imgSrc": "./images/people/person2.jpg"
+                    },
+                    "category": "Lifestyle",
+                    "categoryAr": "أسلوب الحياة"
+                },
+                {
+                    "id": 5,
+                    "imgSrc": "./images/categorates/culinary1.jpg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "wavoring mozaic resto gastronomic delights",
+                    "titleAr": "الاستمتاع بمأكولات موزايك ريستو الفاخرة",
+                    "description": "From street food to fine dining, uncover the diverse and delectable world of this culinary destination.",
+                    "descriptionAr": "من طعام الشارع إلى المطاعم الفاخرة، اكتشف العالم المتنوع والشهي لهذه الوجهة الطهوية.",
+                    "author": {
+                        "name": "Nathaniel Reginald",
+                        "nameAr": "ناثانيال ريجينالد",
+                        "imgSrc": "./images/people/person2.jpg"
+                    },
+                    "category": "Culinary",
+                    "categoryAr": "الطهي"
+                },
+                {
+                    "id": 6,
+                    "imgSrc": "./images/categorates/culinary1.jpg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "Experiencing sustainable culinary tourism",
+                    "titleAr": "تجربة السياحة الطهوية المستدامة",
+                    "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                    "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                    "author": {
+                        "name": "Sebastian Montgomery",
+                        "nameAr": "سيباستيان مونتغومري",
+                        "imgSrc": "./images/people/person4.jpeg"
+                    },
+                    "category": "Culinary",
+                    "categoryAr": "الطهي"
+                },
+                {
+                    "id": 7,
+                    "imgSrc": "./images/categorates/clothes.jpg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "A Fashionista's guide to wanderlust",
+                    "titleAr": "دليل الموضة لعشاق السفر",
+                    "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                    "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                    "author": {
+                        "name": "Maximilian Bartholomew",
+                        "nameAr": "ماكسيميليان بارتولوميو",
+                        "imgSrc": "./images/people/person2.jpg"
+                    },
+                    "category": "Lifestyle",
+                    "categoryAr": "أسلوب الحياة"
+                },
+                {
+                    "id": 8,
+                    "imgSrc": "./images/image2.jpeg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "Journey through time",
+                    "titleAr": "رحلة عبر الزمن",
+                    "description": "Wander through ancient streets, visit iconic landmarks, and immerse yourself in the tales that have shaped history.",
+                    "descriptionAr": "تجول في الشوارع القديمة، وزر المعالم الشهيرة، وانغمس في الحكايات التي شكلت التاريخ.",
+                    "author": {
+                        "name": "Percival Thaddeus",
+                        "nameAr": "برسيفال ثاديوس",
+                        "imgSrc": "./images/people/person3.jpg"
+                    },
+                    "category": "Destination",
+                    "categoryAr": "وجهة"
+                },
+                {
+                    "id": 9,
+                    "imgSrc": "./images/categorates/culinary1.jpg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "Experiencing sustainable culinary tourism",
+                    "titleAr": "تجربة السياحة الطهوية المستدامة",
+                    "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                    "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                    "author": {
+                        "name": "Sebastian Montgomery",
+                        "nameAr": "سيباستيان مونتغومري",
+                        "imgSrc": "./images/people/person4.jpeg"
+                    },
+                    "category": "Culinary",
+                    "categoryAr": "الطهي"
+                },
+                {
+                    "id": 10,
+                    "imgSrc": "./images/categorates/clothes.jpg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "Navigating the traveler's lifestyle",
+                    "titleAr": "التنقل في نمط حياة المسافر",
+                    "description": "From managing work on the road to finding the best travel gear, discover how to thrive as a full-time traveler.",
+                    "descriptionAr": "من إدارة العمل أثناء السفر إلى العثور على أفضل معدات السفر، اكتشف كيف تزدهر كمسافر بدوام كامل.",
+                    "author": {
+                        "name": "Arabella Serenity",
+                        "nameAr": "أرابيلا سيرينيتي",
+                        "imgSrc": "./images/people/person5.jpg"
+                    },
+                    "category": "Lifestyle",
+                    "categoryAr": "أسلوب الحياة"
+                },
+                {
+                    "id": 11,
+                    "imgSrc": "./images/categorates/culinary1.jpg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "Experiencing sustainable culinary tourism",
+                    "titleAr": "تجربة السياحة الطهوية المستدامة",
+                    "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                    "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                    "author": {
+                        "name": "Sebastian Montgomery",
+                        "nameAr": "سيباستيان مونتغومري",
+                        "imgSrc": "./images/people/person4.jpeg"
+                    },
+                    "category": "Culinary",
+                    "categoryAr": "الطهي"
+                },
+                {
+                    "id": 12,
+                    "imgSrc": "./images/image1.jpeg",
+                    "date": "20 Jan 2024",
+                    "dateAr": "20 يناير 2024",
+                    "readTime": "8 minutes ago",
+                    "readTimeAr": "منذ 8 دقائق",
+                    "title": "Adrenaline-pumping adventures",
+                    "titleAr": "مغامرات مليئة بالأدرينالين",
+                    "description": "Join us on an exploration of [Adventure Destination], where heart-pounding activities await.",
+                    "descriptionAr": "انضم إلينا في استكشاف وجهات المغامرة، حيث تنتظرك أنشطة مثيرة.",
+                    "author": {
+                        "name": "Calista Gwendolyn",
+                        "nameAr": "كاليستا غويندولين",
+                        "imgSrc": "./images/people/person1.jpg"
+                    },
+                    "category": "Destination",
+                    "categoryAr": "وجهة"
+                },
+                    {
+                        "id": 13,
+                        "imgSrc": "./images/image2.jpeg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "Journey through time",
+                        "titleAr": "رحلة عبر الزمن",
+                        "description": "Wander through ancient streets, visit iconic landmarks, and immerse yourself in the tales that have shaped history.",
+                        "descriptionAr": "تجول في الشوارع القديمة، وزر المعالم الشهيرة، وانغمس في الحكايات التي شكلت التاريخ.",
+                        "author": {
+                            "name": "Percival Thaddeus",
+                            "nameAr": "برسيفال ثاديوس",
+                            "imgSrc": "./images/people/person3.jpg"
+                        },
+                        "category": "Destination",
+                        "categoryAr": "وجهة"
+                    },
+                    {
+                        "id": 14,
+                        "imgSrc": "./images/categorates/culinary1.jpg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "Experiencing sustainable culinary tourism",
+                        "titleAr": "تجربة السياحة الطهوية المستدامة",
+                        "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                        "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                        "author": {
+                            "name": "Sebastian Montgomery",
+                            "nameAr": "سيباستيان مونتغومري",
+                            "imgSrc": "./images/people/person4.jpeg"
+                        },
+                        "category": "Culinary",
+                        "categoryAr": "الطهي"
+                    },
+                    {
+                        "id": 15,
+                        "imgSrc": "./images/categorates/clothes.jpg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "A fashionista's guide to wanderlust",
+                        "titleAr": "دليل الموضة لعشاق السفر",
+                        "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                        "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                        "author": {
+                            "name": "Maximilian Bartholomew",
+                            "nameAr": "ماكسيميليان بارتولوميو",
+                            "imgSrc": "./images/people/person2.jpg"
+                        },
+                        "category": "Lifestyle",
+                        "categoryAr": "أسلوب الحياة"
+                    },
+                    {
+                        "id": 16,
+                        "imgSrc": "./images/categorates/culinary1.jpg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "Experiencing sustainable culinary tourism",
+                        "titleAr": "تجربة السياحة الطهوية المستدامة",
+                        "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                        "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                        "author": {
+                            "name": "Sebastian Montgomery",
+                            "nameAr": "سيباستيان مونتغومري",
+                            "imgSrc": "./images/people/person4.jpeg"
+                        },
+                        "category": "Culinary",
+                        "categoryAr": "الطهي"
+                    },
+                    {
+                        "id": 17,
+                        "imgSrc": "./images/categorates/tips & tricks.jpg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "Top 5 apps and gadgets that will transform your journeys",
+                        "titleAr": "أفضل 5 تطبيقات وأدوات لتحسين رحلاتك",
+                        "description": "Explore the latest in travel technology with our guide to must-have apps and gadgets.",
+                        "descriptionAr": "استكشف أحدث تقنيات السفر من خلال دليلنا لأهم التطبيقات والأدوات التي يجب امتلاكها.",
+                        "author": {
+                            "name": "Anastasia Evangeline",
+                            "nameAr": "أنستازيا إيفانجيلين",
+                            "imgSrc": "./images/people/person6.jpeg"
+                        },
+                        "category": "Tips & Hacks",
+                        "categoryAr": "نصائح وحيل"
+                    },
+                    {
+                        "id": 18,
+                        "imgSrc": "./images/categorates/culinary1.jpg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "Savoring mozaic resto gastronomic delights",
+                        "titleAr": "الاستمتاع بأطباق موزايك ريستو",
+                        "description": "From street food to fine dining, uncover the diverse and delectable world of this culinary destination.",
+                        "descriptionAr": "من طعام الشارع إلى الطعام الفاخر، اكتشف عالم الطهي المتنوع والشهي في هذه الوجهة الطهوية.",
+                        "author": {
+                            "name": "Nathaniel Reginald",
+                            "nameAr": "ناثانيال ريجنالد",
+                            "imgSrc": "./images/people/person2.jpg"
+                        },
+                        "category": "Culinary",
+                        "categoryAr": "الطهي"
+                    },
+                    {
+                        "id": 1,
+                        "imgSrc": "./images/categorates/clothes.jpg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "A fashionista's guide to wanderlust",
+                        "titleAr": "دليل الموضة لعشاق السفر",
+                        "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                        "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                        "author": {
+                            "name": "Maximilian Bartholomew",
+                            "nameAr": "ماكسيميليان بارتولوميو",
+                            "imgSrc": "./images/people/person2.jpg"
+                        },
+                        "category": "Lifestyle",
+                        "categoryAr": "أسلوب الحياة"
+                    },
+                    {
+                        "id": 2,
+                        "imgSrc": "./images/image1.jpeg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "unveiling the secrets beyond the tourist trails",
+                        "titleAr": "كشف الأسرار وراء المسارات السياحية",
+                        "description": "Dive into the local culture, discover hidden spots, and experience the authentic charm that often goes unnoticed by the mainstream travel crowd.",
+                        "descriptionAr": "استكشف الثقافة المحلية، واكتشف الأماكن المخفية، واستمتع بالجاذبية الأصيلة التي غالبًا ما لا تلاحظها الحشود السياحية.",
+                        "author": {
+                            "name": "Seraphina Isabella",
+                            "nameAr": "سيرافينا إيزابيلا",
+                            "imgSrc": "./images/people/person1.jpg"
+                        },
+                        "category": "Destination",
+                        "categoryAr": "وجهة"
+                    },
+                    {
+                        "id": 3,
+                        "imgSrc": "./images/categorates/tips & tricks.jpg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 mins read",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "10 Essential packing hacks for stress-free travel",
+                        "titleAr": "10 حيل تعبئة أساسية لسفر بدون إجهاد",
+                        "description": "Uncover the secrets to efficient packing that will revolutionize your travel experience.",
+                        "descriptionAr": "اكتشف أسرار التعبئة الفعالة التي ستحدث ثورة في تجربة سفرك.",
+                        "author": {
+                            "name": "Benjamin Augustus",
+                            "nameAr": "بنجامين أوغسطس",
+                            "imgSrc": "./images/people/person6.jpeg"
+                        },
+                        "category": "Tips & Hacks",
+                        "categoryAr": "نصائح وحيل"
+                    },
+                    {
+                        "id": 4,
+                        "imgSrc": "./images/categorates/clothes.jpg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "A fashionista's guide to wanderlust",
+                        "titleAr": "دليل الموضة لعشاق السفر",
+                        "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                        "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                        "author": {
+                            "name": "Maximilian Bartholomew",
+                            "nameAr": "ماكسيميليان بارتولوميو",
+                            "imgSrc": "./images/people/person2.jpg"
+                        },
+                        "category": "Lifestyle",
+                        "categoryAr": "أسلوب الحياة"
+                    },
+                    {
+                        "id": 5,
+                        "imgSrc": "./images/categorates/culinary1.jpg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "wavoring mozaic resto gastronomic delights",
+                        "titleAr": "الاستمتاع بمأكولات موزايك ريستو الفاخرة",
+                        "description": "From street food to fine dining, uncover the diverse and delectable world of this culinary destination.",
+                        "descriptionAr": "من طعام الشارع إلى المطاعم الفاخرة، اكتشف العالم المتنوع والشهي لهذه الوجهة الطهوية.",
+                        "author": {
+                            "name": "Nathaniel Reginald",
+                            "nameAr": "ناثانيال ريجينالد",
+                            "imgSrc": "./images/people/person2.jpg"
+                        },
+                        "category": "Culinary",
+                        "categoryAr": "الطهي"
+                    },
+                    {
+                        "id": 6,
+                        "imgSrc": "./images/categorates/culinary1.jpg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "Experiencing sustainable culinary tourism",
+                        "titleAr": "تجربة السياحة الطهوية المستدامة",
+                        "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                        "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                        "author": {
+                            "name": "Sebastian Montgomery",
+                            "nameAr": "سيباستيان مونتغومري",
+                            "imgSrc": "./images/people/person4.jpeg"
+                        },
+                        "category": "Culinary",
+                        "categoryAr": "الطهي"
+                    },
+                    {
+                        "id": 7,
+                        "imgSrc": "./images/categorates/clothes.jpg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "A Fashionista's guide to wanderlust",
+                        "titleAr": "دليل الموضة لعشاق السفر",
+                        "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                        "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                        "author": {
+                            "name": "Maximilian Bartholomew",
+                            "nameAr": "ماكسيميليان بارتولوميو",
+                            "imgSrc": "./images/people/person2.jpg"
+                        },
+                        "category": "Lifestyle",
+                        "categoryAr": "أسلوب الحياة"
+                    },
+                    {
+                        "id": 8,
+                        "imgSrc": "./images/image2.jpeg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "Journey through time",
+                        "titleAr": "رحلة عبر الزمن",
+                        "description": "Wander through ancient streets, visit iconic landmarks, and immerse yourself in the tales that have shaped history.",
+                        "descriptionAr": "تجول في الشوارع القديمة، وزر المعالم الشهيرة، وانغمس في الحكايات التي شكلت التاريخ.",
+                        "author": {
+                            "name": "Percival Thaddeus",
+                            "nameAr": "برسيفال ثاديوس",
+                            "imgSrc": "./images/people/person3.jpg"
+                        },
+                        "category": "Destination",
+                        "categoryAr": "وجهة"
+                    },
+                    {
+                        "id": 9,
+                        "imgSrc": "./images/categorates/culinary1.jpg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "Experiencing sustainable culinary tourism",
+                        "titleAr": "تجربة السياحة الطهوية المستدامة",
+                        "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                        "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                        "author": {
+                            "name": "Sebastian Montgomery",
+                            "nameAr": "سيباستيان مونتغومري",
+                            "imgSrc": "./images/people/person4.jpeg"
+                        },
+                        "category": "Culinary",
+                        "categoryAr": "الطهي"
+                    },
+                    {
+                        "id": 10,
+                        "imgSrc": "./images/categorates/clothes.jpg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "Navigating the traveler's lifestyle",
+                        "titleAr": "التنقل في نمط حياة المسافر",
+                        "description": "From managing work on the road to finding the best travel gear, discover how to thrive as a full-time traveler.",
+                        "descriptionAr": "من إدارة العمل أثناء السفر إلى العثور على أفضل معدات السفر، اكتشف كيف تزدهر كمسافر بدوام كامل.",
+                        "author": {
+                            "name": "Arabella Serenity",
+                            "nameAr": "أرابيلا سيرينيتي",
+                            "imgSrc": "./images/people/person5.jpg"
+                        },
+                        "category": "Lifestyle",
+                        "categoryAr": "أسلوب الحياة"
+                    },
+                    {
+                        "id": 11,
+                        "imgSrc": "./images/categorates/culinary1.jpg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "Experiencing sustainable culinary tourism",
+                        "titleAr": "تجربة السياحة الطهوية المستدامة",
+                        "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                        "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                        "author": {
+                            "name": "Sebastian Montgomery",
+                            "nameAr": "سيباستيان مونتغومري",
+                            "imgSrc": "./images/people/person4.jpeg"
+                        },
+                        "category": "Culinary",
+                        "categoryAr": "الطهي"
+                    },
+                    {
+                        "id": 12,
+                        "imgSrc": "./images/image1.jpeg",
+                        "date": "20 Jan 2024",
+                        "dateAr": "20 يناير 2024",
+                        "readTime": "8 minutes ago",
+                        "readTimeAr": "منذ 8 دقائق",
+                        "title": "Adrenaline-pumping adventures",
+                        "titleAr": "مغامرات مليئة بالأدرينالين",
+                        "description": "Join us on an exploration of [Adventure Destination], where heart-pounding activities await.",
+                        "descriptionAr": "انضم إلينا في استكشاف وجهات المغامرة، حيث تنتظرك أنشطة مثيرة.",
+                        "author": {
+                            "name": "Calista Gwendolyn",
+                            "nameAr": "كاليستا غويندولين",
+                            "imgSrc": "./images/people/person1.jpg"
+                        },
+                        "category": "Destination",
+                        "categoryAr": "وجهة"
+                    },
+                        {
+                            "id": 13,
+                            "imgSrc": "./images/image2.jpeg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "Journey through time",
+                            "titleAr": "رحلة عبر الزمن",
+                            "description": "Wander through ancient streets, visit iconic landmarks, and immerse yourself in the tales that have shaped history.",
+                            "descriptionAr": "تجول في الشوارع القديمة، وزر المعالم الشهيرة، وانغمس في الحكايات التي شكلت التاريخ.",
+                            "author": {
+                                "name": "Percival Thaddeus",
+                                "nameAr": "برسيفال ثاديوس",
+                                "imgSrc": "./images/people/person3.jpg"
+                            },
+                            "category": "Destination",
+                            "categoryAr": "وجهة"
+                        },
+                        {
+                            "id": 14,
+                            "imgSrc": "./images/categorates/culinary1.jpg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "Experiencing sustainable culinary tourism",
+                            "titleAr": "تجربة السياحة الطهوية المستدامة",
+                            "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                            "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                            "author": {
+                                "name": "Sebastian Montgomery",
+                                "nameAr": "سيباستيان مونتغومري",
+                                "imgSrc": "./images/people/person4.jpeg"
+                            },
+                            "category": "Culinary",
+                            "categoryAr": "الطهي"
+                        },
+                        {
+                            "id": 15,
+                            "imgSrc": "./images/categorates/clothes.jpg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "A fashionista's guide to wanderlust",
+                            "titleAr": "دليل الموضة لعشاق السفر",
+                            "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                            "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                            "author": {
+                                "name": "Maximilian Bartholomew",
+                                "nameAr": "ماكسيميليان بارتولوميو",
+                                "imgSrc": "./images/people/person2.jpg"
+                            },
+                            "category": "Lifestyle",
+                            "categoryAr": "أسلوب الحياة"
+                        },
+                        {
+                            "id": 16,
+                            "imgSrc": "./images/categorates/culinary1.jpg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "Experiencing sustainable culinary tourism",
+                            "titleAr": "تجربة السياحة الطهوية المستدامة",
+                            "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                            "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                            "author": {
+                                "name": "Sebastian Montgomery",
+                                "nameAr": "سيباستيان مونتغومري",
+                                "imgSrc": "./images/people/person4.jpeg"
+                            },
+                            "category": "Culinary",
+                            "categoryAr": "الطهي"
+                        },
+                        {
+                            "id": 17,
+                            "imgSrc": "./images/categorates/tips & tricks.jpg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "Top 5 apps and gadgets that will transform your journeys",
+                            "titleAr": "أفضل 5 تطبيقات وأدوات لتحسين رحلاتك",
+                            "description": "Explore the latest in travel technology with our guide to must-have apps and gadgets.",
+                            "descriptionAr": "استكشف أحدث تقنيات السفر من خلال دليلنا لأهم التطبيقات والأدوات التي يجب امتلاكها.",
+                            "author": {
+                                "name": "Anastasia Evangeline",
+                                "nameAr": "أنستازيا إيفانجيلين",
+                                "imgSrc": "./images/people/person6.jpeg"
+                            },
+                            "category": "Tips & Hacks",
+                            "categoryAr": "نصائح وحيل"
+                        },
+                        {
+                            "id": 18,
+                            "imgSrc": "./images/categorates/culinary1.jpg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "Savoring mozaic resto gastronomic delights",
+                            "titleAr": "الاستمتاع بأطباق موزايك ريستو",
+                            "description": "From street food to fine dining, uncover the diverse and delectable world of this culinary destination.",
+                            "descriptionAr": "من طعام الشارع إلى الطعام الفاخر، اكتشف عالم الطهي المتنوع والشهي في هذه الوجهة الطهوية.",
+                            "author": {
+                                "name": "Nathaniel Reginald",
+                                "nameAr": "ناثانيال ريجنالد",
+                                "imgSrc": "./images/people/person2.jpg"
+                            },
+                            "category": "Culinary",
+                            "categoryAr": "الطهي"
+                        },
+                        {
+                            "id": 1,
+                            "imgSrc": "./images/categorates/clothes.jpg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "A fashionista's guide to wanderlust",
+                            "titleAr": "دليل الموضة لعشاق السفر",
+                            "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                            "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                            "author": {
+                                "name": "Maximilian Bartholomew",
+                                "nameAr": "ماكسيميليان بارتولوميو",
+                                "imgSrc": "./images/people/person2.jpg"
+                            },
+                            "category": "Lifestyle",
+                            "categoryAr": "أسلوب الحياة"
+                        },
+                        {
+                            "id": 2,
+                            "imgSrc": "./images/image1.jpeg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "unveiling the secrets beyond the tourist trails",
+                            "titleAr": "كشف الأسرار وراء المسارات السياحية",
+                            "description": "Dive into the local culture, discover hidden spots, and experience the authentic charm that often goes unnoticed by the mainstream travel crowd.",
+                            "descriptionAr": "استكشف الثقافة المحلية، واكتشف الأماكن المخفية، واستمتع بالجاذبية الأصيلة التي غالبًا ما لا تلاحظها الحشود السياحية.",
+                            "author": {
+                                "name": "Seraphina Isabella",
+                                "nameAr": "سيرافينا إيزابيلا",
+                                "imgSrc": "./images/people/person1.jpg"
+                            },
+                            "category": "Destination",
+                            "categoryAr": "وجهة"
+                        },
+                        {
+                            "id": 3,
+                            "imgSrc": "./images/categorates/tips & tricks.jpg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 mins read",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "10 Essential packing hacks for stress-free travel",
+                            "titleAr": "10 حيل تعبئة أساسية لسفر بدون إجهاد",
+                            "description": "Uncover the secrets to efficient packing that will revolutionize your travel experience.",
+                            "descriptionAr": "اكتشف أسرار التعبئة الفعالة التي ستحدث ثورة في تجربة سفرك.",
+                            "author": {
+                                "name": "Benjamin Augustus",
+                                "nameAr": "بنجامين أوغسطس",
+                                "imgSrc": "./images/people/person6.jpeg"
+                            },
+                            "category": "Tips & Hacks",
+                            "categoryAr": "نصائح وحيل"
+                        },
+                        {
+                            "id": 4,
+                            "imgSrc": "./images/categorates/clothes.jpg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "A fashionista's guide to wanderlust",
+                            "titleAr": "دليل الموضة لعشاق السفر",
+                            "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                            "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                            "author": {
+                                "name": "Maximilian Bartholomew",
+                                "nameAr": "ماكسيميليان بارتولوميو",
+                                "imgSrc": "./images/people/person2.jpg"
+                            },
+                            "category": "Lifestyle",
+                            "categoryAr": "أسلوب الحياة"
+                        },
+                        {
+                            "id": 5,
+                            "imgSrc": "./images/categorates/culinary1.jpg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "wavoring mozaic resto gastronomic delights",
+                            "titleAr": "الاستمتاع بمأكولات موزايك ريستو الفاخرة",
+                            "description": "From street food to fine dining, uncover the diverse and delectable world of this culinary destination.",
+                            "descriptionAr": "من طعام الشارع إلى المطاعم الفاخرة، اكتشف العالم المتنوع والشهي لهذه الوجهة الطهوية.",
+                            "author": {
+                                "name": "Nathaniel Reginald",
+                                "nameAr": "ناثانيال ريجينالد",
+                                "imgSrc": "./images/people/person2.jpg"
+                            },
+                            "category": "Culinary",
+                            "categoryAr": "الطهي"
+                        },
+                        {
+                            "id": 6,
+                            "imgSrc": "./images/categorates/culinary1.jpg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "Experiencing sustainable culinary tourism",
+                            "titleAr": "تجربة السياحة الطهوية المستدامة",
+                            "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                            "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                            "author": {
+                                "name": "Sebastian Montgomery",
+                                "nameAr": "سيباستيان مونتغومري",
+                                "imgSrc": "./images/people/person4.jpeg"
+                            },
+                            "category": "Culinary",
+                            "categoryAr": "الطهي"
+                        },
+                        {
+                            "id": 7,
+                            "imgSrc": "./images/categorates/clothes.jpg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "A Fashionista's guide to wanderlust",
+                            "titleAr": "دليل الموضة لعشاق السفر",
+                            "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                            "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                            "author": {
+                                "name": "Maximilian Bartholomew",
+                                "nameAr": "ماكسيميليان بارتولوميو",
+                                "imgSrc": "./images/people/person2.jpg"
+                            },
+                            "category": "Lifestyle",
+                            "categoryAr": "أسلوب الحياة"
+                        },
+                        {
+                            "id": 8,
+                            "imgSrc": "./images/image2.jpeg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "Journey through time",
+                            "titleAr": "رحلة عبر الزمن",
+                            "description": "Wander through ancient streets, visit iconic landmarks, and immerse yourself in the tales that have shaped history.",
+                            "descriptionAr": "تجول في الشوارع القديمة، وزر المعالم الشهيرة، وانغمس في الحكايات التي شكلت التاريخ.",
+                            "author": {
+                                "name": "Percival Thaddeus",
+                                "nameAr": "برسيفال ثاديوس",
+                                "imgSrc": "./images/people/person3.jpg"
+                            },
+                            "category": "Destination",
+                            "categoryAr": "وجهة"
+                        },
+                        {
+                            "id": 9,
+                            "imgSrc": "./images/categorates/culinary1.jpg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "Experiencing sustainable culinary tourism",
+                            "titleAr": "تجربة السياحة الطهوية المستدامة",
+                            "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                            "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                            "author": {
+                                "name": "Sebastian Montgomery",
+                                "nameAr": "سيباستيان مونتغومري",
+                                "imgSrc": "./images/people/person4.jpeg"
+                            },
+                            "category": "Culinary",
+                            "categoryAr": "الطهي"
+                        },
+                        {
+                            "id": 10,
+                            "imgSrc": "./images/categorates/clothes.jpg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "Navigating the traveler's lifestyle",
+                            "titleAr": "التنقل في نمط حياة المسافر",
+                            "description": "From managing work on the road to finding the best travel gear, discover how to thrive as a full-time traveler.",
+                            "descriptionAr": "من إدارة العمل أثناء السفر إلى العثور على أفضل معدات السفر، اكتشف كيف تزدهر كمسافر بدوام كامل.",
+                            "author": {
+                                "name": "Arabella Serenity",
+                                "nameAr": "أرابيلا سيرينيتي",
+                                "imgSrc": "./images/people/person5.jpg"
+                            },
+                            "category": "Lifestyle",
+                            "categoryAr": "أسلوب الحياة"
+                        },
+                        {
+                            "id": 11,
+                            "imgSrc": "./images/categorates/culinary1.jpg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "Experiencing sustainable culinary tourism",
+                            "titleAr": "تجربة السياحة الطهوية المستدامة",
+                            "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                            "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                            "author": {
+                                "name": "Sebastian Montgomery",
+                                "nameAr": "سيباستيان مونتغومري",
+                                "imgSrc": "./images/people/person4.jpeg"
+                            },
+                            "category": "Culinary",
+                            "categoryAr": "الطهي"
+                        },
+                        {
+                            "id": 12,
+                            "imgSrc": "./images/image1.jpeg",
+                            "date": "20 Jan 2024",
+                            "dateAr": "20 يناير 2024",
+                            "readTime": "8 minutes ago",
+                            "readTimeAr": "منذ 8 دقائق",
+                            "title": "Adrenaline-pumping adventures",
+                            "titleAr": "مغامرات مليئة بالأدرينالين",
+                            "description": "Join us on an exploration of [Adventure Destination], where heart-pounding activities await.",
+                            "descriptionAr": "انضم إلينا في استكشاف وجهات المغامرة، حيث تنتظرك أنشطة مثيرة.",
+                            "author": {
+                                "name": "Calista Gwendolyn",
+                                "nameAr": "كاليستا غويندولين",
+                                "imgSrc": "./images/people/person1.jpg"
+                            },
+                            "category": "Destination",
+                            "categoryAr": "وجهة"
+                        },
+                            {
+                                "id": 13,
+                                "imgSrc": "./images/image2.jpeg",
+                                "date": "20 Jan 2024",
+                                "dateAr": "20 يناير 2024",
+                                "readTime": "8 minutes ago",
+                                "readTimeAr": "منذ 8 دقائق",
+                                "title": "Journey through time",
+                                "titleAr": "رحلة عبر الزمن",
+                                "description": "Wander through ancient streets, visit iconic landmarks, and immerse yourself in the tales that have shaped history.",
+                                "descriptionAr": "تجول في الشوارع القديمة، وزر المعالم الشهيرة، وانغمس في الحكايات التي شكلت التاريخ.",
+                                "author": {
+                                    "name": "Percival Thaddeus",
+                                    "nameAr": "برسيفال ثاديوس",
+                                    "imgSrc": "./images/people/person3.jpg"
+                                },
+                                "category": "Destination",
+                                "categoryAr": "وجهة"
+                            },
+                            {
+                                "id": 14,
+                                "imgSrc": "./images/categorates/culinary1.jpg",
+                                "date": "20 Jan 2024",
+                                "dateAr": "20 يناير 2024",
+                                "readTime": "8 minutes ago",
+                                "readTimeAr": "منذ 8 دقائق",
+                                "title": "Experiencing sustainable culinary tourism",
+                                "titleAr": "تجربة السياحة الطهوية المستدامة",
+                                "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                                "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                                "author": {
+                                    "name": "Sebastian Montgomery",
+                                    "nameAr": "سيباستيان مونتغومري",
+                                    "imgSrc": "./images/people/person4.jpeg"
+                                },
+                                "category": "Culinary",
+                                "categoryAr": "الطهي"
+                            },
+                            {
+                                "id": 15,
+                                "imgSrc": "./images/categorates/clothes.jpg",
+                                "date": "20 Jan 2024",
+                                "dateAr": "20 يناير 2024",
+                                "readTime": "8 minutes ago",
+                                "readTimeAr": "منذ 8 دقائق",
+                                "title": "A fashionista's guide to wanderlust",
+                                "titleAr": "دليل الموضة لعشاق السفر",
+                                "description": "Explore the intersection of fashion and travel as we dive into the wardrobes of globetrotters.",
+                                "descriptionAr": "اكتشف تقاطع الموضة والسفر بينما نتعمق في خزائن المسافرين",
+                                "author": {
+                                    "name": "Maximilian Bartholomew",
+                                    "nameAr": "ماكسيميليان بارتولوميو",
+                                    "imgSrc": "./images/people/person2.jpg"
+                                },
+                                "category": "Lifestyle",
+                                "categoryAr": "أسلوب الحياة"
+                            },
+                            {
+                                "id": 16,
+                                "imgSrc": "./images/categorates/culinary1.jpg",
+                                "date": "20 Jan 2024",
+                                "dateAr": "20 يناير 2024",
+                                "readTime": "8 minutes ago",
+                                "readTimeAr": "منذ 8 دقائق",
+                                "title": "Experiencing sustainable culinary tourism",
+                                "titleAr": "تجربة السياحة الطهوية المستدامة",
+                                "description": "Join us on a sustainable culinary voyage, exploring destinations that prioritize farm-to-table practices.",
+                                "descriptionAr": "انضم إلينا في رحلة طهوية مستدامة، نستكشف فيها وجهات تفضل ممارسات المزرعة إلى الطاولة.",
+                                "author": {
+                                    "name": "Sebastian Montgomery",
+                                    "nameAr": "سيباستيان مونتغومري",
+                                    "imgSrc": "./images/people/person4.jpeg"
+                                },
+                                "category": "Culinary",
+                                "categoryAr": "الطهي"
+                            },
+                            {
+                                "id": 17,
+                                "imgSrc": "./images/categorates/tips & tricks.jpg",
+                                "date": "20 Jan 2024",
+                                "dateAr": "20 يناير 2024",
+                                "readTime": "8 minutes ago",
+                                "readTimeAr": "منذ 8 دقائق",
+                                "title": "Top 5 apps and gadgets that will transform your journeys",
+                                "titleAr": "أفضل 5 تطبيقات وأدوات لتحسين رحلاتك",
+                                "description": "Explore the latest in travel technology with our guide to must-have apps and gadgets.",
+                                "descriptionAr": "استكشف أحدث تقنيات السفر من خلال دليلنا لأهم التطبيقات والأدوات التي يجب امتلاكها.",
+                                "author": {
+                                    "name": "Anastasia Evangeline",
+                                    "nameAr": "أنستازيا إيفانجيلين",
+                                    "imgSrc": "./images/people/person6.jpeg"
+                                },
+                                "category": "Tips & Hacks",
+                                "categoryAr": "نصائح وحيل"
+                            },
+                            {
+                                "id": 18,
+                                "imgSrc": "./images/categorates/culinary1.jpg",
+                                "date": "20 Jan 2024",
+                                "dateAr": "20 يناير 2024",
+                                "readTime": "8 minutes ago",
+                                "readTimeAr": "منذ 8 دقائق",
+                                "title": "Savoring mozaic resto gastronomic delights",
+                                "titleAr": "الاستمتاع بأطباق موزايك ريستو",
+                                "description": "From street food to fine dining, uncover the diverse and delectable world of this culinary destination.",
+                                "descriptionAr": "من طعام الشارع إلى الطعام الفاخر، اكتشف عالم الطهي المتنوع والشهي في هذه الوجهة الطهوية.",
+                                "author": {
+                                    "name": "Nathaniel Reginald",
+                                    "nameAr": "ناثانيال ريجنالد",
+                                    "imgSrc": "./images/people/person2.jpg"
+                                },
+                                "category": "Culinary",
+                                "categoryAr": "الطهي"
+                            }
     
     
 ]

@@ -183,8 +183,8 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   header .search input.open {
-    padding: 1rem;
-    width: 12.75rem;
+    /* padding: 1rem; */
+    /* width: 12.75rem; */
     outline: 0;
   }
 
@@ -303,14 +303,16 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #fff;
   width: 8.5em;
   height: 2.9em;
-  border: #3654ff 0.2em solid;
-  border-radius: 11px;
+  border: white 1px solid;
+  outline: white 1px solid;
+  border-radius: 7px;
   text-align: center;
   transition: all 0.6s ease;
 }
 
 .sign-up:hover {
-  background-color: #3654ff;
+  background-color: white;
+  color: black;
   cursor: pointer;
 }
 
@@ -352,6 +354,16 @@ input[type="search"]::-webkit-search-results-decoration {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
   width: 0;
   z-index: 2;
+  padding: 0 !important;
+  button{
+    background-color: transparent;
+    padding: 5px 35px 5px 10px !important;
+    border-radius: 9px;
+    cursor: pointer;
+    &:hover{
+      background-color: #3333330e;
+    }
+  }
 
 }
 
@@ -362,6 +374,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .lang-card.active {
   width: auto;
+  padding:10px 15px 10px 10px !important;
+
 }
 
 
@@ -435,6 +449,11 @@ a {
   }
 
   &:hover {
+    .img-container{
+    img{
+      transform: scale(1.1);
+    }
+  }
     .go {
       display: block;
     }
@@ -489,12 +508,17 @@ a {
 
 .filter {
   height: fit-content;
+  position: relative;
 }
 
 
 .dropdown{
+  position: relative;
+    -webkit-appearance: none; /* إزالة السهم الافتراضي في متصفحات WebKit */
+    -moz-appearance: none; /* إزالة السهم الافتراضي في Firefox */
+    appearance: none; 
   border-radius: 5px;
-  padding: 5px 30px;
+  padding: 5px 25px;
   background-color: #990000d6;
   border: 0;
   color: white;
@@ -504,6 +528,10 @@ a {
     padding: 10px;
   }
 }
+.droupdown-arrow{
+    right: 20px;
+    width: 30px;
+  }
 
 .back-btn,
 .next-btn {
@@ -533,6 +561,13 @@ h4.category {
   transition: 0.3s;
 }
 
+.swiper-btn{
+  background: linear-gradient(150deg, #000000, #fe0018, #3c406f, #d87cee);
+
+  &.disable{
+  background: rgba(128, 128, 128, 0.15) !important;
+  }
+}
 .blogs .categorates button.active {
   background-color: #990000;
   color: white;
@@ -559,6 +594,11 @@ h4.category {
 .img-container {
   height: 25rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  border-radius: 5px;
+  img{
+    transition: .3s;
+  }
 }
 
 .cards {
@@ -581,14 +621,31 @@ h4.category {
 
 
 .pagination-btn {
-  background: transparent;
-  font-size: 1rem;
+  border-radius: 5px;
+  width: 45px !important;
+  height: 45px !important;
+  box-shadow: 0 .125rem .25rem #00000013;
+  color: rgba(0, 0, 0, 0.641);
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-.pagination-btn.active,
-.pagination-btn:hover {
-  background-color: #f0f0f0;
+.pagination-btn.active
+ {
+  &:hover{
+  background-color: #990000;
+  color: white;
+
+  }
+  background-color: #990000;
+  color: white;
+}
+.pagination-btn:hover{
+  background-color: #eee;
+  color: black;
+
 }
 
 /* End Pagination Styles */
@@ -612,31 +669,19 @@ h4.category {
 .booking img {
   filter: blur(2px);
 }
-
 .booking button {
-  height: fit-content;
-  background-color: white;
+  font-size: 1rem;
   color: black;
-  border-radius: 10em;
-  font-size: 17px;
-  font-weight: 600;
-  padding: 1em 2em;
-  width: fit-content;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #fafafa;
+  background: white;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid black;
-  box-shadow: 0 0 0 0 black;
-
-  &:hover {
-    transform: translateY(-4px) translateX(-2px);
-    box-shadow: 2px 5px 0 0 black;
-  }
-
-  &:active {
-    transform: translateY(2px) translateX(1px);
-    box-shadow: 0 0 0 0 black;
-  }
+  margin: 35px 0;
+  width: fit-content;
 }
+
 
 
 .article::after {
@@ -738,7 +783,10 @@ h4.category {
   padding: 40px 80px;
   margin-top: 80px;
   text-align: center;
-
+    .desc {
+        font-size: 1.15rem;
+        color: #f5d9d9d0;
+    }
   .tag-title {
     text-align: left;
   }
@@ -772,6 +820,9 @@ h4.category {
         transform: translateX(20px);
       }
     }
+  }
+  input{
+    height: 50px;
   }
 }
 @media (max-width:1024px) {

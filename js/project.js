@@ -1,9 +1,9 @@
 import { scrollToTop } from "./scrollToTop.js";
-import {handleLanguage}from "./handleLanguage.js"
-import{openAndClose, openSearchInput}from './openAndClose.js'
+import { handleLanguage } from "./handleLanguage.js"
+import { openAndClose, openSearchInput } from './openAndClose.js'
 import { changeToRtl } from "./changeToRtl.js";
 openSearchInput
-const lang=localStorage.getItem('lang')
+const lang = localStorage.getItem('lang')
 // slides Data
 const slidesData = [
   {
@@ -15,17 +15,19 @@ const slidesData = [
     description: 'An iconic landmark, this post unveils the secrets that make this destination a traveler\'s paradise.',
     descriptionAr: 'معلم بارز، يكشف هذا المنشور الأسرار التي تجعل هذه الوجهة جنة للمسافرين.',
     profile: {
-      name: 'Mohamed Rady',
-      imageSrc: './images/image1.jpeg',
+
       publicationDate: '24 Jan 2024',
       readTime: '10 minutes ago'
     },
     profileAr: {
-      name: 'محمد راضي',
-      imageSrc: './images/image1.jpeg',
+
       publicationDate: '24 يناير 2024',
       readTime: 'منذ 10 دقائق'
     }
+    ,
+    category: "Lifestyle",
+    categoryAr: "أسلوب الحياة"
+
   },
   {
     imageSrc: './images/image4.avif',
@@ -36,18 +38,18 @@ const slidesData = [
     description: 'This post reveals the beauty of untouched beaches and the best spots to visit.',
     descriptionAr: 'يكشف هذا المنشور عن جمال الشواطئ البكر وأفضل الأماكن التي يمكن زيارتها.',
     profile: {
-      name: 'Ahmed Ali',
-      imageSrc: './images/image1.jpeg',
+
       publicationDate: '5 Feb 2024',
       readTime: '8 minutes ago'
     },
     profileAr: {
-      name: 'أحمد علي',
-      imageSrc: './images/image1.jpeg',
+
       publicationDate: '5 فبراير 2024',
       readTime: 'منذ 8 دقائق'
-    }
-  },  
+    },
+    category: "Lifestyle",
+    categoryAr: "أسلوب الحياة"
+  },
   {
     imageSrc: './images/image1.jpeg',
     destination: 'tips & tricks',
@@ -57,17 +59,17 @@ const slidesData = [
     description: 'An iconic landmark, this post unveils the secrets that make this destination a traveler\'s paradise.',
     descriptionAr: 'معلم بارز، يكشف هذا المنشور الأسرار التي تجعل هذه الوجهة جنة للمسافرين.',
     profile: {
-      name: 'Mohamed Rady',
-      imageSrc: './images/image1.jpeg',
+
       publicationDate: '24 Jan 2024',
       readTime: '10 minutes ago'
     },
     profileAr: {
-      name: 'محمد راضي',
-      imageSrc: './images/image1.jpeg',
-      publicationDate: '24 يناير 2024',
-      readTime: 'منذ 10 دقائق'
-    }
+
+      publicationDate: '5 فبراير 2024',
+      readTime: 'منذ 8 دقائق'
+    },
+    category: "Culinary",
+    categoryAr: "الطهي"
   },
   {
     imageSrc: './images/categorates/clothes.jpg',
@@ -78,50 +80,99 @@ const slidesData = [
     description: 'This post reveals the beauty of untouched beaches and the best spots to visit.',
     descriptionAr: 'يكشف هذا المنشور عن جمال الشواطئ البكر وأفضل الأماكن التي يمكن زيارتها.',
     profile: {
-      name: 'Yasser Ali',
-      imageSrc: './images/image1.jpeg',
+
       publicationDate: '5 Feb 2024',
       readTime: '8 minutes ago'
     },
     profileAr: {
-      name: 'ياسر علي',
-      imageSrc: './images/image1.jpeg',
+
       publicationDate: '5 فبراير 2024',
       readTime: 'منذ 8 دقائق'
     }
-  }
+
+    ,
+    category: "Lifestyle",
+    categoryAr: "أسلوب الحياة"
+  },
 ];
 
 // Articles Data
-let articlesData=[];
+let articlesData = [];
 getAttribute()
-function getAttribute(){
-  
-    fetch('./json/articles.json').then(response => response.json()).then(articles=>{
-        articlesData=articles
-        displayArticles(articlesData)
-        displayCategorates()
-    })
-    
+function getAttribute() {
+
+  fetch('./json/articles.json').then(response => response.json()).then(articles => {
+    articlesData = articles
+    displayArticles(articlesData)
+    displayCategorates()
+  })
+
 }
+//search
+const inputField = document.getElementById('searchInput'); 
+let timeout;
+function searchValue(){
+
+  clearTimeout(timeout);
+
+  timeout = setTimeout(() => {
+      console.log(inputField.value); 
+  }, 5000)
+}
+inputField.addEventListener('input', searchValue);
+const searchInput = document.getElementById('searchInput');
+const searchBtn = document.getElementById('searchBtn');
+
+searchInput.addEventListener('input', () => {
+    // إذا كان هناك نص في حقل الإدخال، قم بتغيير الـ SVG
+    if (searchInput.value) {
+        searchBtn.innerHTML = `
+            <svg fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 72 72" enable-background="new 0 0 72 72" xml:space="preserve">
+                <g>
+                    <path d="M53.678,61.824c-2.27,0-4.404-0.885-6.01-2.49L36,47.667L24.332,59.334c-1.604,1.605-3.739,2.49-6.01,2.49 s-4.404-0.885-6.01-2.49c-1.605-1.604-2.49-3.739-2.49-6.01c0-2.271,0.885-4.405,2.491-6.011l11.666-11.667l-10.96-10.961 c-1.605-1.604-2.49-3.739-2.49-6.01s0.885-4.405,2.49-6.01c1.605-1.605,3.739-2.49,6.011-2.49c2.271,0,4.405,0.885,6.01,2.49 L36,23.626l10.96-10.96c1.605-1.605,3.738-2.49,6.01-2.49s4.406,0.885,6.01,2.49c1.605,1.604,2.49,3.739,2.49,6.01 s-0.885,4.405-2.49,6.01L48.021,35.646l11.666,11.668c1.605,1.604,2.49,3.738,2.49,6.01c0,2.271-0.885,4.405-2.49,6.01 C58.084,60.939,55.949,61.824,53.678,61.824z M36,42.839c0.511,0,1.023,0.195,1.414,0.586l13.082,13.081 c0.852,0.851,1.98,1.318,3.182,1.318c1.203,0,2.332-0.468,3.182-1.318c0.852-0.851,1.318-1.98,1.318-3.182 c0-1.202-0.467-2.332-1.318-3.181l-13.08-13.083c-0.781-0.781-0.781-2.047,0-2.828l12.373-12.375 c0.852-0.851,1.318-1.979,1.318-3.182s-0.467-2.331-1.318-3.182c-0.85-0.851-1.98-1.318-3.182-1.318s-2.332,0.468-3.18,1.318 L37.414,27.868c-0.781,0.781-2.046,0.781-2.828,0L22.21,15.494c-0.85-0.851-1.979-1.318-3.181-1.318 c-1.202,0-2.332,0.468-3.182,1.318c-0.851,0.851-1.319,1.979-1.319,3.182s0.469,2.331,1.318,3.182l12.374,12.375 c0.781,0.781,0.781,2.047,0,2.828L15.14,50.143c-0.85,0.85-1.318,1.979-1.318,3.182c0,1.201,0.469,2.331,1.318,3.182 c0.851,0.851,1.98,1.318,3.182,1.318c1.202,0,2.332-0.468,3.182-1.318l13.083-13.081C34.977,43.034,35.489,42.839,36,42.839z"></path>
+                </g>
+            </svg>`;
+    } else {
+        // إذا لم يكن هناك نص، أعد الـ SVG الأصلي
+        searchBtn.innerHTML = `
+            <svg class="position-absolute translate-middle-y top-50" viewBox="0 0 24 24" width="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <path
+                        d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </svg>`;
+    }
+});
+
+searchBtn.addEventListener('click', () => {
+    searchInput.value = ''; // مسح النص في حقل الإدخال
+    searchBtn.innerHTML = `
+        <svg class="position-absolute translate-middle-y top-50" viewBox="0 0 24 24" width="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path
+                    d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </svg>`; // إعادة الـ SVG الأصلي
+});
 
 // Categorates list
-let categorateList= ['All','Lifestyle','Destination','Tips & Hacks','Culinary','Tips & Hacks','Culinary']
-let categorateListAr = [
-  'الكل', 'أسلوب الحياة', 'وجهة', 'نصائح وحيل', 'الطهي','الكل', 'أسلوب الحياة'];
+let categorateList = ['All', 'Lifestyle', 'Destination', 'Tips & Hacks', 'Culinary', 'Tips & Hacks', 'Culinary' , 'Tips & Hacks', 'Culinary', 'Tips & Hacks', 'Culinary'] 
+let categorateListAr = [ 'الكل', 'أسلوب الحياة', 'وجهة', 'نصائح وحيل', 'الطهي', 'الكل', 'أسلوب الحياة', 'أسلوب الحياة', 'وجهة', 'نصائح وحيل', 'الطهي', 'الكل'];
 //Start DisplayContent
-function displaycontent(slidesData){
+function displaycontent(slidesData) {
 
-    const list=document.querySelector('.list');
-    if (!list) return
-    slidesData.forEach((data,index)=>{
-      const destination =lang==='ar'? data.destinationAr:data.destination;
-      const title =lang==='ar'?data.titleAr: data.title;
-      const description =lang==='ar'?data.descriptionAr: data.description;
-      const profileName =lang==='ar'?data.profileAr.name:data.profile.name;
-      const publicationDate =lang==='ar'?data.profileAr.publicationDate:  data.profile.publicationDate;
-      const readTime =lang==='ar'?data.profileAr.readTime:data.profile.readTime;
-        list.innerHTML+=`  
+  const list = document.querySelector('.list');
+  if (!list) return
+  slidesData.forEach((data, index) => {
+    const destination = lang === 'ar' ? data.destinationAr : data.destination;
+    const title = lang === 'ar' ? data.titleAr : data.title;
+    const description = lang === 'ar' ? data.descriptionAr : data.description;
+    const category = lang === 'ar' ? data.categoryAr : data.category;
+    const publicationDate = lang === 'ar' ? data.profileAr.publicationDate : data.profile.publicationDate;
+    const readTime = lang === 'ar' ? data.profileAr.readTime : data.profile.readTime;
+    list.innerHTML += `  
 
   <div class="item position-relative overflow-hidden" style="min-width:100%;">
     <img src="${data.imageSrc}" class="w-100 h-100 object-fit-cover" alt="${title}">
@@ -137,8 +188,17 @@ function displaycontent(slidesData){
       </div>
       <div class="profile position-relative mt-4 d-flex flex-column gap-3 align-self-center ">
         <div class="name d-flex align-items-center gap-2 cursor-pointer">
-          <img src="${data.profile.imageSrc ||'./images/default.jpg'}" class="rounded-circle" style="width: 30px; height: 30px;" alt="${profileName}">
-          <p class="fw-bold my-auto">${profileName}</p>
+        <svg class="no-rotate" width="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g stroke-width="0"></g>
+                <g stroke-linecap="round" stroke-linejoin="round"></g>
+                <g>
+                    <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </svg>
+            <p class="fw-bold my-auto">${category}</p>
         </div>
         <div class="date d-flex  align-items-center position-relative fw-normal opacity-75 gap-4">
           <span class="Publication-date d-flex align-items-center gap-2">
@@ -152,18 +212,18 @@ function displaycontent(slidesData){
     </div>
   </div>
         `
-    const sliderDots=document.querySelector('.slider-dots')
+    const sliderDots = document.querySelector('.slider-dots')
     if (sliderDots) {
-        let sliderDot=document.createElement('span')
-        sliderDot.classList.add('dot')
-        if (index === 0) {
-            sliderDot.classList.add('active');
-        }
-        sliderDots.appendChild(sliderDot)
+      let sliderDot = document.createElement('span')
+      sliderDot.classList.add('dot')
+      if (index === 0) {
+        sliderDot.classList.add('active');
       }
-    });
-    
-    getIndex();
+      sliderDots.appendChild(sliderDot)
+    }
+  });
+
+  getIndex();
 
 }
 
@@ -172,10 +232,10 @@ function displaycontent(slidesData){
 
 
 // Start Display Categorates Function
-  
 function displayCategorates() {
   let categoratesDiv = document.querySelector('.categorates');
   if (!categoratesDiv) return;
+
   let categorateName = lang === 'ar' ? categorateListAr : categorateList;
 
   categorateName.forEach((categorate, i) => {
@@ -198,16 +258,92 @@ function displayCategorates() {
   });
 
   const swiperBtns = document.querySelectorAll('.swiper-btn');
+  categoratesDiv.addEventListener('scroll', () => {
+    console.log(-categoratesDiv.scrollLeft)
+    updateSwiperBtnsVisibility();
+  
+});
   swiperBtns.forEach(btn => {
       btn.addEventListener('click', () => {
           const firstCategorateBtnWidth = document.querySelector('.categorates button').clientWidth;
-          categoratesDiv.scrollLeft += btn.classList.contains('back-btn') ? -firstCategorateBtnWidth : firstCategorateBtnWidth;
 
+          // Scroll the categoratesDiv left or right
+          if (btn.classList.contains('back-btn')) {
+            categoratesDiv.scrollBy({ left: -firstCategorateBtnWidth, behavior: 'smooth' });
+        } else {
+            categoratesDiv.scrollBy({ left: firstCategorateBtnWidth, behavior: 'smooth' });
+        }
+          updateSwiperBtnsVisibility();
       });
   });
 
-  updateSwiperBtnsVisibility(); // Call to set initial button visibility
+  
+  function updateSwiperBtnsVisibility() {
+      const backBtn = document.querySelector('.back-btn');
+      const nextBtn = document.querySelector('.next-btn');
+
+      // Check if we are at the start
+      if(lang!='ar'){
+
+      if (categoratesDiv.scrollLeft === 0) {
+          backBtn.disabled = true; 
+          backBtn.style.opacity = '.4'; 
+          backBtn.style.cursor = 'default'; 
+
+
+      } else {
+          backBtn.disabled = false; // Enable back button
+          backBtn.style.opacity = '1'; // Visual indication of disabled state
+          backBtn.style.cursor = 'pointer'; // Visual indication of disabled state
+      }
+
+      // Check if we are at the end
+      const maxScrollLeft = categoratesDiv.scrollWidth - categoratesDiv.clientWidth;
+      if (categoratesDiv.scrollLeft >= maxScrollLeft-1) {
+          nextBtn.disabled = true; // Disable next button
+          nextBtn.style.opacity = '.4'; // Visual indication of disabled state
+          nextBtn.style.cursor = 'default'; // Visual indication of disabled state
+
+      } else {
+          nextBtn.disabled = false; // Enable next button
+          nextBtn.style.opacity = '1'; // Visual indication of disabled state
+          nextBtn.style.cursor = 'pointer'; // Visual indication of disabled state
+
+      }
+    }
+      if(lang=='ar'){
+      const maxScrollLeft = categoratesDiv.scrollWidth - categoratesDiv.clientWidth;
+        
+        if (-categoratesDiv.scrollLeft >= maxScrollLeft-1) {
+          backBtn.disabled = true; // Disable back button
+          backBtn.style.opacity = '.4'; // Visual indication of disabled state
+          backBtn.style.cursor = 'default'; // Visual indication of disabled state
+
+      } else {
+          backBtn.disabled = false; // Enable back button
+          backBtn.style.opacity = '1'; // Visual indication of disabled state
+          backBtn.style.cursor = 'pointer'; // Visual indication of disabled state
+      }
+
+        if (categoratesDiv.scrollLeft == 0) {
+          nextBtn.disabled = true; // Disable next button
+          nextBtn.style.opacity = '.4'; // Visual indication of disabled state
+          nextBtn.style.cursor = 'default'; // Visual indication of disabled state
+
+      } else {
+          nextBtn.disabled = false; // Enable next button
+          nextBtn.style.opacity = '1'; // Visual indication of disabled state
+          nextBtn.style.cursor = 'pointer'; // Visual indication of disabled state
+
+      }
+      }
+  }
+
+  // Initial call to set button visibility
+  updateSwiperBtnsVisibility();
+  
 }
+
 
 // Update visibility of swiper buttons
 function updateSwiperBtnsVisibility() {
@@ -222,19 +358,19 @@ function updateSwiperBtnsVisibility() {
   const visibleButtons = Math.floor(categoratesDiv.clientWidth / buttonWidth);
 
   if (screenWidth >= 1024) {
-      if (visibleButtons < 5) {
-          swiperBtns.forEach(btn => btn.style.display = 'none');
-      } else {
-          swiperBtns.forEach(btn => btn.style.display = 'block');
-      }
-  } else if (screenWidth >= 768 && screenWidth < 1024) {
-      if (visibleButtons < 4) {
-          swiperBtns.forEach(btn => btn.style.display = 'none');
-      } else {
-          swiperBtns.forEach(btn => btn.style.display = 'block');
-      }
-  } else {
+    if (visibleButtons < 5) {
+      swiperBtns.forEach(btn => btn.style.display = 'none');
+    } else {
       swiperBtns.forEach(btn => btn.style.display = 'block');
+    }
+  } else if (screenWidth >= 768 && screenWidth < 1024) {
+    if (visibleButtons < 4) {
+      swiperBtns.forEach(btn => btn.style.display = 'none');
+    } else {
+      swiperBtns.forEach(btn => btn.style.display = 'block');
+    }
+  } else {
+    swiperBtns.forEach(btn => btn.style.display = 'block');
   }
 }
 
@@ -243,149 +379,161 @@ window.addEventListener('resize', updateSwiperBtnsVisibility);
 
 //Start GetSort function
 
-function getSortBy(){
+function getSortBy() {
   if (typeof window === 'undefined') return;
   const selectElement = document.getElementById('select');
 
   selectElement.addEventListener('change', (event) => {
     const selectedValue = event.target.value;
     console.log(selectedValue);
-  });}
+  });
+}
 
 //End GetSort function
 
 //Start Pagination function
-let currentPage=1;
-let itemsPerPage=9;
-let NumberOfPages=Math.ceil(articlesData/itemsPerPage)
+let currentPage = 1;
+let itemsPerPage = 9;
+let NumberOfPages = Math.ceil(articlesData / itemsPerPage)
 let filteredData = articlesData;
 
 // Function to display pagination buttons and manage pagination behavior
 function displayPagination() {
-    const pagination = document.querySelector('.pagination');
-    pagination.innerHTML = '';
-    // Create and append back button if currentPage > 1
-    if (currentPage > 1) {
-        const backButton = document.createElement('button');
-        backButton.classList.add('pagination-btn', 'p-1', 'rounded');
-        backButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs"><path d="M15 18l-6-6 6-6"></path></svg>';
+  const pagination = document.querySelector('.pagination');
+  pagination.innerHTML = '';
+  // Create and append back button if currentPage > 1
+  const backButton = document.createElement('button');
+  backButton.classList.add('pagination-btn', 'p-1', 'rounded');
+  backButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs"><path d="M15 18l-6-6 6-6"></path></svg>';
 
-        backButton.addEventListener('click', () => {
-                currentPage--;
-                displayArticles(filteredData);
-                displayPagination();
-                const blogsElement = document.querySelector('.blogs');
-                blogsElement.scrollIntoView({ behavior: 'smooth' });
-        });
+  backButton.addEventListener('click', () => {
+    currentPage--;
+    displayArticles(filteredData);
+    displayPagination();
+    const blogsElement = document.querySelector('.blogs');
+    blogsElement.scrollIntoView({ behavior: 'smooth' });
+  });
 
-        pagination.appendChild(backButton);
-    }
-
-    // Create and append pagination number buttons
-    if(NumberOfPages>1){
+  if(NumberOfPages>1){
+  pagination.appendChild(backButton);
+}
+  if (currentPage <= 1) {
+    backButton.classList.add('disabled')
+    backButton.style.opacity = '.5'
+    backButton.style.cursor = 'default'
+    backButton.setAttribute('disabled', 'true')
+  }
+  // Create and append pagination number buttons
+  if (NumberOfPages > 1) {
     for (let i = 1; i <= NumberOfPages; i++) {
-        const pageNumberBtn = document.createElement('button');
-        pageNumberBtn.classList.add('pagination-btn', 'px-3','py-1', 'my-0', 'mx-1', 'border-0', 'rounded', 'cursor-pointer', 'fw-bold');
-        pageNumberBtn.textContent = i;
+      const pageNumberBtn = document.createElement('button');
+      pageNumberBtn.classList.add('pagination-btn', 'px-3', 'py-1', 'my-0', 'mx-1', 'border-0', 'rounded', 'cursor-pointer', 'fw-bold');
+      pageNumberBtn.textContent = i;
 
-        // Highlight current page as active
-        if (i === currentPage) {
-            pageNumberBtn.classList.add('active');
-        }
+      // Highlight current page as active
+      if (i === currentPage) {
+        pageNumberBtn.classList.add('active');
+      }
 
-        // Logic for showing pages
-        if (
-            i ===1 || 
-            i === NumberOfPages ||
-            (currentPage === 1 && i <= 3) || // Always show the last page
-            (i >= currentPage - 1 && i <= currentPage + 1) // Show current page and neighbors
-        ) {
-            pageNumberBtn.addEventListener('click', () => {
-                currentPage = i;
-                displayArticles(filteredData);
-                displayPagination();
+      // Logic for showing pages
+      if (
+        i === 1 ||
+        i === NumberOfPages ||
+        (currentPage === 1 && i <= 3) || // Always show the last page
+        (i >= currentPage - 1 && i <= currentPage + 1) // Show current page and neighbors
+      ) {
+        pageNumberBtn.addEventListener('click', () => {
+          currentPage = i;
+          displayArticles(filteredData);
+          displayPagination();
 
-                const blogsElement = document.querySelector('.blogs');
-                blogsElement.scrollIntoView({ behavior: 'smooth' });            
-            });
-
-            pagination.appendChild(pageNumberBtn);
-        } else if (i === currentPage + 3 || (i === 2 && currentPage > 3)) {
-            const dots = document.createElement('span');
-            dots.classList.add('my-auto','pagination-dots');
-            dots.textContent = '...';
-            pagination.appendChild(dots);
-        }
-    }}
-
-    // Create and append next button if currentPage < NumberOfPages
-    if (currentPage < NumberOfPages) {
-        const nextButton = document.createElement('button');
-        nextButton.classList.add('pagination-btn', 'p-1','fs-5', 'rounded');
-        nextButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs"><path d="M9 18l6-6-6-6"></path></svg>';
-
-        nextButton.addEventListener('click', () => {
-                currentPage++;
-                displayArticles(filteredData);
-                displayPagination();
-                
-            const blogsElement = document.querySelector('.blogs');
-            blogsElement.scrollIntoView({ behavior: 'smooth' });
+          const blogsElement = document.querySelector('.blogs');
+          blogsElement.scrollIntoView({ behavior: 'smooth' });
         });
 
-        pagination.appendChild(nextButton);
-        
+        pagination.appendChild(pageNumberBtn);
+      } else if (i === currentPage + 3 || (i === 2 && currentPage > 3)) {
+        const dots = document.createElement('span');
+        dots.classList.add('my-auto', 'pagination-dots');
+        dots.textContent = '...';
+        pagination.appendChild(dots);
+      }
     }
+  }
+
+  // Create and append next button if currentPage < NumberOfPages
+  const nextButton = document.createElement('button');
+  nextButton.classList.add('pagination-btn', 'p-1', 'fs-5', 'rounded');
+  nextButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs"><path d="M9 18l6-6-6-6"></path></svg>';
+
+  nextButton.addEventListener('click', () => {
+    currentPage++;
+    displayArticles(filteredData);
+    displayPagination();
+
+    const blogsElement = document.querySelector('.blogs');
+    blogsElement.scrollIntoView({ behavior: 'smooth' });
+  });
+  if(NumberOfPages>1){
+  pagination.appendChild(nextButton);
+}
+  if (currentPage == NumberOfPages) {
+    nextButton.classList.add('disabled')
+    nextButton.style.opacity = '.5'
+    nextButton.style.cursor = 'default'
+    nextButton.setAttribute('disabled', 'true')
+  }
+
 }
 
 // Function to filter data based on category
 
 function filterData(category) {
   if (typeof window === 'undefined') return;
-    document.querySelectorAll('.categorate-button').forEach(btn=>{
-        btn.classList.remove('active')
-    })
-    if (category !== 'All'&&category !== 'الكل') {
-        filteredData = articlesData.filter(article=> lang === 'ar' ? article.categoryAr === category : article.category === category          );
-    }else{
-        filteredData = articlesData
-    }
-    NumberOfPages = Math.ceil(filteredData.length / itemsPerPage);
-    currentPage = 1;
-    displayArticles(filteredData)
-        displayPagination();
+  document.querySelectorAll('.categorate-button').forEach(btn => {
+    btn.classList.remove('active')
+  })
+  if (category !== 'All' && category !== 'الكل') {
+    filteredData = articlesData.filter(article => lang === 'ar' ? article.categoryAr === category : article.category === category);
+  } else {
+    filteredData = articlesData
+  }
+  NumberOfPages = Math.ceil(filteredData.length / itemsPerPage);
+  currentPage = 1;
+  displayArticles(filteredData)
+  displayPagination();
 }
 
 // Function to display articles based on current page
 
-function displayArticles(articlesData){
+function displayArticles(articlesData) {
   if (typeof window === 'undefined') return;
-    const cards=document.querySelector('.cards');
-    cards.innerHTML = ''; 
+  const cards = document.querySelector('.cards');
+  cards.innerHTML = '';
 
-    //Get the start index and end index of the number of data to display.
+  //Get the start index and end index of the number of data to display.
 
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
-    const paginatedData = articlesData.slice(startIndex, endIndex);
-    paginatedData.forEach(article=>{
-      const category =lang==='ar'?article.categoryAr:article.category;
-      const title = lang==='ar'?article.titleAr:article.title;
-      const description = lang==='ar'?article.descriptionAr:article.description;
-      const publicationDate =  lang==='ar'?article.dateAr:article.date;
-      const readTime =  lang==='ar'?article.readTimeAr:article.readTime;
-    const card=document.createElement('div');
-    card.classList.add('card','border-0','py-2', 'col-12','col-md-6' ,'col-lg-4')
-    card.innerHTML=`      
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const paginatedData = articlesData.slice(startIndex, endIndex);
+  paginatedData.forEach(article => {
+    const category = lang === 'ar' ? article.categoryAr : article.category;
+    const title = lang === 'ar' ? article.titleAr : article.title;
+    const description = lang === 'ar' ? article.descriptionAr : article.description;
+    const publicationDate = lang === 'ar' ? article.dateAr : article.date;
+    const readTime = lang === 'ar' ? article.readTimeAr : article.readTime;
+    const card = document.createElement('div');
+    card.classList.add('card', 'border-0', 'py-2', 'col-12', 'col-md-6', 'col-lg-4')
+    card.innerHTML = `      
 <a href="article details.html?id=${article.id}" class="text-black text-decoration-none">
       <div class="img-container">
-            <img class="card-img w-100 h-100 object-fit-cover rounded-2" src="${article.imgSrc||'./images/default.jpg'} " alt="${article.title}" />
+            <img class="card-img w-100 h-100 object-fit-cover rounded-2" src="${article.imgSrc || './images/default.jpg'} " alt="${article.title}" />
           <h4 class="category fs-6 py-2 px-3 d-inline position-absolute rounded-pill text-truncate">${category}</h4>
       </div>
             <div class="card-body d-flex flex-column  justify-content-between">
               <div class="d-flex flex-column justify-content-between flex-grow-1">
               <div>
-              <div class="date d-flex align-items-center mb-3 mt-2  position-relative fs-6 fw-normal opacity-75 gap-4">
+              <div class="date d-flex align-items-center my-1  position-relative fs-6 fw-normal opacity-75 gap-4">
                 <span class="Publication-date d-flex gap-2 align-items-center"> 
                 <svg class="no-rotate" fill="#000000" width="18" viewBox="0 0 35 35" data-name="Layer 2" id="a866a81f-2948-4418-8bd5-1a5193c5f74e" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M29.545,34.75H5.455a5.211,5.211,0,0,1-5.2-5.2V8.56a5.21,5.21,0,0,1,5.205-5.2h24.09a5.21,5.21,0,0,1,5.2,5.205V29.545A5.211,5.211,0,0,1,29.545,34.75ZM5.455,5.855A2.708,2.708,0,0,0,2.75,8.56V29.545a2.709,2.709,0,0,0,2.705,2.7h24.09a2.708,2.708,0,0,0,2.7-2.7V8.56a2.707,2.707,0,0,0-2.7-2.7Z"></path><path d="M33.5,17.331H1.541a1.25,1.25,0,0,1,0-2.5H33.5a1.25,1.25,0,0,1,0,2.5Z"></path><path d="M9.459,9.155a1.249,1.249,0,0,1-1.25-1.25V1.5a1.25,1.25,0,0,1,2.5,0V7.905A1.25,1.25,0,0,1,9.459,9.155Z"></path><path d="M25.542,9.155a1.249,1.249,0,0,1-1.25-1.25V1.5a1.25,1.25,0,0,1,2.5,0V7.905A1.25,1.25,0,0,1,25.542,9.155Z"></path></g></svg>
                 ${publicationDate} </span>
@@ -393,9 +541,9 @@ function displayArticles(articlesData){
                 <svg fill="#000000" width="18" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M256,0C114.84,0,0,114.84,0,256s114.84,256,256,256s256-114.84,256-256S397.16,0,256,0z M423.127,396.636l-30.258-30.258 l-26.49,26.49l30.258,30.258c-33.551,28.279-75.697,46.657-121.905,50.598v-42.896h-37.463v42.896 c-46.207-3.941-88.354-22.319-121.905-50.598l30.258-30.258l-26.49-26.49l-30.258,30.258 c-28.279-33.551-46.657-75.697-50.598-121.905h42.896v-37.463H38.275c3.941-46.207,22.319-88.354,50.598-121.905l30.258,30.258 l26.49-26.49l-30.258-30.258c33.551-28.279,75.697-46.657,121.905-50.598v42.896h37.463V38.275 c46.207,3.941,88.354,22.319,121.905,50.598l-30.258,30.258l26.49,26.49l30.258-30.258 c28.279,33.551,46.657,75.697,50.598,121.905h-42.896v37.463h42.896C469.784,320.939,451.405,363.085,423.127,396.636z"></path> </g> </g> <g> <g> <polygon points="274.732,237.268 274.732,118.634 237.268,118.634 237.268,274.732 355.902,274.732 355.902,237.268 "></polygon> </g> </g> </g></svg> 
                 ${readTime} </span>
               </div>
-                      <h4 class="card-title text-truncate fs-3 mb-2">${title}</h4>
+                      <h4 class="card-title text-truncate fs-3 mb-1">${title}</h4>
               <div class="description">
-                <p class="card-text fs-6 overflow-hidden opacity-75 lh-base mb-3">
+                <p class="card-text fs-6 overflow-hidden opacity-75 lh-base mb-2">
                   ${description}
                 </p>
               </div>
@@ -420,95 +568,95 @@ function displayArticles(articlesData){
             </div>
 </a>
         `
-        cards.appendChild(card)
-    })
+    cards.appendChild(card)
+  })
 
 }
 
 let currentIndex = 0;
 
 // Function to get the current index of the slider from the dot buttons
-function getIndex(){
-    const sliderDots = document.querySelectorAll('.slider-dots .dot'); 
+function getIndex() {
+  const sliderDots = document.querySelectorAll('.slider-dots .dot');
 
-        sliderDots.forEach((dot,i)=>{
-            dot.addEventListener('click',()=>{
-                currentIndex=i;
-                showSlide(currentIndex);
-                console.log(currentIndex)
-            })
+  sliderDots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      currentIndex = i;
+      showSlide(currentIndex);
+      console.log(currentIndex)
     })
+  })
 
 }
 // End get index From dot button funcion
 
 // Function to automatically transition to the next slide every 5 seconds
-function autoSlide(){
-    const slides =document.querySelectorAll('.list .item')
-    setInterval(()=>{
-                currentIndex = (currentIndex + 1) % slides.length;
+function autoSlide() {
+  const slides = document.querySelectorAll('.list .item')
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
 
-                showSlide(currentIndex);
-    },5000)
+    showSlide(currentIndex);
+  }, 5000)
 }
 // Function to show the slide corresponding to the given index
 function showSlide(index) {
-    const list =document.querySelector('.slider .list');
-    const X =window.localStorage.getItem('lang')=='ar'? index * 100:-index * 100;
-    list.style.transform = `translateX(${X}%)`;
-    updateActiveDot(index); 
+  const list = document.querySelector('.slider .list');
+  const X = window.localStorage.getItem('lang') == 'ar' ? index * 100 : -index * 100;
+  list.style.transform = `translateX(${X}%)`;
+  updateActiveDot(index);
 }
 
 // Function to update the active dot based on the current slide
 function updateActiveDot(index) {
   if (typeof window === 'undefined') return;
-    const sliderDots = document.querySelectorAll('.slider-dots .dot'); 
-    sliderDots.forEach(dot => dot.classList.remove('active'));
-    sliderDots[index].classList.add('active');
+  const sliderDots = document.querySelectorAll('.slider-dots .dot');
+  sliderDots.forEach(dot => dot.classList.remove('active'));
+  sliderDots[index].classList.add('active');
 
 }
 
-function initializePageLanguage(){
+function initializePageLanguage() {
   if (typeof window === 'undefined') return;
-    changeToRtl('./css/style-rtl.css');
-    if(localStorage.getItem('lang')==='ar'){
-      //  Fixing next and back buttons
-      document.querySelectorAll('.swiper-btn').forEach((btn, index) => {
-        btn.classList.replace(index === 0 ? 'back-btn' : 'next-btn', index === 0 ? 'next-btn' : 'back-btn');
-      });
-      
-    }
+  changeToRtl('./css/style-rtl.css');
+  if (localStorage.getItem('lang') === 'ar') {
+    //  Fixing next and back buttons
+    document.querySelectorAll('.swiper-btn').forEach((btn, index) => {
+      btn.classList.replace(index === 0 ? 'back-btn' : 'next-btn', index === 0 ? 'next-btn' : 'back-btn');
+    });
+
+  }
 }
 
 function changeToArabic(lang) {
   if (typeof window === 'undefined') return;
   if (lang === 'ar') {
-      const navBarLinks = document.querySelectorAll('#navBarLinks li a');
+    const navBarLinks = document.querySelectorAll('#navBarLinks li a');
 
-      navBarLinks[0].innerHTML = 'فندق';         
-      navBarLinks[1].innerHTML = 'رحلة';         
-      navBarLinks[2].innerHTML = 'قطار';         
-      navBarLinks[3].innerHTML = 'سفر';          
-      navBarLinks[4].innerHTML = 'تأجير سيارات'; 
+    navBarLinks[0].innerHTML = 'فندق';
+    navBarLinks[1].innerHTML = 'رحلة';
+    navBarLinks[2].innerHTML = 'قطار';
+    navBarLinks[3].innerHTML = 'سفر';
+    navBarLinks[4].innerHTML = 'تأجير سيارات';
 
-    const registerBtns=document.querySelectorAll("#register button")
-    registerBtns[0].innerHTML = 'تسجيل دخول';         
-    registerBtns[1].innerHTML = 'اشتراك'; 
+    const registerBtns = document.querySelectorAll("#register button")
+    registerBtns[0].innerHTML = 'تسجيل دخول';
+    registerBtns[1].innerHTML = 'اشتراك';
 
-    const BlogTile=document.querySelector('#blogText h2')
-    const BlogParagraph=document.querySelector('#blogText p')
-    BlogTile.innerHTML='مدونات'
-    BlogParagraph.innerHTML='نشارك هنا نصائح السفر وأدلة الوجهات والقصص التي إلهام مغامرتك القادمة.'
+    const BlogTile = document.querySelector('#blogText h2')
+    const BlogParagraph = document.querySelector('#blogText p')
+    BlogTile.innerHTML = 'مدونات'
+    BlogParagraph.innerHTML = 'نشارك هنا نصائح السفر وأدلة الوجهات والقصص التي إلهام مغامرتك القادمة.'
 
-    const sortTitle=document.querySelector('#sortTitle')
-    const sortOptions=document.querySelectorAll('#sort select option')
+    const sortTitle = document.querySelector('#sortTitle')
+    const sortOptions = document.querySelectorAll('#sort select option')
 
-    sortTitle.innerHTML='الترتيب حسب:'
-    sortOptions[0].innerHTML='الكل'
-    sortOptions[1].innerHTML='اخر المدونات'
-    sortOptions[2].innerHTML='اقدم المدونات'
-    sortOptions[3].innerHTML='اشهر المدونات'
-    
+    sortTitle.innerHTML = 'الترتيب حسب:'
+    sortOptions[0].innerHTML = 'الكل'
+    sortOptions[1].innerHTML = 'اخر المدونات'
+    sortOptions[2].innerHTML = 'اقدم المدونات'
+    sortOptions[3].innerHTML = 'اشهر المدونات'
+
     const bookingTitle = document.querySelector('#booking h2');
     const bookingDescription = document.querySelector('#booking p');
     const bookingButton = document.querySelector('#booking button');
@@ -521,7 +669,7 @@ function changeToArabic(lang) {
     const articleCount = document.querySelector('#article h3');
 
     articleText.innerHTML = 'مقالات متاحة';
-    articleCount.innerHTML = '78'; 
+    articleCount.innerHTML = '78';
 
     const beyondTitle = document.querySelector('#beyond h2');
 
@@ -546,19 +694,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to toggle the menu list when the dashboard button is clicked
 
-  openAndClose('dash','ul','active','.close-btn',['#searchInput'],'open');
+  openAndClose('dash', 'ul', 'active', '.close-btn', ['#searchInput'], 'open');
 
   // Function to toggle the search input field when the search button is clicked
-  
-  openSearchInput('searchBtn','#searchInput','open',null,['ul'],'active');
-  
+
+  openSearchInput('searchBtn', '#searchInput', 'open', null, ['ul'], 'active');
+
 
   // Open And Close Language Menu
-  openAndClose(['langButton','langFlag','langImg'],'#languagesCard','active');
-  
+  openAndClose(['langButton', 'langFlag', 'langImg'], '#languagesCard', 'active');
+
   handleLanguage('#languagesCard button');
   initializePageLanguage(); // Ensure language settings are applied
-  scrollToTop('toTop','opacity-1','opacity-0')
+  scrollToTop('toTop', 'opacity-1', 'opacity-0')
   changeToArabic(lang)
   autoSlide()
 

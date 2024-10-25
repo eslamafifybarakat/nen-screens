@@ -83,3 +83,24 @@ a {
     }
   }
 }
+.droupdown-arrow{
+  left: 25px;
+  right: inherit;
+}
+.lang-card {
+
+  button{
+    padding: 5px 10px 5px 35px !important;
+  }
+
+}
+
+.dd ul {
+  gap: 0px;
+  top: 0;
+}
+
+.lang-card.active {
+  padding:10px 10px 10px 15px !important;
+
+}

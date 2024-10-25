@@ -12,6 +12,10 @@
     <title>article details</title>
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/details.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="icon" href="./images/logo.svg" type="image/x-icon">
+
+
     <script src="./js/bootstrap.bundle.min.js" defer></script>
     <script src="./js/details.js" type="module" defer></script>
 
@@ -80,7 +84,7 @@
                 </span>
                 <span id="lang" class="fs-6 m-auto">English</span>
             </button>
-            <div id="languagesCard" class="language lang-card overflow-hidden position-absolute">
+            <div id="languagesCard" class="p-lg-3 language lang-card overflow-hidden position-absolute">
                 <button class="text-black w-100 p-3 d-flex gap-1 align-items-center" name="english"
                     aria-label="Switch to English">
                     <span class="lang-img-container d-flex" style="width: 40px; height: 40px;">
@@ -107,8 +111,18 @@
     <div class="page px-lg-3 pb-3">
         <!-- bread-crumb -->
 
-        <div class="bread-crumb" id="breadCrumb">
-            <span><a href="index.html" class=" text-dark">Home</a></span>
+        <div class="bread-crumb fs-6" id="breadCrumb">
+            <span><a href="index.html" class=" text-dark d-flex gap-1 align-items-center">
+                    <svg width="40" class="no-rotate" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.18753 11.3788C4.03002 11.759 4 11.9533 4 12V20.0018C4 20.5529 4.44652 21 5 21H8V15C8 13.8954 8.89543 13 10 13H14C15.1046 13 16 13.8954 16 15V21H19C19.5535 21 20 20.5529 20 20.0018V12C20 11.9533 19.97 11.759 19.8125 11.3788C19.6662 11.0256 19.4443 10.5926 19.1547 10.1025C18.5764 9.1238 17.765 7.97999 16.8568 6.89018C15.9465 5.79788 14.9639 4.78969 14.0502 4.06454C13.5935 3.70204 13.1736 3.42608 12.8055 3.2444C12.429 3.05862 12.1641 3 12 3C11.8359 3 11.571 3.05862 11.1945 3.2444C10.8264 3.42608 10.4065 3.70204 9.94978 4.06454C9.03609 4.78969 8.05348 5.79788 7.14322 6.89018C6.23505 7.97999 5.42361 9.1238 4.8453 10.1025C4.55568 10.5926 4.33385 11.0256 4.18753 11.3788ZM10.3094 1.45091C10.8353 1.19138 11.4141 1 12 1C12.5859 1 13.1647 1.19138 13.6906 1.45091C14.2248 1.71454 14.7659 2.07921 15.2935 2.49796C16.3486 3.33531 17.4285 4.45212 18.3932 5.60982C19.3601 6.77001 20.2361 8.0012 20.8766 9.08502C21.1963 9.62614 21.4667 10.1462 21.6602 10.6134C21.8425 11.0535 22 11.5467 22 12V20.0018C22 21.6599 20.6557 23 19 23H16C14.8954 23 14 22.1046 14 21V15H10V21C10 22.1046 9.10457 23 8 23H5C3.34434 23 2 21.6599 2 20.0018V12C2 11.5467 2.15748 11.0535 2.33982 10.6134C2.53334 10.1462 2.80369 9.62614 3.12345 9.08502C3.76389 8.0012 4.63995 6.77001 5.60678 5.60982C6.57152 4.45212 7.65141 3.33531 8.70647 2.49796C9.2341 2.07921 9.77521 1.71454 10.3094 1.45091Z"
+                                fill="#0F0F0F"></path>
+                        </g>
+                    </svg><span id="home"> Home</span></a></span>
             <svg height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g stroke-width="0"></g>
                 <g stroke-linecap="round" stroke-linejoin="round"></g>
@@ -118,7 +132,7 @@
                         fill="#000000"></path>
                 </g>
             </svg>
-            <span><a href="#" class=" text-dark">Blogs </a></span>
+            <span><a href="./index.html#blogList" class=" text-dark">Blogs </a></span>
         </div>
         <!-- End bread-crumb -->
         <div class="img-container" id="imgContainer"></div>
@@ -126,12 +140,22 @@
 
 
             <!-- start Article -->
-            <div id="articleTitle" class="article-title">
-                <h1></h1>
+            <div class=" d-flex align-items-center justify-content-between">
+                <div>
+                    <div id="articleTitle" class="article-title">
+                        <h1></h1>
 
-            </div>
-            <div class="author d-flex gap-4 flex-wrap flex-row justify-content-between">
-                <div class="author-content align-items-center  flex-grow-1 d-flex flex-row gap-3" id="authorContent">
+                    </div>
+                    <div class="category mt-4 mb-2 d-flex gap-4 flex-wrap flex-row justify-content-between">
+                        <div class="category-content align-items-center  flex-grow-1 d-flex flex-row gap-3"
+                            id="categoryContent">
+                        </div>
+                    </div>
+                </div>
+                <div class="category d-flex gap-4 flex-wrap flex-row justify-content-between">
+                    <div class="category-content align-items-center  flex-grow-1 d-flex flex-row gap-3"
+                        id="categoryContent">
+                    </div>
                 </div>
                 <div id="share" class="share d-flex  align-items-center  gap-2">
                     <div class="share-icon">
@@ -173,16 +197,25 @@
                         <h5 id="shareTitle">Share</h5>
                         <div class="share-icons d-flex gap-2 ">
                             <button id="facebookShareButton" name="facebookShare" aria-label="Share on Facebook"
-                                title="Share this content on Facebook"> <svg width="40" class="no-rotate"
-                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier97" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier97" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier97">
+                                title="Share this content on Facebook"> <svg width="30" class="no-rotate"
+                                    viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)"></circle>
                                         <path
-                                            d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"
-                                            fill="#0080ff"></path>
+                                            d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
+                                            fill="white"></path>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16"
+                                                y2="29.917" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#18ACFE"></stop>
+                                                <stop offset="1" stop-color="#0163E0"></stop>
+                                            </linearGradient>
+                                        </defs>
                                     </g>
                                 </svg>
+                                <span>Facebook</span>
                             </button>
                             <button id="twitterShareButton" name="twitterShare" aria-label="Share on Twitter"
                                 title="Share this content on Twitter"> <svg width="30" class="no-rotate"
@@ -194,23 +227,26 @@
                                     <path fill="#fff" fill-rule="nonzero"
                                         d="M318.64 157.549h33.401l-72.973 83.407 85.85 113.495h-67.222l-52.647-68.836-60.242 68.836h-33.423l78.052-89.212-82.354-107.69h68.924l47.59 62.917 55.044-62.917zm-11.724 176.908h18.51L205.95 176.493h-19.86l120.826 157.964z" />
                                 </svg>
+                                <span>Twitter</span>
+
                             </button>
 
 
-                            <button id="linkedinShareButton" name="linkedinShare" aria-label="Share on LinkedIn"
-                                title="Share this content on LinkedIn"> <svg width="35" viewBox="0 0 16 16"
-                                    class="no-rotate" xmlns="http://www.w3.org/2000/svg" fill="none">
-                                    <g stroke-width="0"></g>
-                                    <g stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g>
-                                        <path fill="#0A66C2"
-                                            d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z">
+                            <button id="linkedinShareButton" name="linkedinShare" aria-label="Share on LinkedIn"> <svg
+                                    class="no-rotate" width="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path fill="#0077B5" fill-rule="evenodd"
+                                            d="M22.0367422,22 L17.8848745,22 L17.8848745,15.5036305 C17.8848745,13.9543347 17.85863,11.9615082 15.7275829,11.9615082 C13.5676669,11.9615082 13.237862,13.6498994 13.237862,15.3925291 L13.237862,22 L9.0903683,22 L9.0903683,8.64071385 L13.0707725,8.64071385 L13.0707725,10.4673257 L13.1276354,10.4673257 C13.6813927,9.41667396 15.0356049,8.3091593 17.0555507,8.3091593 C21.2599073,8.3091593 22.0367422,11.0753215 22.0367422,14.6734319 L22.0367422,22 Z M4.40923804,6.81585163 C3.07514653,6.81585163 2,5.73720584 2,4.40748841 C2,3.07864579 3.07514653,2 4.40923804,2 C5.73720584,2 6.81585163,3.07864579 6.81585163,4.40748841 C6.81585163,5.73720584 5.73720584,6.81585163 4.40923804,6.81585163 L4.40923804,6.81585163 Z M6.48604672,22 L2.32980492,22 L2.32980492,8.64071385 L6.48604672,8.64071385 L6.48604672,22 Z">
                                         </path>
                                     </g>
-                                </svg>
+                                </svg> <span>Linkedin</span>
+
                             </button>
                             <button id="whatsappShareButton" name="whatsappShare" aria-label="Share on WhatsApp"
-                                title="Share this content on WhatsApp"><svg width="35" viewBox="0 0 32 32" fill="none"
+                                title="Share this content on WhatsApp"><svg width="30" viewBox="0 0 32 32" fill="none"
                                     class="no-rotate" xmlns="http://www.w3.org/2000/svg">
                                     <g stroke-width="0"></g>
                                     <g stroke-linecap="round" stroke-linejoin="round">
@@ -236,6 +272,8 @@
                                             </linearGradient>
                                         </defs>
                                     </g>
+                                    <span>WhatsApp</span>
+
                                 </svg>
                             </button>
                             <button id="instagramShareButton" name="instagramShare" aria-label="Share on Instagram"
@@ -286,15 +324,18 @@
                                         </defs>
                                     </g>
                                 </svg>
+                                <span>Instagram</span>
+
                             </button>
                         </div>
                         <div class="copy">
-                            <h5 class="fs-5 pt-5 opacity-75" id="pageLink">Page Link</h5>
+                            <h5 class="fs-5 pt-5 opacity-75" id="pageLink">Copy url</h5>
                             <div
                                 class="d-flex justify-content-between align-items-center bg-light text-muted-color py-2 px-3 rounded mt-3 gap-3">
                                 <p class="mb-0 opacity-25" id="link"></p>
                                 <button id="copyLinkBtn" class="copy" name="copyLink"
                                     aria-label="Copy link to clipboard" title="Copy the link to clipboard">
+                                    <span class="copied">Copied</span>
                                     <span data-text-end="Copied!" data-text-initial="Copy to clipboard"
                                         class="tooltip"></span>
                                     <span>
@@ -318,6 +359,7 @@
                 </div>
 
             </div>
+
             <div class="row mt-4 align-items-start justify-content-between  ">
                 <div class="description position-relative p-s-5 col-md-12 gap-2 col-lg-9" id="description"></div>
                 <div class="sidebar col-md-3 col-sm-0">
@@ -776,13 +818,12 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
                     <div id="subscribe" class="d-flex flex-column justify-content-center text-white-color mt-2">
-                        <h6 class="tag-title">
-                            Subscribe Our Newsletter
-                        </h6>
-                        <p class="desc fs-5-2 mt-2">
-                            Join our newsletter and be the first to know about new product releases, discounts,
-                            and
-                            useful resources!
+                        <p class="tag-title fs-5">
+                            SUBSCRIBE OUR NEWSLETTER
+                        </p>
+                        <p class="desc mt-2">
+                            Join Our Newsletter And Be The First To Know About New Product Releases, Discounts, And
+                            Useful Resources
                         </p>
                         <div class="input-group rounded-pill overflow-hidden mt-4">
                             <input type="text" class="form-control border-0" placeholder="Your email address"

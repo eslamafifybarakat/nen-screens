@@ -88,8 +88,8 @@ header .links ul{
     color: black;
   }
   header .search input.open {
-    padding: 1rem;
-    width: 12.75rem;
+    /* padding: 1rem; */
+    /* width: 12.75rem; */
     outline: 0;
   }
   .close-btn{
@@ -253,18 +253,19 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 .sign-up {
   background-color: #ffffff00;
-  color: #fff;
   width: 8.5em;
+  color: white;
   height: 2.9em;
-  border: #3654ff 0.2em solid;
+  border: white 1px solid;
   border-radius: 11px;
   text-align: center;
   transition: all 0.6s ease;
 }
 
 .sign-up:hover {
-  background-color: #3654ff;
+  background-color: white;
   cursor: pointer;
+  color: #000;
 }
 
 .sign-up svg {
@@ -295,21 +296,39 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     top: 45%;
   }
 }
-  .lang-card {
-    top: 60px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
-    width: 0;
-    z-index: 2;
+ 
+.lang-card {
+  z-index: 2;
+  top: 60px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  width: 0;
+  z-index: 2;
+  padding: 0 !important;
+  button{
+    background-color: transparent;
+    padding: 5px 35px 5px 10px !important;
+    border-radius: 9px;
+    cursor: pointer;
+    &:hover{
+      background-color: #3333330e;
+    }
+  }
 
-  }
-  .dd ul{
-    gap: 0px;
-  }
-  .lang-card.active{
-    width: auto;
-  }
+}
+
+.dd ul {
+  gap: 0px;
+  top: 0;
+}
+
+.lang-card.active {
+  width: auto;
+  padding:10px 15px 10px 10px !important;
+
+}
+
   
 
 @media (max-width:1024px) {
@@ -439,11 +458,33 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   align-content: center;
 
   flex-wrap: wrap;
+  button{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    span{
+      justify-self: flex-end;
+    }
+  }
 
 }
 
 .save svg{
 cursor: pointer;
+}
+.copy{
+  position: relative;;
+}
+.copied{
+  position: absolute;
+  top: -46px;
+  left: -17px;
+  background: #55555537;
+  padding: 5px;
+  border-radius: 5px;
+  display:none;
 }
 /* From Uiverse.io by Galahhad */ 
 
@@ -482,12 +523,8 @@ cursor: pointer;
     }
     }
     .article-title h1{
-
         padding: 0;
-
     }
-
-
 }
 .author-img-container{
     width: 30px;
@@ -619,6 +656,28 @@ opacity: .7;
   overflow: hidden;
   padding: 50px;
     margin-bottom: 10px;
+    a{
+       .go {
+    display: none;
+    padding: 5px;
+    width: 30px;
+    border: 1px solid white;
+    right: 10px;
+    border-radius: 50%;
+    bottom: 5px;
+  }
+
+      &:hover{
+        .go{
+          display: block;
+        }
+        .article{
+          img{
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
 }
 .article{
   height: 380px;
@@ -635,6 +694,7 @@ opacity: .7;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: .3s;
 
   }
 }
@@ -664,7 +724,7 @@ opacity: .7;
   gap: 15px;
 }
 .bread-crumb svg{
- width: 12px;
+ width: 15px;
 }
 
 .bread-crumb span a{
@@ -737,8 +797,15 @@ opacity: .7;
   padding: 40px 80px;
   text-align: center;
   overflow: hidden;
+  input{
+    height: 50px;
+  }
   .tag-title {
     text-align: left;
+  }
+  .desc{
+    font-size: 1.15rem;
+    color: #f5d9d9d0;
   }
   .location,.email{
     a{
@@ -749,6 +816,7 @@ opacity: .7;
     padding-bottom: 45px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.237);
   }
+
   #subscribe{
     text-align: left;
   }

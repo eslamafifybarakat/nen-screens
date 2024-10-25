@@ -274,7 +274,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   header .search input.open {
     right: 0;
-    width: 11rem;
+    width: 9rem;
     z-index: 5;
   }
 

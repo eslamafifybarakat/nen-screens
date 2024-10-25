@@ -232,7 +232,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   }
   header .search input.open {
     right: 0;
-    width: 11rem;
+    width: 9rem;
     z-index: 5;
   }
   header .auth1 {
